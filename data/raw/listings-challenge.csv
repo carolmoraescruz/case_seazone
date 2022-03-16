@@ -1,0 +1,463 @@
+Código,Localização,Categoria,Comissão,Endereço,Cama Casal,Cama Solteiro,Cama Queen,Cama King,Sofá Cama Solteiro,Travesseiros,Banheiros,Taxa de Limpeza,Capacidade,Hotel,Data Inicial do contrato,Status,Tipo
+ADJ205,JUR,SIM2Q,"0,20","Av dos Búzios, 470 Apto 205 Jurerê Florianópolis",01,02,00,00,0,04,"2,00","295,00",04,Não,25/10/2019,Ativo,Apartamento
+AYA201,JUR,JR3Q,"0,20","R Prof Manoel do Lago Almeida, 140 Apto 201 Jurerê Florianópolis",03,00,00,00,0,06,"2,00","314,00",06,Não,25/10/2019,Ativo,Apartamento
+BEL102,JUR,SUP2Q,"0,20","Rodovia Maurício Sirotsky Sobrinho, 5145 apto 102 Jurerê Florianópolis",00,02,01,00,0,04,"2,00","252,00",04,Não,01/12/2019,Inativo,Apartamento
+CCA201,CAN,SUP3Q,"0,20","Rua Prof Teodosio Mauricio Wanderley, 120 Apto 201 Canasvieiras Florianópolis",01,04,00,00,0,06,"2,00","354,00",06,Não,25/11/2019,Ativo,Apartamento
+CDC301,JUR,TOP3Q,"0,20","Av. Dourados, 910, Ap 301, Jurerê",03,00,00,00,0,06,"2,00","314,00",06,Não,01/12/2019,Inativo,Apartamento
+CDS106,JUR,SUP2Q,"0,20",Av dos Salmões 844 Apto 106 Jurerê Florianópolis,01,02,00,00,0,04,"2,00","253,00",04,Não,05/02/2020,Ativo,Apartamento
+CDS208,JUR,JR2Q,"0,20",Av dos Salmões 844 Apto 208 Jurerê Florianópolis,01,02,00,00,1,05,"2,00","291,00",05,Não,01/09/2019,Inativo,Apartamento
+CDS209,JUR,SUP2Q,"0,20",Av dos Salmões 844 Apto 209 Jurerê Florianópolis,01,02,00,00,0,04,"1,00","255,00",04,Não,01/11/2019,Inativo,Apartamento
+CHR101,JUR,SUP2Q,"0,20","Rua dos Chernes, 525 Apto 101 Jurerê Florianópolis",01,02,00,00,1,05,"2,00","281,00",05,Não,01/10/2019,Ativo,Apartamento
+CPJ102,JUR,TOP3Q,"0,20","Condomínio Portal do Jurerê, Apto 102 Av. das Raias 961 Jurerê",02,02,00,00,0,06,"3,00","0,00",06,Não,26/12/2019,Inativo,Apartamento
+CPS107,JUR,SUP2Q,"0,20","Rua dos Chernes, 181, apto 107 Jurerê Florianópolis",02,00,00,00,0,04,"2,00","285,00",04,Não,07/01/2020,Ativo,Apartamento
+CVJ302,JUR,MASTER3Q,"0,20","Rua Deputado Paulo Preis, 565 Apto 302 Jurerê Florianópolis",01,03,00,00,0,05,"4,00","330,00",05,Não,20/01/2020,Ativo,Apartamento
+ECB107,JUR,SUP3Q,"0,20","Edifício Costa Bella, Apto 106 Av. das Raias, 601 Jurerê",01,04,00,00,0,06,"2,00","0,00",06,Não,06/01/2020,Inativo,Apartamento
+EDH208,JUR,SUP2Q,"0,20","Rua Deputado Paulo Preis, 590.Apto 208 Jurerê Florianópolis",02,00,00,00,0,04,"2,00","248,00",04,Não,28/12/2019,Inativo,Apartamento
+EVM102,JUR,JR3Q,"0,20","Rua dos Cambuatas,104 Apto 102 Jurerê Florianópolis",01,02,00,00,2,06,"2,00","342,00",06,Não,01/12/2019,Ativo,Apartamento
+ILC1110,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 1, ap 110",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/06/2019,Ativo,Dentro do Hotel
+ILC1111,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 1, ap 111",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/06/2019,Ativo,Dentro do Hotel
+ILC1112,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 1, ap 112",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/06/2019,Ativo,Dentro do Hotel
+ILC1205,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 1, ap 205",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/03/2020,Inativo,Dentro do Hotel
+ILC1206,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 1, ap 206",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/08/2019,Ativo,Dentro do Hotel
+ILC1211,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 1, ap 211",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/01/2019,Ativo,Dentro do Hotel
+ILC1213,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 1, ap 213",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/06/2019,Ativo,Dentro do Hotel
+ILC1314,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 1, ap 314",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/06/2019,Inativo,Dentro do Hotel
+ILC1403,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 1, ap 403",00,00,01,00,0,04,"1,00","0,00",04,Sim,20/07/2020,Inativo,Dentro do Hotel
+ILC1404,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 1, ap 404",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/12/2018,Ativo,Dentro do Hotel
+ILC1413,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 1, ap 413",00,00,01,00,0,04,"1,00","0,00",04,Sim,05/08/2020,Ativo,Dentro do Hotel
+ILC1506,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 1, ap 506",00,00,00,00,0,00,"0,00","0,00",04,Sim,20/02/2020,Ativo,Dentro do Hotel
+ILC2203,ILC,JR,"0,05","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 2, ap 203",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/03/2019,Ativo,Dentro do Hotel
+ILC2206,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 2, ap 206",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/03/2019,Ativo,Dentro do Hotel
+ILC2301,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 2, ap 301",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/07/2019,Ativo,Dentro do Hotel
+ILC2303,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 2, ap 303",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/01/2019,Ativo,Dentro do Hotel
+ILCO2307,ILC,TOP,"0,00","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 2, ap 307",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/12/2018,Inativo,Dentro do Hotel
+ILC2313,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 2, ap 313",00,00,00,00,0,00,"1,00","0,00",04,Sim,01/12/2018,Inativo,Dentro do Hotel
+ILC2412,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 2, ap 412",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/12/2018,Ativo,Dentro do Hotel
+ILC2413,ILC,JR,"0,00","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 2, ap 413",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/12/2018,Ativo,Dentro do Hotel
+ILC3104,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 3, ap 104",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/03/2019,Ativo,Dentro do Hotel
+ILC3105,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 3, ap 105",00,00,01,00,0,04,"1,00","0,00",04,Sim,29/07/2020,Ativo,Dentro do Hotel
+ILC3111,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 3, ap 111",00,00,01,00,0,04,"1,00","0,00",04,Sim,20/08/2020,Ativo,Dentro do Hotel
+ILC3310,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 3, ap 310",00,00,00,00,0,00,"0,00","0,00",04,Sim,06/05/2019,Inativo,Dentro do Hotel
+ILC3312,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 3, ap 312",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/03/2019,Ativo,Dentro do Hotel
+ILC3412,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 3, ap 412",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/04/2020,Ativo,Dentro do Hotel
+ILC3413,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 3, ap 413",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/05/2019,Ativo,Dentro do Hotel
+ILC3415,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 3, ap 415",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/05/2019,Ativo,Dentro do Hotel
+ILC4110,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 110",00,00,01,00,0,04,"1,00","0,00",04,Sim,20/08/2020,Ativo,Dentro do Hotel
+ILC4310,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 310",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/01/2020,Ativo,Dentro do Hotel
+ILC4313,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 313",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/01/2020,Ativo,Dentro do Hotel
+ILC4403,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 403",00,00,00,00,0,00,"0,00","0,00",04,Sim,06/09/2019,Inativo,Dentro do Hotel
+ILC4404,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 404",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/01/2020,Ativo,Dentro do Hotel
+ILC4406,ILC,JR,"0,05","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 406",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/01/2020,Ativo,Dentro do Hotel
+ILC4409,ILC,TOP,"0,05","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 409",00,00,00,00,0,00,"0,00","0,00",04,Sim,21/12/2019,Inativo,Dentro do Hotel
+ILC4410,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 410",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/03/2019,Inativo,Dentro do Hotel
+ILC4411,ILC,JR,"0,05","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 411",00,00,00,00,0,00,"0,00","0,00",04,Sim,15/11/2019,Inativo,Dentro do Hotel
+ILC4501,ILC,MASTER,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 501",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/09/2019,Ativo,Dentro do Hotel
+ILCO4502,ILC,MASTER,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 502",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/11/2019,Inativo,Dentro do Hotel
+JBA104,JUR,JR1Q,"0,15","Res, Jurerê Beach I, Apto 104 Av dos Búzios, 130 Jurerê, Florianópolis",01,00,00,00,2,04,"1,00","198,00",04,Não,03/05/2020,Ativo,Apartamento
+JBA202,JUR,JR2Q,"0,20","Res, Jurerê Beach I, Apto 202, Av dos Búzios, 130 Jurerê, Florianópolis",02,01,00,00,0,05,"1,00","246,00",05,Não,03/05/2020,Ativo,Apartamento
+JBM201,JUR,TOP1Q,"0,20","Rua Haroldo Callado, 205, apto 201, Jurerê, Florianópolis",01,00,00,00,0,04,"1,00","198,00",04,Não,03/05/2020,Ativo,Apartamento
+JBM202,JUR,TOP1Q,"0,20","Rua Jornalista Haroldo Callado 305 apto 202, Jurerê CEP 88053-600",01,00,00,00,0,04,"1,00","198,00",04,Não,17/07/2020,Ativo,Apartamento
+JBM302,JUR,TOP1Q,"0,20","Rua Haroldo Callado, 305, apto 302, Jurerê, Florianópolis",01,00,00,00,2,04,"1,00","211,00",04,Não,03/05/2020,Ativo,Apartamento
+JBM303,JUR,MASTER1Q,"0,20","Rua Haroldo Callado, 305, apto 303, Jurerê, Florianópolis",01,00,00,00,1,03,"1,00","211,00",03,Não,03/05/2020,Ativo,Apartamento
+JBV122,JBV,TOP,"0,10","Alameda César Nascimento, 646, apto 122 - Jurerê, Florianópolis - SC, 88053-500",00,00,00,00,0,00,"0,00","0,00",04,Sim,06/12/2019,Ativo,Dentro do Hotel
+JBV124,JBV,JR,"0,10","Alameda César Nascimento, 646, apto 124 - Jurerê, Florianópolis - SC, 88053-500",00,00,01,00,0,03,"1,00","0,00",03,Sim,20/07/2020,Ativo,Dentro do Hotel
+JBV134,JBV,JR,"0,10","Alameda César Nascimento, 646, apto 134 - Jurerê, Florianópolis - SC, 88053-500",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/08/2019,Ativo,Dentro do Hotel
+JBVO242,JBV,TOP,"0,00","Alameda César Nascimento, 646, apto 242 - Jurerê, Florianópolis - SC, 88053-500",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/03/2020,Inativo,Dentro do Hotel
+JBV259,JBV,SUP,"0,10","Alameda César Nascimento, 646, apto 259 - Jurerê, Florianópolis - SC, 88053-500",00,00,00,00,0,00,"0,00","0,00",04,Sim,16/12/2019,Ativo,Dentro do Hotel
+JBV265,JBV,JR,"0,10","Alameda César Nascimento, 646, apto 265 - Jurerê, Florianópolis - SC, 88053-500",00,01,01,00,0,03,"1,00","0,00",03,Sim,22/07/2020,Ativo,Dentro do Hotel
+JBV406,JBV,JR,"0,10","Alameda César Nascimento, 646, apto 406 - Jurerê, Florianópolis - SC, 88053-500",00,00,00,00,0,00,"0,00","0,00",04,Sim,15/01/2020,Inativo,Dentro do Hotel
+JBV452,JBV,TOP,"0,10","Alameda César Nascimento, 646, apto 452 - Jurerê, Florianópolis - SC, 88053-500",00,01,00,01,2,05,"1,00","0,00",05,Sim,24/07/2020,Inativo,Dentro do Hotel
+JBV455,JBV,TOP,"0,00","Alameda César Nascimento, 646, apto 455 - Jurerê, Florianópolis - SC, 88053-500",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/12/2018,Ativo,Dentro do Hotel
+JBVO462,JBV,TOP,"0,00","Alameda César Nascimento, 646, apto 462 - Jurerê, Florianópolis - SC, 88053-500",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/12/2018,Inativo,Dentro do Hotel
+JBV464,JBV,JR,"0,00","Alameda César Nascimento, 646, apto 464 - Jurerê, Florianópolis - SC, 88053-500",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/12/2018,Ativo,Dentro do Hotel
+MDP102,JUR,SUP3Q,"0,20","R. dos Surubins, 57 Apto 102 Jurerê Florianópolis",01,02,01,00,0,06,"2,00","339,00",06,Não,18/05/2020,Inativo,Apartamento
+PSD101,JUR,SIM2Q,"0,20","Rua cesar Nascimento, 138, apto 101, Jurerê, Florianópolis",02,00,00,00,0,06,"1,00","197,00",06,Não,01/09/2019,Ativo,Apartamento
+PSD102,JUR,JR1Q,"0,20","Rua Cesar Nascimento, 138, apto 102, Jurerê, Florianópolis",02,00,00,00,0,06,"1,00","247,00",06,Não,01/09/2019,Ativo,Apartamento
+PSD103,JUR,JR1Q,"0,20","Rua Cesar Nascimento, 138, apto 103, Jurerê, Florianópolis",01,00,00,00,0,04,"1,00","205,00",04,Não,01/09/2019,Ativo,Apartamento
+PSD201,JUR,SIM2Q,"0,20","Rua Cesar Nascimento, 138, apto 201, Jurerê, Florianópolis",02,00,00,00,0,06,"1,00","275,00",06,Não,01/09/2019,Ativo,Apartamento
+PSD202,JUR,JR1Q,"0,20","Rua Cesar Nascimento, 138, apto 202, Jurerê, Florianópolis",01,00,00,00,0,04,"1,00","198,00",04,Não,01/09/2019,Ativo,Apartamento
+PSD203,JUR,JR1Q,"0,20","Rua Cesar Nascimento, 138, apto 203, Jurerê, Florianópolis",01,00,00,00,0,04,"1,00","205,00",04,Não,01/09/2019,Ativo,Apartamento
+PSD204,JUR,JR1Q,"0,20","Rua Cesar Nascimento, 138, apto 204, Jurerê, Florianópolis",01,00,00,00,0,04,"1,00","198,00",04,Não,01/09/2019,Ativo,Apartamento
+PSD205,JUR,JR1Q,"0,20","Rua Cesar Nascimento, 138, apto 205, Jurerê, Florianópolis",01,00,00,00,0,04,"1,00","198,00",04,Não,01/09/2019,Ativo,Apartamento
+PSD301,JUR,SIM2Q,"0,20","Rua Cesar Nascimento, 138, apto 301, Jurerê, Florianópolis",02,00,00,00,0,06,"1,00","278,00",06,Não,01/09/2019,Ativo,Apartamento
+REN002,JUR,TOP3Q,"0,20","Av dos Búzios, 2877 Apto 002 Jurerê Florianópolis",01,04,00,00,0,06,"2,00","341,00",06,Não,01/08/2019,Inativo,Apartamento
+SAB106,JUR,JR1Q,"0,20","Av das Raias, 555 Apto 106 Jurerê Florianópolis",01,00,00,00,1,03,"1,00","197,00",03,Não,01/12/2019,Inativo,Apartamento
+SAM001,JUR,JR1Q,"0,15","Rua Deputado Paulo Preis, 513, apto 001, Jurerê, Florianópolis",01,00,00,00,2,04,"1,00","218,00",04,Não,01/09/2019,Inativo,Apartamento
+SAM002,JUR,JR1Q,"0,15","Rua Deputado Paulo Preis, 513, apto 002, Jurerê, Florianópolis",01,00,00,00,2,04,"1,00","218,00",04,Não,01/09/2019,Inativo,Apartamento
+SAM003,JUR,JR1Q,"0,15","Rua Deputado Paulo Preis, 513, apto 003, Jurerê, Florianópolis",01,00,00,00,2,04,"1,00","218,00",04,Não,01/09/2019,Inativo,Apartamento
+SAM004,JUR,JR1Q,"0,15","Rua Deputado Paulo Preis, 513, apto 004, Jurerê, Florianópolis",01,00,00,00,2,04,"1,00","218,00",04,Não,01/09/2019,Inativo,Apartamento
+SAM005,JUR,JR1Q,"0,15","Rua Deputado Paulo Preis, 513, apto 005, Jurerê, Florianópolis",01,00,00,00,2,04,"1,00","218,00",04,Não,01/12/2019,Inativo,Apartamento
+SAM006,JUR,JR1Q,"0,15","Rua Deputado Paulo Preis, 513, apto 006, Jurerê, Florianópolis",01,00,00,00,2,04,"1,00","218,00",04,Não,01/12/2019,Inativo,Apartamento
+SAM007,JUR,JR1Q,"0,15","Rua Deputado Paulo Preis, 513, apto 007, Jurerê, Florianópolis",01,00,00,00,2,04,"1,00","218,00",04,Não,01/12/2019,Inativo,Apartamento
+SAM008,JUR,JR1Q,"0,15","Rua Deputado Paulo Preis, 513, apto 008, Jurerê, Florianópolis",01,00,00,00,2,04,"1,00","218,00",04,Não,01/12/2019,Inativo,Apartamento
+SAM009,JUR,JR1Q,"0,15","Rua Deputado Paulo Preis, 513, apto 009, Jurerê, Florianópolis",01,00,00,00,2,04,"1,00","218,00",04,Não,01/12/2019,Inativo,Apartamento
+SAM010,JUR,JR1Q,"0,15","Rua Deputado Paulo Preis, 513, apto 010, Jurerê, Florianópolis",01,00,00,00,2,04,"1,00","218,00",04,Não,01/12/2019,Inativo,Apartamento
+SAM011,JUR,JR3Q,"0,15","Rua Deputado Paulo Preis, 513, apto 011, Jurerê, Florianópolis",02,02,00,00,2,08,"3,00","382,00",08,Não,01/12/2019,Inativo,Apartamento
+SAM012,JUR,JR2Q,"0,15","Rua Deputado Paulo Preis, 513, apto 012, Jurerê, Florianópolis",01,04,00,00,2,08,"2,00","327,00",08,Não,01/12/2019,Inativo,Apartamento
+SBS106,JUR,JR1Q,"0,20","Av das Raias, 771 Apto 106 Jurerê Florianópolis",00,00,00,01,0,04,"1,00","199,00",04,Não,01/11/2019,Ativo,Apartamento
+SBS111,JUR,JR2Q,"0,20","Av das Raias, 771 Apto 111 Jurerê Florianópolis",02,00,00,00,0,04,"2,00","230,00",04,Não,02/09/2019,Ativo,Apartamento
+STO2206,STO,JR1Q,"0,05","Praia do - Estr. Ver. Onildo Lemos, 2505, torre 2, apto 206 - Santinho, Florianópolis - SC, 88058-700",00,00,00,00,0,00,"0,00","0,00",04,Sim,01/03/2019,Ativo,Dentro do Hotel
+THI003,JUR,SIM1Q,"0,20","Rua Professor Manoel do Lago Almeida, 372, apto 003, Jurerê",01,00,00,00,2,04,"1,00","0,00",04,Não,01/08/2019,Inativo,Apartamento
+THI004,JUR,SIM1Q,"0,20","Rua Professor Manoel do Lago Almeida, 372, apto 004, Jurerê",01,00,00,00,2,04,"1,00","0,00",04,Não,01/08/2019,Inativo,Apartamento
+VDI208,JUR,SUP2Q,"0,20","Av dos Dourados, 970 Bloco 01 Apto 208 Jurerê Florianópolis",01,01,00,00,0,06,"3,00","289,00",06,Não,01/03/2019,Ativo,Apartamento
+VDM104,CAN,JR1Q,"0,20","Rod Tertuliano Brito Xavier,2011 Bloco 01 Apto 104 Canasvieiras Florianópolis",01,00,00,00,2,04,"1,00","0,00",04,Não,10/01/2020,Inativo,Apartamento
+VDM301,CAN,SUP1Q,"0,15","Rod Tertuliano Brito Xavier,2011 Bloco 01 Apto 301 Canasvieiras Florianópolis",01,00,00,00,2,04,"1,00","204,00",04,Não,01/12/2019,Inativo,Apartamento
+JBM204,JUR,TOP2Q,"0,20","Rua Jornalista Haroldo Callado, número 305, CEP: 88053-600, Jurerê, Florianópolis",00,02,01,00,0,06,"1,00","267,00",05,Não,09/09/2020,Inativo,Apartamento
+SDO206,ING,SUP3Q,"0,20","Rua Lazaro de Oliveira Souza, número 440, Ingleses Norte, CEP: 88058-580, Florianópolis, SC",02,01,01,00,1,08,"3,00","390,00",08,Não,11/09/2020,Ativo,Apartamento
+SGA202,JUR,SUP3Q,"0,20","Apartamento 202, situado na Av. dos Dourados, 815, CEP: 88053-410, Florianópolis – SC.",00,02,02,00,0,06,"2,00","326,00",06,Não,14/09/2020,Bloqueado,Apartamento
+JBV252,JBV,TOP,"0,10","Alameda César Nascimento, 646, apto 252 - Jurerê, Florianópolis - SC, 88053-500",00,00,01,00,2,04,"1,00","0,00",04,Sim,21/09/2020,Ativo,Dentro do Hotel
+ILC2106,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 2, ap 106",00,00,01,00,2,04,"1,00","0,00",04,Sim,23/09/2020,Ativo,Dentro do Hotel
+PNO302,CAN,TOP3Q,"0,20","Tertulino brito Xavier, número 3217, apart 302, CEP: 88054-601",02,02,00,00,0,06,"2,00","320,00",06,Não,30/09/2020,Inativo,Apartamento
+IDP104,ING,SUP3Q,"0,20","Rua Recanto do Sol, 300, Ingleses Norte, Apto 104A",02,02,00,00,1,07,"2,00","345,00",07,Não,29/09/2020,Ativo,Apartamento
+ILC4213,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 213",01,00,00,00,2,04,"1,00","0,00",04,Sim,05/10/2020,Ativo,Dentro do Hotel
+CSP203,ING,JR3Q,"0,20","Servidão João Luís de Souto, número 210, Ingleses, Florianópolis – SC",01,02,00,00,2,06,"2,00","328,00",06,Não,09/10/2020,Inativo,Apartamento
+JBVO155,JBV,JR,"0,10","Alameda César Nascimento, 646, apto 155 - Jurerê, Florianópolis - SC, 88053-500",00,01,01,00,0,04,"1,00","0,00",03,Sim,11/10/2020,Inativo,Dentro do Hotel
+ILCO2309,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 2, ap 309",00,00,01,00,0,04,"1,00","0,00",04,Sim,14/10/2020,Inativo,Dentro do Hotel
+JBV222,JBV,MASTER,"0,00","Alameda César Nascimento, 646, apto 222 - Jurerê, Florianópolis - SC, 88053-500",00,01,01,00,0,04,"1,00","0,00",04,Sim,14/10/2020,Ativo,Dentro do Hotel
+JBV224,JBV,JR,"0,00","Alameda César Nascimento, 646, apto 224 - Jurerê, Florianópolis - SC, 88053-500",00,01,01,00,0,04,"1,00","0,00",03,Sim,13/10/2020,Ativo,Dentro do Hotel
+CDS109,JUR,SIM2Q,"0,20","Avenida dos Salmões 844 - apartamento 109 - Jurere Internacional - FLorianópolis, CEP 88053-365",00,02,01,00,0,04,"1,50","244,00",04,Não,13/10/2020,Inativo,Apartamento
+JBV465,JBV,JR,"0,10","Alameda César Nascimento, 646, apto 465 - Jurerê, Florianópolis - SC, 88053-500",00,01,01,00,0,04,"1,00","0,00",03,Sim,11/10/2020,Ativo,Dentro do Hotel
+POR204,ING,TOP3Q,"0,20","Rua das Gaivotas, 1380, Edifício Portamar, Bairro Ingleses – CEP 88058-500 – Florianópolis / SC",01,03,01,00,0,07,"3,00","345,00",07,Não,16/10/2020,Ativo,Apartamento
+STI204,ING,SUP1Q,"0,20","Rua Adiles Della Giustina, 105, apto 204 - Ingleses do Rio Vermelho, Florianópolis - SC - CEP 88058-522, Florianópolis – SC",00,00,01,00,0,04,"1,00","196,00",04,Não,20/10/2020,Ativo,Apartamento
+STI206,ING,SUP1Q,"0,20","Rua Adiles Della Giustina, 105, apto 206 - Ingleses do Rio Vermelho, Florianópolis - SC - CEP 88058-522, Florianópolis – SC",00,00,01,00,0,04,"1,00","196,00",04,Não,20/10/2020,Ativo,Apartamento
+ILC3405,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 3, ap 405",00,00,01,00,0,04,"1,00","0,00",04,Sim,19/10/2020,Ativo,Dentro do Hotel
+ILC3403,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 3, ap 403",00,00,01,00,0,04,"1,00","0,00",04,Sim,23/10/2020,Ativo,Dentro do Hotel
+ILC1202,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 1, ap 202",00,00,01,00,0,04,"1,00","0,00",04,Sim,26/10/2020,Ativo,Dentro do Hotel
+ILC3501,ILC,MASTER,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 3, ap 501",00,00,02,00,0,06,"2,00","0,00",06,Sim,28/10/2020,Inativo,Dentro do Hotel
+ILCO3113,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 3, ap 113",00,00,01,00,0,04,"1,00","0,00",04,Sim,28/10/2020,Inativo,Dentro do Hotel
+ILC3109,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 3, ap 109",00,00,01,00,0,04,"1,00","0,00",04,Sim,28/10/2020,Ativo,Dentro do Hotel
+EIC204,CAN,JR1Q,"0,20","Rua Osvaldo Hulse, no 41, Edificio Ilha de Creta CEP: 88054-470, Florianópolis – SC",01,02,00,00,0,04,"1,00","214,00",04,Não,28/10/2020,Inativo,Apartamento
+ELUO101,JUR,TOP1Q,"0,20","Rua Professor Renato Barbosa, 227, Jurerê, CEP 88053-640, Edifício Lúnico, Florianópolis – SC",00,00,01,00,0,04,"1,00","196,00",04,Não,28/10/2020,Inativo,Apartamento
+ELUO107,JUR,TOP1Q,"0,20","Rua Professor Renato Barbosa, 227, CEP 88053-640, Edifício Lúnico, Florianópolis – SC",00,00,01,00,0,04,"1,50","191,00",04,Não,28/10/2020,Inativo,Apartamento
+LIB203,ING,SUP2Q,"0,20","Rua das Dunas, 125, Condomínio La Isla Bonita, Bloco A, Apto203, Ingleses, Florianópolis-SC",00,03,01,00,0,05,"2,00","276,00",05,Não,30/10/2020,Ativo,Apartamento
+MDS018,ING,JR3Q,"0,20","Rua Vereador Onildo Lemos, 2148, Bloco A, Apto 18, Praia do Santinho, Florianópolis – SC",02,02,00,00,0,06,"2,00","314,00",06,Não,02/11/2020,Ativo,Apartamento
+JBV327,JBV,TOP,"0,10","Alameda César Nascimento, 646, apto 327 - Jurerê, Florianópolis - SC, 88053-500",00,01,01,00,0,05,"1,00","0,00",05,Sim,06/11/2020,Ativo,Dentro do Hotel
+JBV325,JBV,JR,"0,10","Alameda César Nascimento, 646, apto 325 - Jurerê, Florianópolis - SC, 88053-500",00,01,01,00,0,04,"1,00","0,00",03,Sim,06/11/2020,Ativo,Dentro do Hotel
+CCO103,ING,SUP2Q,"0,20","Rua Abel Álvares Cabral Júnior, número 670, Apto 103, Ingleses, Florianópolis – SC",02,00,00,00,0,04,"2,00","230,00",04,Não,09/11/2020,Inativo,Apartamento
+STO1269,STO,JR2Q,"0,10","Praia do - Estr. Ver. Onildo Lemos, 2505, torre 1, apto 269 - Santinho, Florianópolis - SC, 88058-700",00,00,02,00,0,04,"2,50","0,00",04,Sim,06/11/2020,Inativo,Dentro do Hotel
+STO1270,STO,JR1Q,"0,10","Praia do - Estr. Ver. Onildo Lemos, 2505, torre 1, apto 270 - Santinho, Florianópolis - SC, 88058-700",00,00,01,00,0,04,"1,00","0,00",02,Sim,06/11/2020,Inativo,Dentro do Hotel
+JAY404,JUR,MASTER4Q,"0,20","Avenida Dos Búzios, 1.136, apartamento 404, Jurerê Internacional, Florianópolis/SC, CEP 88.053-300",00,01,01,01,0,05,"2,50","292,00",05,Não,11/11/2020,Inativo,Apartamento
+RVG208,ING,TOP2Q,"0,20","Residencial Villa Giardino, Rua das Gaivotas, número 2383 - APTO 208 B2, Ingleses, Florianópolis – SC",02,00,00,00,1,05,"2,00","255,00",05,Não,11/11/2020,Ativo,Apartamento
+CCP201,CAN,SUP1Q,"0,20","Rodovia Tertuliano de Brito Xavier, 688 - bloco A3 apto 201 - Torre Bragança do Condomínio Cidades Portuguesas – Canasvieiras, Florianópolis – SC - CEP: 88054-600",01,00,00,00,0,04,"1,00","191,00",04,Não,16/11/2020,Ativo,Apartamento
+RSM102,ING,JR2Q,"0,20","Avenida Internacional, 303, apto 102, – Bairro Ingleses do Rio Vermelho – Florianópolis – SC",02,00,00,00,2,06,"2,00","286,00",06,Não,17/11/2020,Inativo,Apartamento
+ILC4215,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 215",00,01,01,00,0,05,"1,00","0,00",05,Sim,16/11/2020,Inativo,Dentro do Hotel
+JSR112,JUR,SUP1Q,"0,20","Rua Francisco Gouveia, 34 apto 112, Jurerê Summer Resort - Jurerê - CEP: 88053-645",00,00,01,00,0,05,"1,00","220,00",05,Não,17/11/2020,Ativo,Apartamento
+ILC2108,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 2, ap 108",00,00,01,00,0,04,"1,00","0,00",04,Sim,23/11/2020,Ativo,Dentro do Hotel
+ILC4214,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 214",00,00,01,00,0,04,"1,00","0,00",04,Sim,24/11/2020,Ativo,Dentro do Hotel
+ILC4415,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 415",00,00,01,00,0,04,"1,00","0,00",04,Sim,25/11/2020,Ativo,Dentro do Hotel
+ILC2109,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 2, ap 109",00,00,01,00,0,04,"1,00","0,00",04,Sim,27/11/2020,Ativo,Dentro do Hotel
+RCD305,ING,SUP2Q,"0,20","Residencial Caminho das Dunas, Rua Servidão Caminho das Dunas, 148, apto 305 bloco A - Florianópolis – SC.",02,00,00,00,0,04,"2,00","230,00",04,Não,30/11/2020,Inativo,Apartamento
+CBB001,CAN,JR2Q,"0,20","Rua Dr João de Oliveira, 828 - Condomínio Bahia Blanca. Canasvieiras, Florianópolis – SC.",00,01,02,00,0,07,"1,00","273,00",07,Não,03/12/2020,Inativo,Apartamento
+ILC3503,ILC,TOPM,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 3, ap 503",00,00,01,00,0,04,"1,00","0,00",04,Sim,03/12/2020,Ativo,Dentro do Hotel
+ILC1409,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 1, ap 409",00,00,01,00,0,04,"1,00","0,00",01,Sim,07/12/2020,Inativo,Dentro do Hotel
+PIX101,ING,SUP2Q,"0,20","Servidão Luiz Flôr Francisco, Ingleses do Rio Vermelho, Florianópolis - SC - CEP 88058493",02,00,00,00,0,06,"1,00","249,00",06,Não,04/12/2020,Inativo,Apartamento
+SDP206,ING,JR2Q,"0,20","Rua dos Tubarões, 196 - Ingleses do Rio Vermelho, Florianópolis - SC - CEP: 88058-690",01,02,00,00,0,04,"2,00","250,00",04,Não,07/12/2020,Ativo,Apartamento
+EAB203,ING,JR2Q,"0,20","Rua das Gaivotas, 1085 - Ingleses do Rio Vermelho, Florianópolis – SC",00,02,01,00,0,04,"1,00","250,00",04,Não,08/12/2020,Ativo,Apartamento
+FEM406,ING,SUP1Q,"0,20","Rua Brisamar, 142 - Ingleses Norte, Florianópolis/SC – CEP 88.058-570",00,00,01,00,2,06,"1,00","241,00",06,Não,07/12/2020,Inativo,Apartamento
+RSY101,ING,SUP2Q,"0,20","Rua dos Canudos, 573 - Residencial Sylvinha - Ingleses do Rio Vermelho, Florianópolis/SC - CEP: 88058-560.",01,03,00,00,0,05,"2,00","269,00",05,Não,09/12/2020,Inativo,Apartamento
+RVG202,ING,SUP3Q,"0,20","Rua das Gaivotas 2383, Ingleses Norte, Florianópolis – SC",02,00,01,00,0,06,"3,00","306,00",06,Não,09/12/2020,Inativo,Apartamento
+ILC2403,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 2, ap 403",00,00,01,00,0,04,"1,00","0,00",04,Sim,14/12/2020,Ativo,Dentro do Hotel
+ELU109,JUR,TOP1Q,"0,20","Rua Professor Renato Barbosa, 227 - L’unico Residence - Jurerê, Florianópolis – SC.",01,00,00,00,0,04,"1,50","204,00",04,Não,15/12/2020,Ativo,Apartamento
+ILC1309,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 1, ap 309",00,00,01,00,0,04,"1,00","0,00",04,Sim,17/12/2020,Ativo,Dentro do Hotel
+ATL018,LAG,MASTER1Q,"0,20","Rod. Antonio Luís Moura Gonzaga 95, Cond Vilas do Porto, Aldeia I, casa 18 - Rio Tavares - Florianópolis – SC",00,00,01,00,0,02,"1,00","172,00",02,Não,16/12/2020,Ativo,Apartamento
+JBV127,JBV,TOP,"0,10","Alameda César Nascimento, 646, apto 127 - Jurerê, Florianópolis - SC, 88053-500",00,01,01,00,0,05,"1,00","0,00",05,Sim,21/12/2020,Inativo,Dentro do Hotel
+ILC2307,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 2, ap 307",00,00,00,00,0,00,"0,00","0,00",04,Sim,21/12/2020,Ativo,Dentro do Hotel
+MISA322,LAG,HOUSIM3Q,"0,20","Casa A, Rua Manoel Isidoro da Silveira, 322 - Lagoa da Conceição, Florianópolis – SC.",03,00,00,00,0,08,"3,00","340,00",08,Não,21/12/2020,Inativo,Casa
+MISB322,LAG,HOUSIM3Q,"0,20","Casa B, Rua Manoel Isidoro da Silveira, 322 - Lagoa da Conceição, Florianópolis – SC.",02,04,00,00,0,10,"2,00","364,00",10,Não,21/12/2020,Inativo,Casa
+JBV155,JBV,JR,"0,10","Alameda César Nascimento, 646, apto 155 - Jurerê, Florianópolis - SC, 88053-500",00,01,01,00,0,04,"1,00","0,00",03,Sim,23/12/2020,Ativo,Dentro do Hotel
+SMR002,ING,HOUSIM2Q,"0,20","Servidão Maria Ramos Gama, casa 2 - Ingleses do Rio Vermelho, Florianópolis – SC - CEP: 88058-742",00,02,01,00,1,06,"1,50","337,00",06,Não,21/12/2020,Inativo,Casa
+JBV226,JBV,JR,"0,10","Alameda César Nascimento, 646, apto 226 - Jurerê, Florianópolis - SC, 88053-500",00,01,01,00,0,04,"1,00","0,00",03,Sim,21/12/2020,Inativo,Dentro do Hotel
+RBT708,UFSC,SUP2Q,"0,20","Rua Ogê Fortkamp, 111, Apto 708, Bloco C- Condomínio Residencial Boulevard Trindade - Trindade, Florianópolis - SC, 88036-610",00,00,00,00,0,00,"0,00","0,00",00,Não,28/12/2020,Inativo,Apartamento
+RTG208,ING,TOP2Q,"0,20","Rua Ilha das Galés, 380, apto 208, bloco D - Ingleses Norte - Florianópolis/SC - CEP: 88058-581",00,02,01,00,0,04,"2,00","250,00",04,Não,05/01/2021,Ativo,Apartamento
+ELU103,JUR,SUP2Q,"0,20","Rua Prof. Renato Barbosa, 227, apto 103 - Jurerê - Florianópolis/SC - CEP 88053-640",02,00,00,00,0,04,"2,00","236,00",04,Não,05/01/2021,Inativo,Apartamento
+AGAA5402,LAG,SUP1Q,"0,20",,00,00,01,00,0,04,"2,00","215,00",04,Não,06/01/2021,Ativo,Apartamento
+AGAB5402,LAG,SUP1Q,"0,20","Rodovia Admar Gonzaga, 5402, studio 1 - Lagoa da Conceição, Florianópolis/SC - CEP: 88062-001",01,00,00,00,0,02,"1,00","169,00",02,Não,06/01/2021,Ativo,Apartamento
+AGAC5402,LAG,SUP1Q,"0,20","Rodovia Admar Gonzaga, 5402, studio 2 - Lagoa da Conceição, Florianópolis/SC - CEP: 88062-001",01,00,00,00,0,02,"1,00","169,00",02,Não,06/01/2021,Ativo,Apartamento
+PAA001,LAG,SIM1Q,"0,20","Pousada Alto Astral, Servidão Bertolina Felicidade de Souza, 51, ap 001 - Barra da Lagoa, Florianópolis - SC - CEP: 88061-424",01,02,00,00,0,04,"1,00","219,00",04,Não,29/01/2021,Inativo,Apartamento
+PAA002,LAG,SIM1Q,"0,20","Pousada Alto Astral, Servidão Bertolina Felicidade de Souza, 51, ap 002 - Barra da Lagoa, Florianópolis - SC - CEP: 88061-424",01,00,00,00,0,04,"1,00","196,00",04,Não,29/12/2020,Inativo,Apartamento
+EAG916,CEN,TOP1Q,"0,25","Rua Esteves Júnior, 496 - Edifício Algarve II - Florianópolis – SC",01,00,00,00,1,03,"1,00","190,00",03,Não,11/01/2021,Inativo,Apartamento
+TLS901,CAM,HOUTOP5Q,"0,20","Rua Tereza Lopes, 901 - CEP: 88066-065. Campeche, Florianópolis – SC",05,01,00,00,0,11,"3,50","485,00",11,Não,11/01/2021,Ativo,Casa
+RILS139,LAG,HOUJR5Q,"0,20","Rua Rita Lourenço da Silveira, 139 - Lagoa da Conceição, Florianópolis/SC - CEP:88062-060",03,00,03,00,1,11,"4,00","452,00",11,Não,15/01/2021,Ativo,Casa
+MHC202,ING,TOP2Q,"0,20","Rua Dom João Becker, 2000, apto 202 - bloco A - Santinho/Ingleses, Florianópolis/SC – CEP: 88058-700",00,02,01,00,2,06,"2,00","300,00",06,Não,15/01/2021,Inativo,Apartamento
+ILC2415,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 2, ap 415",00,00,01,00,0,04,"1,00","0,00",04,Sim,18/01/2021,Ativo,Dentro do Hotel
+RPI202,JUR,SUP2Q,"0,20","Rua Jurerê Tradicional, 300, apto 202 - Jurerê, Florianópolis – SC",02,00,00,00,0,04,"2,00","230,00",04,Não,15/01/2021,Inativo,Apartamento
+JBV125,JBV,JR,"0,10","Alameda César Nascimento, 646, apto 125 - Jurerê, Florianópolis - SC, 88053-500",00,01,01,00,0,04,"1,00","0,00",03,Sim,22/01/2021,Ativo,Dentro do Hotel
+ILC2416,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 2, ap 416",00,00,01,00,0,04,"1,00","0,00",04,Sim,27/01/2021,Inativo,Dentro do Hotel
+COG1202,ING,TOP1Q,"0,20","Rua Vereador Onildo Lemos, 1999, apto 1202 - Costão das Gaivotas. Ingleses, Florianópolis – SC",,,,,,,,,,Não,27/01/2021,Onboarding,Apartamento
+ILC4502,ILC,MASTER,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 502",02,00,00,00,0,06,"2,00","0,00",06,Sim,26/01/2021,Ativo,Dentro do Hotel
+STI210,ING,SUP1Q,"0,20","Rua Adiles Della Giustina, 105, apto 201 - Ingleses do Rio Vermelho, Florianópolis - SC - CEP 88058-522, Florianópolis – SC",00,00,01,00,0,04,"1,00","196,00",04,Não,29/01/2021,Ativo,Apartamento
+STI209,ING,SUP1Q,"0,20","Rua Adiles Della Giustina, 105 - Ingleses do Rio Vermelho, Florianópolis - SC - CEP 88058-522, Florianópolis – SC",00,00,01,00,0,04,"1,00","196,00",04,Não,01/02/2021,Ativo,Apartamento
+HAV103,CEN,TOP1Q,"0,20","Rua Crispim Mira, 459, Centro. CEP 88020 - 540, Florianópolis – SC",00,00,01,00,1,03,"1,00","188,00",03,Não,01/02/2021,Ativo,Apartamento
+JBV115,JBV,JR,"0,10","Alameda César Nascimento, 646, apto 115 - Jurerê, Florianópolis - SC, 88053-500",00,01,01,00,0,04,"1,00","0,00",03,Sim,05/02/2021,Ativo,Dentro do Hotel
+STI109,ING,SUP1Q,"0,20","Rua Adiles Della Giustina, 105 - Ingleses do Rio Vermelho, CEP 88058-522. Florianópolis – SC",00,00,01,00,0,04,"1,00","196,00",04,Não,09/02/2021,Ativo,Apartamento
+SOL001,SOL,SUP,"0,10","Solar do Oriente - Yurt Ecovillage, Av Irineu Borhausen, s/n, yurt 001, São Joaquim/SC - CEP: 88600-000",00,00,01,00,1,03,"1,00","0,00",03,Sim,03/02/2021,Inativo,Dentro do Hotel
+LIN203,CEN,TOP1Q,"0,20","Rua Felipe Schmidt, 1102, 7º pavimento, apto 203 - Centro, Florianópolis – SC",00,02,00,00,0,04,"1,00","186,00",04,Não,12/02/2021,Ativo,Apartamento
+ILC4208,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 208",01,00,00,00,0,04,"1,00","0,00",04,Sim,16/02/2021,Ativo,Dentro do Hotel
+BOU201,CAN,JR1Q,"0,25","Rua Hypólito Gregorio Pereira, 137, apto 201, Canasvieiras- Florianópolis/SC",00,02,01,00,0,04,"1,00","202,00",04,Não,12/02/2021,Ativo,Apartamento
+CIL104,JUR,TOP3Q,"0,20","Rua das Piraúnas, n. 1540, apto 104-B - Jurerê Tradicional, Florianópolis/SC - CEP: 88053-418",02,00,01,00,0,06,"3,50","313,00",06,Não,18/02/2021,Inativo,Apartamento
+VISE030,CEN,HOUTOP2Q,"0,25","Rua Felipe Schmidt, 1066, casa 030 - Centro, Florianópolis/SC - CEP 88010-002",01,01,00,00,1,04,"3,00","258,00",04,Não,18/02/2021,Ativo,Casa
+TOCA151,CAM,HOUJR2Q,"0,25","Rua das Corujas, 151 - Campeche, Florianópolis - SC - CEP 88063-287",01,02,00,00,0,04,"1,00","255,00",04,Não,19/02/2021,Ativo,Casa
+ILC3206,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 3, ap 206",00,00,01,00,0,04,"1,00","0,00",04,Sim,19/02/2021,Inativo,Dentro do Hotel
+PATY001,PAT,JR,"0,10","Rua Jorge Cherem, n. 95, ap 001, CEP 88053-620. Jurere Leste, Florianópolis - SC.",00,00,00,00,0,00,"0,00","0,00",00,Sim,19/02/2021,Inativo,Dentro do Hotel
+PATY002,PAT,JR,"0,10","Rua Jorge Cherem, n. 95, ap 002, CEP 88053-620. Jurere Leste, Florianópolis - SC",00,00,01,00,0,02,"1,00","0,00",02,Sim,19/02/2021,Inativo,Dentro do Hotel
+PATY003,PAT,JR,"0,10","Rua Jorge Cherem, n. 95, ap 003, CEP 88053-620. Jurere Leste, Florianópolis - SC",00,00,01,00,0,02,"1,00","0,00",02,Sim,19/02/2021,Inativo,Dentro do Hotel
+PATY004,PAT,JR,"0,10","Rua Jorge Cherem, n. 95, ap 004, CEP 88053-620. Jurere Leste, Florianópolis - SC",00,00,01,00,0,02,"1,00","0,00",02,Sim,19/02/2021,Inativo,Dentro do Hotel
+RPC306,CAN,SUP2Q,"0,20","Rod. Virgílio Várzea, 4570, apto 306, Bloco Q - Canasvieiras, Florianópolis/SC - CEP: 88054-605",00,02,01,00,0,06,"1,00","269,00",06,Não,23/02/2021,Ativo,Apartamento
+CIM1007,CEN,TOP1Q,"0,25","Avenida Mauro Ramos, n. 1512, apto 1007, Condomínio Cidade Milano - Centro, Florianópolis/SC - CEP 88020-302",,,,,,,,,,Não,24/02/2021,Onboarding,Apartamento
+SOL002,SOL,SUP,"0,10","Solar do Oriente - Yurt Ecovillage, Av Irineu Borhausen, s/n, yurt 002, São Joaquim/SC - CEP: 88600-000",00,00,00,01,1,03,"1,00","0,00",03,Sim,24/02/2021,Inativo,Dentro do Hotel
+SOL003,SOL,SUP,"0,10","Solar do Oriente - Yurt Ecovillage, Av Irineu Borhausen, s/n, yurt 003, São Joaquim/SC - CEP: 88600-000",00,00,00,01,1,03,"1,00","0,00",03,Sim,24/02/2021,Inativo,Dentro do Hotel
+SOL004,SOL,SUP,"0,10","Solar do Oriente - Yurt Ecovillage, Av Irineu Borhausen, s/n, yurt 004, São Joaquim/SC - CEP: 88600-000",00,00,00,01,1,03,"1,00","0,00",03,Sim,24/02/2021,Inativo,Dentro do Hotel
+SOL005,SOL,SUP,"0,10","Solar do Oriente - Yurt Ecovillage, Av Irineu Borhausen, s/n, yurt 005, São Joaquim/SC - CEP: 88600-000",00,00,00,01,1,03,"1,00","0,00",03,Sim,24/02/2021,Inativo,Dentro do Hotel
+SOL006,SOL,SUP,"0,10","Solar do Oriente - Yurt Ecovillage, Av Irineu Borhausen, s/n, yurt 006, São Joaquim/SC - CEP: 88600-000",00,00,00,01,1,03,"1,00","0,00",03,Sim,24/02/2021,Inativo,Dentro do Hotel
+ICO202,CAN,SIM1Q,"0,20","R. Hipólito Gregório Pereira, 393, apto 202 - Canasvieiras, Florianópolis/SC - CEP: 88054-210",02,01,00,00,0,05,"1,00","230,00",05,Não,25/02/2021,Inativo,Apartamento
+JBM301,JUR,TOP1Q,"0,25","R. Jornalista Haroldo Callado, 305, apto 301 - Jurerê, Florianópolis/SC - CEP: 88053-600",01,00,00,00,2,04,"1,00","206,00",04,Não,25/02/2021,Ativo,Apartamento
+SEJ052,ING,HOUJR6Q,"0,20","Servidão do Jornalista, casa 52 - Ingleses Norte, Florianópolis/SC - CEP: 88058-724",04,04,00,00,0,12,"4,00","576,00",12,Não,26/02/2021,Ativo,Casa
+JBV106,JBV,JR,"0,10","Alameda César Nascimento, 646, apto 106 - Jurerê, Florianópolis - SC, 88053-500",00,01,01,00,0,03,"1,00","0,00",03,Sim,01/03/2021,Ativo,Dentro do Hotel
+JBV108,JBV,TOP,"0,10","Alameda César Nascimento, 646, apto 108 - Jurerê, Florianópolis - SC, 88053-500",00,01,01,00,0,05,"1,00","0,00",05,Sim,01/03/2021,Ativo,Dentro do Hotel
+JBV173,JBV,JR,"0,10","Alameda César Nascimento, 646, apto 173 - Jurerê, Florianópolis - SC, 88053-500",00,01,01,00,0,03,"1,00","0,00",03,Sim,01/03/2021,Ativo,Dentro do Hotel
+ILC4102,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 102",00,00,01,00,0,04,"1,00","0,00",04,Sim,21/06/2019,Ativo,Dentro do Hotel
+TER301,ING,SUP2Q,"0,20","Servidão Manoel Fernandes Nunes, n. 51, apto 301 - Ingleses, Florianópolis/SC – CEP: 88.058-710",01,03,00,00,1,06,"2,00","295,00",06,Não,02/03/2021,Ativo,Apartamento
+SBR304,ING,SUP2Q,"0,20","Estrada Vereador Onildo Lemos, n. 2050, apto 304 - Santinho, Florianópolis/SC - CEP: 88.058-400",01,03,00,00,1,06,"2,00","295,00",06,Não,02/03/2021,Ativo,Apartamento
+LEN203,ING,TOP2Q,"0,20","Rua dos Tubarões, n. 164, apto 203 - Ingleses, Florianópolis/SC - CEP: 88.058-690",00,03,01,00,1,06,"2,00","295,00",06,Não,02/03/2021,Ativo,Apartamento
+VER102,ING,SUP2Q,"0,20","Servidão Ipê do Costão, n. 32, apto 102 - bloco B - Santinho, Florianópolis/SC - CEP: 88.058-826",01,03,00,00,1,06,"2,00","295,00",06,Não,02/03/2021,Ativo,Apartamento
+SLA402,SLA,SUP,"0,10","Slaviero Acquamar Ingleses - R. das Gaivotas, 1114, apto 402 - Ingleses, Florianópolis - SC, 88058-500.",00,00,01,00,2,04,"1,00","0,00",04,Sim,03/03/2021,Ativo,Dentro do Hotel
+SLA401,SLA,SUP,"0,10","Slaviero Acquamar Ingleses, R. das Gaivotas, 1114, apto 401 - Ingleses, Florianópolis - SC, 88058-500.",01,01,00,00,1,04,"1,00","0,00",04,Sim,03/03/2021,Ativo,Dentro do Hotel
+MAV001,JUR,SIM1Q,"0,20","Rodovia Tertuliano de Brito Xavier, n. 3415, apto 001, Chalé Sinimbu - Jurerê, Florianópolis – SC, CEP: 88054-601",01,00,00,00,0,02,"1,00","169,00",02,Não,12/03/2021,Ativo,Apartamento
+MAV002,JUR,SIM1Q,"0,20","Rodovia Tertuliano de Brito Xavier, n. 3415, apto 002, Chalé Sinimbu - Jurerê, Florianópolis – SC, CEP: 88054-601",01,00,00,00,0,02,"1,00","169,00",02,Não,12/03/2021,Ativo,Apartamento
+JBV334,JBV,JR,"0,10","Alameda César Nascimento, 646, apto 334 - Jurerê, Florianópolis - SC, 88053-500",00,01,01,00,0,03,"1,00","0,00",03,Sim,18/03/2021,Ativo,Dentro do Hotel
+ILC3404,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 3, ap 404",00,00,01,00,0,04,"1,00","0,00",04,Sim,19/03/2021,Ativo,Dentro do Hotel
+REM106,ING,JR2Q,"0,20","R. Ruth Pereira, n. 94, apto 106 - Ingleses do Rio Vermelho, Florianópolis - SC, CEP 88058-640",01,01,00,00,0,05,"1,00","264,00",05,Não,24/03/2021,Inativo,Apartamento
+SBR402,ING,JR2Q,"0,20","Vereador Onildo Lemos, n. 2050, apto 402 - Santinho, Florianópolis - SC, CEP 88058-700",01,04,00,00,0,06,"2,00","312,00",06,Não,25/03/2021,Ativo,Apartamento
+VER003,ING,JR2Q,"0,20","Servidão Ipê do Costão, n. 32, bloco B, apto 03 - Ingleses do Rio Vermelho, Florianópolis – SC, CEP 88.058-826",01,04,00,00,0,06,"2,00","312,00",06,Não,25/03/2021,Inativo,Apartamento
+VMB001,VMB,SUP,"0,10","Travessa Anajé, n.90, apto 001 - Rio Tavares, Florianópolis - SC, CEP 88048-387",00,06,00,00,0,10,"0,00","0,00",10,Sim,26/03/2021,Inativo,Dentro do Hotel
+VMB002,VMB,SUP,"0,10","Travessa Anajé, n.90, apto 002 - Rio Tavares, Florianópolis - SC, CEP 88048-387",00,00,00,00,0,00,"0,00","0,00",00,Sim,26/03/2021,Inativo,Dentro do Hotel
+VMB003,VMB,SUP,"0,10","Travessa Anajé, n.90, apto 003 - Rio Tavares, Florianópolis - SC, CEP 88048-387",01,00,00,00,0,04,"0,00","0,00",04,Sim,26/03/2021,Inativo,Dentro do Hotel
+JBV407,JBV,TOP,"0,10","Alameda César Nascimento, 646, apto 407 - Jurerê, Florianópolis - SC, 88053-500",00,01,01,00,0,05,"1,00","0,00",05,Sim,30/03/2021,Ativo,Dentro do Hotel
+JOC456,CEN,SUP1Q,"0,20","R. João Carvalho, n. 456 - Agronômica, Florianópolis - SC, CEP 88025-010",01,00,00,00,1,03,"1,00","206,00",03,Não,30/03/2021,Ativo,Apartamento
+PATY005,PAT,JR,"0,10","Rua Jorge Cherem, n. 95, ap 005, CEP 88053-620. Jurere Leste, Florianópolis - SC",01,00,00,00,0,02,"1,00","0,00",02,Sim,31/03/2021,Inativo,Dentro do Hotel
+PATY006,PAT,TOP,"0,10","Rua Jorge Cherem, n. 95, ap 006, CEP 88053-620. Jurere Leste, Florianópolis - SC",01,00,00,00,0,02,"1,00","0,00",02,Sim,31/03/2021,Inativo,Dentro do Hotel
+RPC308,CAN,SUP2Q,"0,25","Rod. Virgílio Várzea, 4570, Bloco G, apto 308 - Canasvieiras, Florianópolis/SC - CEP: 88054-605",00,04,01,00,0,06,"1,00","292,00",06,Não,31/03/2021,Ativo,Apartamento
+VMB004,VMB,SUP,"0,10","Travessa Anajé, n.90, apto 004 - Rio Tavares, Florianópolis - SC, CEP 88048-387",01,02,00,00,0,04,"0,00","0,00",04,Sim,06/04/2021,Inativo,Dentro do Hotel
+FDU003,ING,SIM1Q,"0,25","Rod. João Gualberto Soares, n. 8126, apto 003 - Ingleses do Rio Vermelho, Florianópolis - SC, CEP 88060-000",01,00,00,00,0,04,"1,00","196,00",04,Não,06/04/2021,Ativo,Apartamento
+FDU004,ING,SIM1Q,"0,25","Rod. João Gualberto Soares, n. 8126, apto 004 - Ingleses do Rio Vermelho, Florianópolis - SC, CEP 88060-000",01,00,00,00,0,04,"1,00","196,00",04,Não,06/04/2021,Ativo,Apartamento
+FDU005,ING,JR1Q,"0,25","Rod. João Gualberto Soares, n. 8126, apto 005 - Ingleses do Rio Vermelho, Florianópolis - SC, CEP 88060-000",02,00,00,00,0,06,"1,00","231,00",06,Não,06/04/2021,Ativo,Apartamento
+FDU006,ING,JR1Q,"0,25","Rod. João Gualberto Soares, n. 8126, apto 006 - Ingleses do Rio Vermelho, Florianópolis - SC, CEP 88060-000","2,00","0,00","0,00","0,00","0,00","6,00","1,00","231,00","6,00",Não,06/04/2021,Ativo,Apartamento
+FDU007,ING,SIM1Q,"0,25","Rod. João Gualberto Soares, n. 8126, apto 007 - Ingleses do Rio Vermelho, Florianópolis - SC, CEP 88060-000","1,00","0,00","0,00","0,00","0,00","4,00","1,00","196,00","4,00",Não,06/04/2021,Ativo,Apartamento
+FDU008,ING,SIM1Q,"0,25","Rod. João Gualberto Soares, n. 8126, apto 008 - Ingleses do Rio Vermelho, Florianópolis - SC, CEP 88060-000","1,00","0,00","0,00","0,00","0,00","2,00","1,00","169,00","2,00",Não,06/04/2021,Ativo,Apartamento
+DOV208,ING,TOP2Q,"0,25","R. Ilha das Galés, 272, apto 208, Bloco B - Ingleses Norte, Florianópolis - SC, CEP 88058-580","1,00","2,00","0,00","0,00","0,00","6,00","2,00","277,00","6,00",Não,15/04/2021,Ativo,Apartamento
+ILC4408,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 408","0,00","0,00","1,00","0,00","0,00","4,00","1,00","0,00","4,00",Sim,15/04/2021,Ativo,Dentro do Hotel
+ILC2309,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 2, ap 309","0,00","0,00","1,00","0,00","0,00","4,00","1,00","0,00","4,00",Sim,14/04/2021,Ativo,Dentro do Hotel
+ILC4115,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 115","0,00","0,00","1,00","0,00","0,00","4,00","1,00","0,00","4,00",Sim,19/04/2021,Ativo,Dentro do Hotel
+PLR008,PLR,SUP,"0,10","Rua Begônia, s/n, apto 08 - Ibiraquera, Imbituba - SC, CEP 88780-000","0,00","0,00","1,00","0,00","0,00","2,00","1,00","0,00","2,00",Sim,20/04/2021,Inativo,Dentro do Hotel
+PLR010,PLR,SUP,"0,10","Rua Begônia, s/n, apto 10 - Ibiraquera, Imbituba - SC, CEP 88780-000","0,00","0,00","1,00","0,00","0,00","2,00","1,00","0,00","1,00",Sim,20/04/2021,Inativo,Dentro do Hotel
+PLR012,PLR,SUP,"0,10","Rua Begônia, s/n, apto 12 - Ibiraquera, Imbituba - SC, CEP 88780-000","0,00","0,00","0,00","1,00","0,00","0,00","0,00","0,00","1,00",Sim,20/04/2021,Inativo,Dentro do Hotel
+PLR003,PLR,SUP,"0,10","Rua Begônia, s/n, apto 03 - Ibiraquera, Imbituba - SC, CEP 88780-000","0,00","1,00","0,00","1,00","0,00","4,00","1,00","0,00","3,00",Sim,20/04/2021,Inativo,Dentro do Hotel
+RDC107,UFSC,TOP3Q,"0,25","R. Pedro Viêira Vidal, 280, apto 107, torre 3 - Pantanal, Florianópolis - SC, CEP 88040-010","0,00","2,00","1,00","0,00","2,00","6,00","2,00","336,00","6,00",Não,26/04/2021,Ativo,Apartamento
+CNU104,ING,JR2Q,"0,20","R. Martinho de Haro, n. 481, apto 104 - Ingleses Norte, Florianópolis - SC, CEP 88058-540.","1,00","2,00","0,00","0,00","0,00","6,00","1,00","270,00","6,00",Não,30/04/2021,Ativo,Apartamento
+EIT202,CON,TOP2Q,"0,20","R. Euclides da Cunha, n. 185, apto 202, Bloco A - Itaguaçu, Florianópolis - SC, CEP 88085-420","1,00","2,00","0,00","0,00","0,00","4,00","1,00","243,00","4,00",Não,30/04/2021,Ativo,Apartamento
+ILC3113,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 3, ap 113","0,00","0,00","1,00","0,00","0,00","4,00","1,00","0,00","4,00",Sim,06/05/2021,Ativo,Dentro do Hotel
+VIN202,ING,JR3Q,"0,25","R. das Gaivotas, n. 1657, Galeão, apto 202 - Ingleses Norte, Florianópolis - SC, CEP 88058-500","3,00","1,00","0,00","0,00","0,00","7,00","2,00","339,00","7,00",Não,10/05/2021,Ativo,Apartamento
+SLA4012,SLA,SUP,"0,10","R. das Gaivotas, n. 1114, apto 401 - Ingleses, Florianópolis - SC, CEP 88058-500","0,00","0,00","1,00","0,00","2,00","4,00","1,00","0,00","4,00",Sim,11/05/2021,Ativo,Dentro do Hotel
+ILC1313,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 1, ap 313","0,00","0,00","1,00","0,00","0,00","4,00","1,00","0,00","4,00",Sim,17/05/2021,Ativo,Dentro do Hotel
+ILC4107,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 107","0,00","0,00","1,00","0,00","0,00","4,00","1,00","0,00","4,00",Sim,20/05/2021,Ativo,Dentro do Hotel
+SCG002,CAN,JR1Q,"0,10","R. Apostolo Paschoal, n. 929, Apartamento B - Canasvieiras, Florianópolis - SC, CEP 88054-101","1,00","0,00","0,00","0,00","2,00","4,00","1,00","0,00","4,00",Sim,14/05/2021,Inativo,Dentro do Hotel
+SCG006,CAN,JR2Q,"0,10","R. Apostolo Paschoal, n. 929, Apartamento F - Canasvieiras, Florianópolis - SC, CEP 88054-101","1,00","3,00","0,00","0,00","0,00","5,00","1,00","0,00","5,00",Sim,14/05/2021,Inativo,Dentro do Hotel
+CRO206,CAN,SUP2Q,"0,20","Rod. Tertuliano Brito Xavier, n. 2060, apto 206 - Canasvieiras, Florianópolis - SC, CEP 88054-600.","1,00","2,00","0,00","0,00","1,00","5,00","2,00","295,00","5,00",Não,24/05/2021,Ativo,Apartamento
+ILC3313,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 3, ap 313","0,00","0,00","1,00","0,00","0,00","4,00","1,00","0,00","4,00",Sim,26/05/2021,Ativo,Dentro do Hotel
+CPS207,JUR,SUP2Q,"0,25","Rua dos Chernes, 181, 207 - Jurerê, Florianópolis - SC, CEP 88053-545.","1,00","0,00","1,00","0,00","1,00","6,00","2,00","273,00","5,00",Não,25/05/2021,Ativo,Apartamento
+ILC1301,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 1, ap 301","0,00","0,00","1,00","0,00","0,00","4,00","1,00","0,00","4,00",Sim,28/05/2021,Bloqueado,Dentro do Hotel
+COS302,JUR,JR3Q,"0,25","R. das Tainhotas, 59, 302 - Jurerê, Florianópolis - SC, CEP 88053-655.","2,00","0,00","0,00","1,00","1,00","6,00","2,00","335,00","6,00",Não,31/05/2021,Ativo,Apartamento
+ILC3110,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 3, ap 110","0,00","0,00","1,00","0,00","0,00","4,00","1,00","0,00","4,00",Sim,08/06/2021,Ativo,Dentro do Hotel
+RAC304,JUR,TOP4Q,"0,25","R. dos Cambuatas, n. 117, apto 404 - Jurerê, Florianópolis - SC, CEP 88053-525","1,00","1,00","2,00","0,00","0,00","4,00","5,00","433,00","9,00",Não,16/06/2021,Ativo,Apartamento
+ILCO3401,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 3, ap 401","0,00","0,00","1,00","0,00","0,00","4,00","1,00","0,00","4,00",Sim,21/06/2021,Inativo,Dentro do Hotel
+JBV306,JBV,JR,"0,10","Alameda César Nascimento, 646, apto 306 - Jurerê, Florianópolis - SC, 88053-500","0,00","1,00","1,00","0,00","0,00","3,00","1,00","0,00","3,00",Sim,18/06/2021,Ativo,Dentro do Hotel
+SDR001,LAG,TOP1Q,"0,20","Av. das Rendeiras, 372, apto 001 - Lagoa da Conceição, Florianópolis - SC, 88062-400","0,00","0,00","1,00","0,00","0,00","4,00","1,00","196,00","4,00",Não,28/06/2021,Ativo,Apartamento
+SDR002,LAG,TOP1Q,"0,20","Av. das Rendeiras, 372, apto 002 - Lagoa da Conceição, Florianópolis - SC, 88062-400","0,00","0,00","1,00","0,00","0,00","2,00","1,00","169,00","2,00",Não,28/06/2021,Ativo,Apartamento
+SDR005,LAG,SUP1Q,"0,20","Av. das Rendeiras, 372, apto 005 - Lagoa da Conceição, Florianópolis - SC, 88062-400","0,00","0,00","1,00","0,00","0,00","2,00","1,00","169,00","2,00",Não,28/06/2021,Ativo,Apartamento
+SDR006,LAG,SUP1Q,"0,20","Av. das Rendeiras, 372, apto 006 - Lagoa da Conceição, Florianópolis - SC, 88062-400","1,00","0,00","0,00","0,00","0,00","2,00","1,00","169,00","2,00",Não,28/06/2021,Ativo,Apartamento
+SDR007,LAG,SUP1Q,"0,20","Av. das Rendeiras, 372, apto 007 - Lagoa da Conceição, Florianópolis - SC, 88062-400","1,00","0,00","0,00","0,00","0,00","2,00","1,00","169,00","2,00",Não,28/06/2021,Ativo,Apartamento
+SDR008,LAG,SUP1Q,"0,20","Av. das Rendeiras, 372, apto 008 - Lagoa da Conceição, Florianópolis - SC, 88062-400","1,00","0,00","0,00","0,00","0,00","4,00","1,00","196,00","4,00",Não,28/06/2021,Ativo,Apartamento
+SDR010,LAG,SUP1Q,"0,20","Av. das Rendeiras, 372, apto 010 - Lagoa da Conceição, Florianópolis - SC, 88062-400","0,00","0,00","1,00","0,00","0,00","2,00","1,00","169,00","2,00",Não,28/06/2021,Ativo,Apartamento
+JBV142,JBV,TOP,"0,10","Alameda César Nascimento, 646, apto 142 - Jurerê, Florianópolis - SC, 88053-500","0,00","0,00","1,00","0,00","1,00","5,00","1,00","0,00","5,00",Sim,30/06/2021,Ativo,Dentro do Hotel
+ILC2501,ILC,MASTER,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 2, ap 501","0,00","0,00","1,00","0,00","0,00","4,00","1,00","0,00","4,00",Sim,02/07/2021,Ativo,Dentro do Hotel
+ILC2508,ILC,MASTER,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 2, ap 508","0,00","0,00","1,00","0,00","0,00","6,00","1,00","0,00","6,00",Sim,13/07/2021,Ativo,Dentro do Hotel
+RPC203,CAN,SUP2Q,"0,20","Rodovia Virgílio Várzea, n. 4570, apto 203, Bloco J - Canasvieiras, Florianópolis - SC, 88054-605","2,00","0,00","0,00","0,00","1,00","5,00","1,00","255,00","5,00",Não,15/07/2021,Ativo,Apartamento
+COM305,ING,SUP2Q,"0,25","R. dos Tubarões, n. 627, apto 305 - Ingleses Norte, Florianópolis - SC, CEP 88058-690","0,00","3,00","1,00","0,00","0,00","5,00","2,00","276,00","5,00",Não,20/07/2021,Ativo,Apartamento
+JBV277,JBV,TOP,"0,10","Alameda César Nascimento, 646, apto 277 - Jurerê, Florianópolis - SC, 88053-500","0,00","1,00","1,00","0,00","0,00","5,00","1,00","0,00","5,00",Sim,25/06/2021,Ativo,Dentro do Hotel
+CAT406,CEN,SUP1Q,"0,20","R. Ten. Silveira, 324, apto 406 - Centro - Florianópolis - SC, CEP 88010-301","0,00","0,00","1,00","0,00","1,00","3,00","1,00","188,00","3,00",Não,22/07/2021,Ativo,Apartamento
+MAV010,JUR,SIM1Q,"0,20","Rodovia Tertuliano de Brito Xavier, n. 3415, apto 010, Chalé Sinimbu - Jurerê, Florianópolis – SC, CEP: 88054-601","1,00","0,00","0,00","0,00","0,00","2,00","1,00","169,00","2,00",Não,26/07/2021,Ativo,Apartamento
+MAV008,JUR,SIM1Q,"0,20","Rodovia Tertuliano de Brito Xavier, n. 3415, apto 008, Chalé Sinimbu - Jurerê, Florianópolis – SC, CEP: 88054-601","1,00","0,00","0,00","0,00","0,00","2,00","1,00","169,00","2,00",Não,26/07/2021,Ativo,Apartamento
+ELU101,JUR,TOP1Q,"0,20","R. Prof. Renato Barbosa, n. 227, apto 101 - Jurerê, Florianópolis - SC, CEP 88053-640","0,00","0,00","1,00","0,00","0,00","2,00","1,00","169,00","2,00",Não,27/07/2021,Ativo,Apartamento
+JBV141,JBV,TOP,"0,10","Alameda César Nascimento, 646, apto 141 - Jurerê, Florianópolis - SC, 88053-500",00,00,01,00,0,04,"1,00","0,00",04,Sim,28/07/2021,Ativo,Dentro do Hotel
+MAV009,JUR,SIM1Q,"0,20","Rodovia Tertuliano de Brito Xavier, n. 3415, apto 009, Chalé Sinimbu - Jurerê, Florianópolis – SC, CEP: 88054-601",01,00,00,00,0,02,"1,00","169,00",02,Não,04/08/2021,Ativo,Apartamento
+RJM568,LAG,HOUMASTER2Q,"0,20","Rodovia Jornalista Manoel de Menezes, 568 - Praia Mole, Florianópolis – SC, 88061-700.",01,00,01,00,0,04,"1,00","228,00",04,Não,09/08/2021,Ativo,Casa
+BDM207,UFSC,SUP1Q,"0,20","Rua Capitão Romualdo de Barros, 850, apto 207, Carvoeira, 88040-600, Florianópolis – SC",00,00,01,00,1,03,"1,00","193,00",03,Não,05/08/2021,Ativo,Apartamento
+LEO202,ING,SUP2Q,"0,25","Servidão Maria Tomásia Cabral, n. 35 - Ingleses Norte, Florianópolis - SC, CEP 88058-193",01,02,00,00,0,04,"2,00","250,00",04,Não,30/07/2021,Ativo,Apartamento
+RSY204,ING,JR3Q,"0,20","Rua dos Canudos, 573, apto 204 - Ingleses do Rio Vermelho, Florianópolis/SC - CEP: 88058-560",02,02,00,00,0,06,"2,00","322,00",06,Não,10/08/2021,Ativo,Apartamento
+LES403,JUR,TOP3Q,"0,20","Av. das Raias, 400, apto 403 - Jurerê Internacional, Florianópolis - SC, CEP 88053-400.",00,00,03,00,0,06,"3,00","345,00",06,Não,11/08/2021,Ativo,Apartamento
+ILC3505,ILC,TOPM,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 3, ap 505",00,00,01,00,0,04,"1,00","0,00",04,Sim,13/08/2021,Ativo,Dentro do Hotel
+RCU105,JUR,HOUSUP4Q,"0,20","R. dos Cumurupis, 105 - Jurerê Internacional, Florianópolis/SC - CEP 88053-464.",03,02,00,00,0,08,"3,00","555,00",08,Não,17/08/2021,Ativo,Casa
+ILC4113,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 113",00,00,01,00,0,04,"1,00","0,00",04,Sim,18/08/2021,Inativo,Dentro do Hotel
+CBE105,CAN,SUP1Q,"0,20","R. dos Eucaliptos, 575, apto 105 - Canasvieiras, Florianópolis - SC, 88054-150",01,02,00,00,0,06,"1,00","246,00",06,Não,26/08/2021,Ativo,Apartamento
+RAT001,PBL,HOUTOP3Q,"0,20","R. Rubens Alves, Sobrado n. 23 - 01, Perequê - Porto Belo - SC, CEP 88210-000.",02,03,00,00,0,07,"2,50","346,00",07,Não,26/08/2021,Ativo,Casa
+ILC2314,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 2, ap 314",00,00,01,00,0,04,"1,00","0,00",04,Sim,30/08/2021,Ativo,Dentro do Hotel
+ILC2316,ILC,TOP,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 2, ap 316",00,00,01,00,0,04,"1,00","0,00",04,Sim,30/08/2021,Ativo,Dentro do Hotel
+MER905,UFSC,SUP1Q,"0,20","Rod. Admar Gonzaga, 600, apto 905 - Itacorubi, Florianópolis - SC, 88034-000",00,00,01,00,0,03,"1,00","169,00",02,Não,31/08/2021,Ativo,Apartamento
+RVR506,UFSC,TOP1Q,"0,20","R. Dep. Antônio Edu Vieira, 1798, apto 506 - Pantanal, Florianópolis/SC - CEP: 88040-001",01,00,00,00,0,02,"1,00","169,00",02,Não,27/08/2021,Ativo,Apartamento
+CAF401,UFSC,TOP3Q,"0,25","R. Apeninos, n. 100, Bloco B, apto 401 - Córrego Grande, Florianópolis/SC, CEP 88037-620",01,02,00,00,1,05,"2,00","336,00",05,Não,02/09/2021,Ativo,Apartamento
+SSG424,UFSC,TOP1Q,"0,20","R. João Pio Duarte Silva, 1350, apto 424 - Córrego Grande, Florianópolis/SC, CEP 88037-001",01,01,00,00,0,03,"1,00","193,00",03,Não,01/09/2021,Ativo,Apartamento
+VLE001,BOM,JR2Q,"0,17","Av. Araucária, 426, apto 01 - Mariscal, Bombinhas - SC, 88215-000",01,02,00,00,0,04,"1,00","250,00",04,Não,06/09/2021,Ativo,Apartamento
+VLE002,BOM,JR2Q,"0,17","Av. Araucária, 426, apto 02 - Mariscal, Bombinhas - SC, 88215-000",01,02,00,00,0,04,"1,00","236,00",04,Não,06/09/2021,Ativo,Apartamento
+VLE003,BOM,JR2Q,"0,17","Av. Araucária, 426, apto 03 - Mariscal, Bombinhas - SC, 88215-000",01,04,00,00,0,06,"1,00","286,00",06,Não,06/09/2021,Ativo,Apartamento
+VLE004,BOM,JR1Q,"0,17","Av. Araucária, 426, apto 04 - Mariscal, Bombinhas - SC, 88215-000",01,00,00,00,1,03,"1,00","193,00",03,Não,06/09/2021,Ativo,Apartamento
+VLE005,BOM,JR2Q,"0,17","Av. Araucária, 426, apto 05 - Mariscal, Bombinhas - SC, 88215-000",01,02,00,00,0,04,"1,00","228,00",04,Não,06/09/2021,Ativo,Apartamento
+VLE006,BOM,JR2Q,"0,17","Av. Araucária, 426, apto 06 - Mariscal, Bombinhas - SC, 88215-000",01,02,00,00,0,04,"1,00","228,00",04,Não,06/09/2021,Ativo,Apartamento
+VLE007,BOM,JR1Q,"0,17","Av. Araucária, 426, apto 07 - Mariscal, Bombinhas - SC, 88215-000",01,00,00,00,1,03,"1,00","193,00",03,Não,06/09/2021,Ativo,Apartamento
+ILC4204,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 4, ap 204",01,00,01,00,0,04,"1,00","0,00",04,Sim,03/09/2021,Ativo,Dentro do Hotel
+JBV242,JBV,TOP,"0,10","Alameda César Nascimento, 646, apto 242 - Jurerê, Florianópolis - SC, 88053-500",00,01,01,00,0,05,"1,00","0,00",05,Sim,16/09/2021,Ativo,Dentro do Hotel
+JBV331,JBV,TOP,"0,10","Alameda César Nascimento, 646, apto 331 - Jurerê, Florianópolis - SC, 88053-500",00,00,01,00,1,05,"1,00","0,00",05,Sim,16/09/2021,Ativo,Dentro do Hotel
+VLC208,CAM,TOP2Q,"0,20","R. das Corticeiras, 81, Bloco 1, apto 208 - Campeche, Florianópolis - SC, CEP 88063-160.",00,02,01,00,1,05,"2,00","295,00",05,Não,15/09/2021,Ativo,Apartamento
+STI108,ING,SUP1Q,"0,20","Rua Adiles Della Giustina, 105, apto 108 - Ingleses do Rio Vermelho, Florianópolis/SC - CEP 88058-522.",00,00,01,00,0,04,"1,00","196,00",04,Não,16/09/2021,Ativo,Apartamento
+CLN006,CAN,SUP2Q,"0,20","Estr. Jorn. Jaime de Arruda Ramos, 2194, casa 06 - Ponta das Canas, Florianópolis - SC, CEP 88056-750",01,04,00,00,0,06,"1,00","250,00",06,Não,17/09/2021,Ativo,Casa
+ILC3103,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 3, ap 103",00,00,01,00,0,04,"1,00","0,00",04,Sim,23/09/2021,Ativo,Dentro do Hotel
+LES106,JUR,TOP3Q,"0,20","Av. das Raias, 400, apto 106 - Jurerê, Florianópolis - SC, CEP 88053-400.",02,00,01,00,0,08,"3,50","345,00",08,Não,27/09/2021,Ativo,Apartamento
+ILC1214,ILC,JR,"0,10","Il Campanario Village Resort - Av. dos Búzios, 1760 - Jurerê Internacional, torre 1, ap 214",00,00,01,00,0,04,"1,00","0,00",04,Sim,27/09/2021,Ativo,Dentro do Hotel
+ILC2201,ILC,TOP,"0,10","Avenida dos Búzios, n. 1760, apto 2201 - Jurerê Internacional, Florianópolis – SC",00,00,01,00,0,04,"1,00","0,00",04,Sim,29/09/2021,Ativo,Dentro do Hotel
+RGP208,JUR,JR2Q,"0,20","Rua Professor Renato Barbosa, 259, 208 - Jurerê, Florianópolis - SC - 88053-640",00,02,01,00,0,04,"2,00","250,00",04,Não,28/09/2021,Ativo,Apartamento
+EMB686,BOM,HOUSUP3Q,"0,20","R. Embira, 686 - Mariscal, Bombinhas - SC, CEP 88215-000",01,02,01,00,0,06,"2,00","370,00",06,Não,28/09/2021,Ativo,Casa
+EDR101,ING,SUP2Q,"0,20","Estrada Vereador Onildo Lemos, 600, Bloco A, apto 201 - Ingleses Do Rio Vermelho, Florianópolis/SC - CEP: 88058-700.",00,02,01,00,0,06,"2,00","270,00",06,Não,30/09/2021,Inativo,Apartamento
+RAR065,GRA,SUP1Q,"0,20","R. Alexandre Rama, 65 - Ipê Amarelo, Gramado - RS, CEP 95670-000",01,00,00,00,2,04,"1,00","250,00",04,Não,29/09/2021,Ativo,Casa
+RRE201,SAN,SUP1Q,"0,20","Rodovia SC-401, 9550, apto 201 - Santo Antônio de Lisboa, Florianópolis - SC, CEP 88050-001",01,00,00,00,1,03,"1,00","206,00",03,Não,30/09/2021,Ativo,Apartamento
+COI302,CAN,TOP2Q,"0,20","Av. Tom Traugott Wildi, 264, bloco D, apto 302 - Praia Brava, Florianópolis - SC, 88056-800",00,02,01,00,2,06,"2,00","288,00",06,Não,01/10/2021,Ativo,Apartamento
+ABC201,ITA,TOP3Q,"0,20","Rua Delfim Mário de Pádua Peixoto, 600, torre 2, 201 - Praia Brava, Itajaí - SC, 88306-813",01,02,01,00,0,06,"2,00","320,00",06,Não,01/10/2021,Ativo,Apartamento
+ILC1410,ILC,TOP,"0,10","Avenida dos Búzios, 1760, 1410 - Jurerê Internacional, Florianópolis - SC, 88053-301",00,00,01,00,0,04,"1,00","0,00",04,Sim,04/10/2021,Ativo,Dentro do Hotel
+SDR009,LAG,SUP1Q,"0,20","Av. das Rendeiras, 372, studio 09 - Lagoa da Conceição, Florianópolis - SC, 88062-400",01,00,00,00,0,04,"1,00","196,00",04,Não,07/10/2021,Ativo,Apartamento
+CSCO101,ING,SUP1Q,"0,20","R. das Gaivotas, 1467, Bloco Alfa, apto 1101 - Ingleses Norte, Florianópolis - SC, CEP 88058-500",,,,,,,,,,Não,06/10/2021,Inativo,Apartamento
+RFT505,BCB,SUP2Q,"0,20","R. 2300, 460, apto 505 - Centro, Balneário Camboriú - SC, CEP 88330-428.",02,00,00,00,0,06,"2,00","263,00",06,Não,14/10/2021,Ativo,Apartamento
+SED001,UFSC,JR1Q,"0,20","Servidão Dorval Manoel Bento, 175, apto 01 - Córrego Grande, Florianópolis - SC, 88037-410",01,00,00,00,0,04,"1,00","196,00",04,Não,13/10/2021,Ativo,Apartamento
+MAV007,JUR,SIM1Q,"0,20","Rodovia Tertuliano de Brito Xavier, n. 3415, studio 07 - Jurerê, Florianópolis – SC.",01,00,00,00,0,02,"1,00","169,00",02,Não,14/10/2021,Ativo,Apartamento
+SEC016,JUR,HOUJR3Q,"0,20","Serv. da Carioca, 16 - Praia do Forte, Florianópolis - SC, CEP 88053-308",03,00,00,00,1,07,"2,00","305,00",07,Não,05/10/2021,Ativo,Casa
+CCB103,JUR,SUP3Q,"0,20","Avenida das Raias, 601, apto 103 - Jurerê, Florianópolis - SC, 88053-400",02,00,01,00,0,06,"2,00","305,00",06,Não,15/10/2021,Ativo,Apartamento
+EDR203,ING,SUP1Q,"0,20","Estr. Ver. Onildo Lemos, 600, Bloco B, apto 203 - Ingleses do Rio Vermelho, Florianópolis - SC, 88058-700",01,00,00,00,1,03,"1,00","188,00",03,Não,18/10/2021,Ativo,Apartamento
+POS303,JUR,TOP2Q,"0,20","Rod. Tertuliano Brito Xavier, 2501, bloco A, apto 303 - Jurere Leste, Florianópolis - SC, CEP 88054-601",01,02,00,00,0,06,"2,00","277,00",06,Não,20/10/2021,Ativo,Apartamento
+IBI307,JUR,SUP1Q,"0,20","Av. dos Salmões, 914, apto 307 - Jurerê, Florianópolis - SC, CEP 88053-365.",01,00,00,00,2,04,"1,00","206,00",04,Não,20/10/2021,Ativo,Apartamento
+CPJ304,JUR,TOP2Q,"0,20","Av. das Raias, 961, apto 304 - Jurerê Internacional, Florianópolis - SC, CEP 88053-400.",00,02,01,00,0,06,"1,10","285,00",06,Não,22/10/2021,Ativo,Apartamento
+RCA264,JUR,HOUMASTER4Q,"0,20","Rua das Caraúnas, 264 - Jurerê Internacional, Florianópolis - SC, 88053-411",02,02,01,00,0,10,"7,00","575,00",10,Não,21/10/2021,Ativo,Casa
+BDM104,UFSC,SUP1Q,"0,20","Rua Capitão Romualdo de Barros, 850 - apto 104 - Carvoeira, 88040-600, Florianópolis – SC",01,00,00,00,1,03,"1,00","193,00",03,Não,25/10/2021,Ativo,Apartamento
+CAL301,CON,JR2Q,"0,20","Rua Brasilpinho, 548, Prédio Carolina, apto 301 - Kobrasol, São José - SC, 88102-300",01,01,00,00,0,04,"1,00","237,00",04,Não,27/10/2021,Ativo,Apartamento
+ASR204,ING,MASTER2Q,"0,20","Estrada Vereador Onildo Lemos, 2345, Vila 04, apto 204 - Santinho, Florianópolis - SC, 88058-700",01,00,00,01,0,06,"2,00","277,00",06,Não,27/10/2021,Ativo,Apartamento
+RAI001,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 001",00,01,00,00,0,01,"1,00","158,00",01,Não,27/10/2021,Bloqueado,Apartamento
+ILC3208,ILC,TOP,"0,10","Avenida dos Búzios, 1760, 3208 - Jurerê Internacional, Florianópolis - SC, 88053-301",00,00,01,00,1,03,"1,00","0,00",03,Sim,29/10/2021,Ativo,Dentro do Hotel
+CMA113,ITA,TOP2Q,"0,20","Av. Osvaldo Reis, 2000, apto 113 - Praia Brava, Itajaí - SC, CEP 88306-003.",00,01,01,00,0,05,"2,00","244,00",05,Não,28/10/2021,Inativo,Apartamento
+RAI002,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 002",00,00,01,00,0,02,"1,00","169,00",02,Não,27/10/2021,Ativo,Apartamento
+RAI003,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 003",00,01,00,00,0,01,"1,00","158,00",01,Não,27/10/2021,Ativo,Apartamento
+RAI004,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 004",00,00,01,00,0,02,"1,00","169,00",02,Não,27/10/2021,Ativo,Apartamento
+RAI005,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 005",00,00,01,00,0,02,"1,00","169,00",02,Não,27/10/2021,Ativo,Apartamento
+RAI006,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 006",00,00,01,00,0,02,"1,00","169,00",02,Não,27/10/2021,Ativo,Apartamento
+RAI007,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 007",00,00,01,00,0,02,"1,00","169,00",02,Não,27/10/2021,Ativo,Apartamento
+RAI008,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 008",00,00,01,00,0,02,"1,00","169,00",02,Não,27/10/2021,Ativo,Apartamento
+RAI009,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 009",00,00,01,00,0,02,"1,00","169,00",02,Não,27/10/2021,Ativo,Apartamento
+RAI010,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 010",00,00,01,00,0,02,"1,00","169,00",02,Não,27/10/2021,Ativo,Apartamento
+RAI011,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 011",00,00,01,00,0,02,"1,00","169,00",02,Não,27/10/2021,Ativo,Apartamento
+RAI012,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 012",00,01,00,00,0,01,"1,00","158,00",01,Não,27/10/2021,Ativo,Apartamento
+RAI013,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 013",00,01,00,00,0,01,"1,00","158,00",01,Não,27/10/2021,Ativo,Apartamento
+RAI014,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 014",00,00,01,00,0,02,"1,00","169,00",02,Não,27/10/2021,Ativo,Apartamento
+RAI015,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 015",00,01,00,00,0,01,"1,00","158,00",01,Não,27/10/2021,Ativo,Apartamento
+RAI016,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 016",00,00,01,00,0,02,"1,00","169,00",02,Não,27/10/2021,Ativo,Apartamento
+RAI017,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 017",00,00,01,00,0,02,"1,00","169,00",02,Não,27/10/2021,Ativo,Apartamento
+RAI018,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 018",00,00,01,00,0,02,"1,00","169,00",02,Não,27/10/2021,Ativo,Apartamento
+RAI019,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 019",00,00,01,00,0,02,"1,00","169,00",02,Não,27/10/2021,Ativo,Apartamento
+RAI020,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 020",00,00,01,00,0,02,"1,00","169,00",02,Não,27/10/2021,Ativo,Apartamento
+RAI021,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 021",00,01,00,00,0,01,"1,00","158,00",01,Não,27/10/2021,Ativo,Apartamento
+RAI022,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 022",00,00,01,00,0,02,"1,00","169,00",02,Não,27/10/2021,Ativo,Apartamento
+RAI023,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 023",00,00,01,00,0,02,"1,00","169,00",02,Não,27/10/2021,Ativo,Apartamento
+RAI024,CAN,JR1Q,"0,20","R. Afonso Cardoso da Veiga, 228 - Canasvieiras, Florianópolis - SC, CEP 88054-050, apto 024",00,01,00,00,0,01,"1,00","158,00",01,Não,27/10/2021,Ativo,Apartamento
+PLS002,PLS,SUP1Q,"0,10","Rua Júlio José Gonçalves, 200, apto 01 - Barra da Lagoa, Florianópolis - CEP 88061-375",00,02,00,00,0,02,"1,00","0,00",02,Sim,29/10/2021,Inativo,Dentro do Hotel
+PLS003,PLS,SUP1Q,"0,10","Rua Júlio José Gonçalves, 200, apto 03 - Barra da Lagoa, Florianópolis - CEP 88061-375.",01,00,00,00,1,03,"1,00","0,00",03,Sim,29/10/2021,Inativo,Dentro do Hotel
+PLS004,PLS,SUP1Q,"0,10","Rua Júlio José Gonçalves, 200, apto 04 - Barra da Lagoa, Florianópolis - CEP 88061-375.",01,00,00,00,1,03,"1,00","0,00",03,Sim,29/10/2021,Inativo,Dentro do Hotel
+PLS005,PLS,SUP1Q,"0,10","Rua Júlio José Gonçalves, 200, apto 05 - Barra da Lagoa, Florianópolis - CEP 88061-375.",01,00,00,00,1,03,"1,00","0,00",03,Sim,29/10/2021,Inativo,Dentro do Hotel
+PLS006,PLS,SUP1Q,"0,10","Rua Júlio José Gonçalves, 200, apto 06 - Barra da Lagoa, Florianópolis - CEP 88061-375.",01,00,00,00,1,03,"1,00","0,00",03,Sim,29/10/2021,Inativo,Dentro do Hotel
+PLS007,PLS,SUP1Q,"0,10","Rua Júlio José Gonçalves, 200, apto 07 - Barra da Lagoa, Florianópolis - CEP 88061-375.",01,00,00,00,0,02,"1,00","0,00",02,Sim,29/10/2021,Inativo,Dentro do Hotel
+PLS008,PLS,SUP1Q,"0,10","Rua Júlio José Gonçalves, 200, apto 08 - Barra da Lagoa, Florianópolis - CEP 88061-375.",01,00,00,00,0,03,"1,00","0,00",03,Sim,29/10/2021,Inativo,Dentro do Hotel
+PLS010,PLS,SUP1Q,"0,10","Rua Júlio José Gonçalves, 200, apto 10 - Barra da Lagoa, Florianópolis - CEP 88061-375.",00,02,00,00,0,02,"1,00","0,00",02,Sim,29/10/2021,Inativo,Dentro do Hotel
+PLS013,PLS,SUP2Q,"0,10","Rua Júlio José Gonçalves, 200, apto 11 - Barra da Lagoa, Florianópolis - CEP 88061-375.",01,02,00,00,0,04,"1,00","0,00",04,Sim,29/10/2021,Inativo,Dentro do Hotel
+PLS014,PLS,SUP1Q,"0,10","Rua Júlio José Gonçalves, 200, apto 14 - Barra da Lagoa, Florianópolis - CEP 88061-375.",01,00,00,00,1,03,"1,00","0,00",03,Sim,29/10/2021,Inativo,Dentro do Hotel
+PLS012,PLS,SUP1Q,"0,10","Rua Júlio José Gonçalves, 200, apto 12 - Barra da Lagoa, Florianópolis - CEP 88061-375.",01,00,00,00,0,02,"1,00","0,00",02,Sim,29/10/2021,Inativo,Dentro do Hotel
+PLS015,PLS,SUP1Q,"0,10","Rua Júlio José Gonçalves, 200, apto 15 - Barra da Lagoa, Florianópolis - CEP 88061-375.",01,00,00,00,0,02,"1,00","0,00",02,Sim,29/10/2021,Inativo,Dentro do Hotel
+PLS016,PLS,SUP1Q,"0,10","Rua Júlio José Gonçalves, 200, apto 16 - Barra da Lagoa, Florianópolis - CEP 88061-375.",01,00,00,00,0,02,"1,00","0,00",02,Sim,29/10/2021,Inativo,Dentro do Hotel
+RCO208,BCB,HOUJR3Q,"0,20","R. Codorna, 208 - Pioneiros, Balneário Camboriú - SC, CEP 88338-465",00,00,03,00,0,06,"2,50","322,00",06,Não,04/11/2021,Inativo,Casa
+ILC3209,ILC,TOP,"0,10","Avenida dos Búzios, n. 1760, apto 3209 - Jurerê Internacional, Florianópolis – SC.",00,00,01,00,0,04,"1,00","0,00",04,Sim,05/11/2021,Ativo,Dentro do Hotel
+CSC110,ING,SUP1Q,"0,20","R. das Gaivotas, 1467, Bloco Alfa, apto 1110 - Ingleses Norte, Florianópolis - SC, CEP 88058-500.",01,00,00,00,0,04,"1,00","208,00",04,Não,28/10/2021,Ativo,Apartamento
+CEA211,BCB,JR2Q,"0,20","Rua Dom Afonso, 65, apto 211 - Vila Real, Balneário Camboriú - SC, 88337-070",00,01,01,00,1,04,"1,00","236,00",04,Não,16/11/2021,Ativo,Apartamento
+CCM004,BOM,HOUSUP3Q,"0,20","R. Angelim, 220, casa 04 - Canto Grande, Bombinhas - SC, 88215-000",03,00,00,00,0,06,"2,00","306,00",06,Não,22/11/2021,Ativo,Casa
+JRR303,JUR,TOP2Q,"0,20","R. Dep. Paulo Preis, 78, apto 303 - Jurerê, Florianópolis - SC, CEP 88053-580.",01,00,01,00,0,06,"2,00","229,00",06,Não,22/11/2021,Ativo,Apartamento
+RFB001,GRA,JR1Q,"0,20","Rua Francisca Bezzi Casagrande, 277, apto 01 - Gramado, RS - CEP 95670-000",01,00,00,00,1,03,"1,00","197,00",03,Não,22/11/2021,Ativo,Apartamento
+ABC102,ITA,MASTER3Q,"0,20","Rua Delfim Mário de Pádua Peixoto, 600, torre 4, apto 102 - Praia Brava, Itajaí - SC, 88306-813",02,02,00,00,0,06,"2,00","322,00",06,Não,22/11/2021,Ativo,Apartamento
+ABC204,ITA,MASTER3Q,"0,20","Rua Delfim Mário de Pádua Peixoto, 600, torre 2, apto 204 - Praia Brava, Itajaí - SC, 88306-813",01,04,00,00,0,06,"3,50","344,00",06,Não,22/11/2021,Ativo,Apartamento
+CRP802,CEN,SUP2Q,"0,20","R. Ten. Silveira, 798, apto 802 - Centro, Florianópolis - SC, CEP 88010-301.",02,00,01,00,0,,"3,00",,06,Não,29/11/2021,Onboarding,Apartamento
+REL206,CAN,SUP2Q,"0,20","Rua dos Eucalíptos, 200, apto 206 - Canasvieiras, Florianópolis - SC, 88054-150",02,00,00,00,0,06,"2,00","263,00",06,Não,24/11/2021,Ativo,Apartamento
+EIS305,ITP,SUP3Q,"0,20","Rua 266, n. 26, bloco B, apto - Meia Praia, Itapema - SC, 88220-000",02,00,01,00,0,06,"2,00","305,00",06,Não,30/11/2021,Ativo,Apartamento
+RMB404,CAM,TOP2Q,"0,20","Avenida Campeche, 2639, Bloco C, apto 404 - Bairro Lagoa Pequena, Florianópolis – SC, CEP: 88063-301",02,00,00,00,0,06,"2,00","340,00",06,Não,30/11/2021,Ativo,Apartamento
+ELU107,JUR,TOP1Q,"0,20","Rua Professor Renato Barbosa, 227, apto 107 - Jurerê, Florianópolis – SC - CEP 88053-640",00,00,01,00,0,04,"1,50","196,00",04,Não,29/11/2021,Ativo,Apartamento
+CCL004,LAG,HOUTOP2Q,"0,20","Servidão Caminho Costa da Lagoa, casa 4 - Lagoa da Conceição, Florianópolis - SC",00,00,02,00,2,06,"1,50","322,00",06,Não,30/11/2021,Ativo,Casa
+HAV206,CEN,TOP1Q,"0,20","Rua Crispim Mira, 459, apto 206 - Centro, Florianópolis - SC, 88020-540",01,00,00,00,1,03,"1,00","188,00",03,Não,30/11/2021,Ativo,Apartamento
+SSG210,UFSC,TOP1Q,"0,20","R. João Pio Duarte Silva, 1350, apto 210 - Córrego Grande, Florianópolis - SC, CEP 88037-001",01,00,00,00,1,03,"1,00","197,00",03,Não,07/12/2021,Ativo,Apartamento
+CTA022,CAN,SUP3Q,"0,20","Avenida Tom Traugott Wildi, 411, bloco B, apto 22 - Praia Brava, Florianópolis - SC, 88056-800",02,03,00,00,0,,"2,00","355,00",07,Não,08/12/2021,Ativo,Apartamento
+MAV005,JUR,SIM1Q,"0,20","Rodovia Tertuliano de Brito Xavier, 3415, 05 - Jurerê, Florianópolis – SC - 88054-601",01,00,00,00,0,02,"1,00","169,00",02,Não,10/12/2021,Ativo,Apartamento
+MAV006,JUR,SIM1Q,"0,20","Rodovia Tertuliano de Brito Xavier, 3415, 06 - Jurerê, Florianópolis – SC - 88054-601",01,00,00,00,0,02,"1,00","169,00",02,Não,10/12/2021,Ativo,Apartamento
+JRR103,JUR,TOP2Q,"0,20","Rua Deputado Paulo Preis, 78, apto 103 - Jurerê, Florianópolis - SC, 88053-580",00,03,00,01,0,05,"2,00","272,00",05,Não,09/12/2021,Ativo,Apartamento
+VDC001,CAM,HOUJR3Q,"0,20","Rua Joaquim José Antunes, 911, casa 04 - Vivendas do Campeche, Campeche, Florianópolis – SC",01,02,01,00,1,07,"2,50","430,00",09,Não,09/12/2021,Ativo,Casa
+CEL403,BCB,TOP2Q,"0,20","Avenida Atlântica, 1506, bloco A, apto 403 - Centro, Balneário Camboriú - SC, 88330-009",01,01,00,00,2,05,"1,50","263,00",05,Não,13/12/2021,Ativo,Apartamento
+SSG313,UFSC,TOP1Q,"0,20","R. João Pio Duarte Silva, 1350, apto 313 - Córrego Grande, Florianópolis - SC, CEP 88037-001",01,00,00,00,1,03,"1,00","193,00",03,Não,14/12/2021,Ativo,Apartamento
+CAC302,ING,SUP2Q,"0,20","Estrada Vereador Onildo Lemos, 256, apto 302A - Santinho, Florianópolis - SC, 88058-700",01,01,00,00,1,,"2,00","244,00",04,Não,15/12/2021,Ativo,Apartamento
+RPL000,TBM,MASTER3Q,"0,20","Rua Paraíso do Luz, s/n - Ibiraquera, Imbituba - SC 88780-000",02,04,00,01,0,12,"3,00","535,00",12,Não,17/12/2021,Ativo,Casa
+RPL001,TBM,SUP2Q,"0,20","Rua Paraíso do Luz, s/n - Ibiraquera, Imbituba - SC 88780-000.",00,00,00,00,0,00,"0,00","339,00",00,Não,17/12/2021,Inativo,Apartamento
+PTJ302,JUR,TOP2Q,"0,20","Rua Professor Heinz Braunsperger, 85, apto 302 - Jurerê, Florianópolis - SC, 88053-680",01,00,01,00,1,05,"2,50","262,00",05,Não,21/12/2021,Ativo,Apartamento
+VLE008,BOM,SUP2Q,"0,17","Av. Araucária, 426, apto 08 - Mariscal, Bombinhas - SC, 88215-000",,,,,,,,,,Não,27/12/2021,Onboarding,Apartamento
+VISE059,CEN,HOUJR2Q,"0,25","Rua Felipe Schmidt, 1066, casa 59 - Centro, Florianópolis – SC, CEP 88010-002",00,01,01,00,0,05,"2,00","252,00",05,Não,15/12/2021,Ativo,Casa
+CET802,BCB,TOP3Q,"0,20","Avenida Atlântica, 4104, apto 802 - Centro, Balneário Camboriú - SC, 88330-027",02,01,00,00,1,06,"2,00","315,00",06,Não,24/12/2021,Ativo,Apartamento
+EPC204,JUR,TOP2Q,"0,20","R. dos Mandis, 90, apto 204 - Jurerê Internacional, Florianópolis - SC, CEP 88053-404.",00,00,02,00,2,06,"2,00","272,00",06,Não,28/12/2021,Ativo,Apartamento
+JBV105,JBV,JR,"0,10","Alameda César Nascimento, 646, apto 105 - Jurerê, Florianópolis - SC, CEP 88053-500.",00,01,01,00,00,03,"1,00","0,00",03,Sim,30/12/2021,Ativo,Dentro do Hotel
+GAI002,ING,SUP2Q,"0,20","R. Brisamar, 175, apto 02 - Ingleses do Rio Vermelho, Florianópolis - SC, CEP 88058-570",,,,,,,,,,Não,29/12/2021,Onboarding,Apartamento
+ELU106,JUR,TOP1Q,"0,20","Rua Professor Renato Barbosa, 227, apto 106 - Jurerê, Florianópolis - SC, 88053-640",1,0,0,0,1,4,"2,00",215,4,Não,06/01/2022,Ativo,Apartamento
+JFR103,UFSC,SUP2Q,"0,2","Rua João Pio Duarte Silva, 1536, Bloco A, apto 103 - Córrego Grande, Florianópolis - SC, CEP: 88037-001",1,2,0,0,1,5,"2,00",270,5,Não,18/01/2022,Ativo,Apartamento
+JBV433,JBV,JR,"0,05","Alameda César Nascimento, 646, apto 433 - Jurerê, Florianópolis - SC, CEP: 88053-500",0,1,1,0,0,3,1,0,3,Sim,21/01/2022,Ativo,Dentro do Hotel
+JBV462,JBV,TOP,"0,1","Alameda César Nascimento, 646, apto 462 - Jurerê, Florianópolis - SC, CEP: 88053-500",0,1,1,0,0,5,1,0,5,Sim,21/01/2022,Ativo,Dentro do Hotel
+EBT108,JUR,SUP1Q,"0,2","Alameda César Nascimento, 31, apto 108 - Jurerê, Florianópolis - SC, 88053-500",1,0,0,0,1,2,1,197,2,Não,20/01/2022,Ativo,Apartamento
+ELU201,JUR,TOP1Q,"0,2","Rua Professor Renato Barbosa, 227, apto 201 - Jurerê, Florianópolis - SC, 88053-640",0,0,1,0,0,4,1,197,4,Não,20/01/2022,Ativo,Apartamento
+EGO003,GPB,HOUTOP1Q,"0,2"," Estrada Geral do Ouvidor, 03 - Praia do Ouvidor, Garopaba - SC, CEP: 88495-000",1,,,,,,1,,4,Não,20/01/2022,Onboarding,Casa
+SMP169,CAM,HOUJR2Q,"0,2","Rua Servidão Cândido Manoel Pires, 169 - Campeche, Florianópolis - SC - 88063-093",0,2,0,1,1,4,1,277,4,Não,27/01/2022,Ativo,Casa
+RJS001,CAN,TOP1Q,"0,2","Rua Ranulpho José de Souza Sobrinho, 60, 01 - Canasvieiras, Florianópolis - SC, 88054-430",0,0,1,0,0,2,1,197,2,Não,28/01/2022,Ativo,Apartamento
+RJS002,CAN,HOUTOP4Q,"0,2","Rua Ranulpho José de Souza Sobrinho, 60, 02 - Canasvieiras, Florianópolis - SC, 88054-430",0,0,4,0,1,9,2,418,9,Não,28/01/2022,Ativo,Apartamento
+CSG305,CAN,JR1Q,"0,2","Rua Madre Maria Vilac, 2136, apto 305 - Canasvieiras, Florianópolis - SC, 88054-000",1,0,0,0,0,4,1,197,4,Não,31/01/2022,Ativo,Apartamento
+ABC202,ITA,TOP3Q,"0,2","Rua Delfim Mário de Pádua Peixoto, 600, Torre 2, apto 202 - Praia Brava, Itajaí - SC, 88306-813",2,2,0,0,0,8,4,364,8,Não,31/01/2022,Ativo,Apartamento
+STC005,ING,HOUTOP4Q,"0,2","Estrada Dário Manoel Cardoso, 2350, casa 05 - Ingleses do Rio Vermelho, Florianópolis - SC, CEP 88058-400",2,4,1,0,4,14,3.1,551,14,Não,31/01/2022,Ativo,Casa
+CET602,BCB,TOP3Q,"0,2","Avenida Atlântica, 4104, apto 602 - Centro, Balneário Camboriú - SC, 88330-027",2,2,0,0,0,7,2,340,7,Não,31/01/2022,Ativo,Apartamento
+RAN203,JUR,TOP3Q,"0,2","Rua das Moréias, 32, apto 203 - Jurerê, Florianópolis - SC, 88053-535",2,0,1,0,0,6,"3,5",320,6,Não,01/02/2022,Ativo,Apartamento
+TOCA152,CAM,JR1Q,"0,25","Rua das Corujas, 151, apto 02 - Campeche, Florianópolis - SC - CEP 88063-287",0,2,0,0,0,2,1,197,2,Não,02/02/2022,Ativo,Apartamento
+PDR305,JUR,SUP2Q,"0,2","Avenida das Raias, 45, apto 305 - Jurerê Internacional, Florianópolis - SC, 88053-400",1,0,1,0,0,4,2,243,4,Não,02/02/2022,Ativo,Apartamento
+JRR410,JUR,MASTER1Q,"0,2","Rua Deputado Paulo Preis, 78, apto 410 - Jurerê, Florianópolis - SC, 88053-580",0,0,1,0,0,2,2,197,2,Não,02/02/2022,Ativo,Apartamento
+ELU313,JUR,TOP2Q,"0,2","Rua Professor Renato Barbosa, 227, apto 313 - Jurerê, Florianópolis - SC, CEP 88053-640",2,0,0,0,0,6,3,270,6,Não,07/02/2022,Ativo,Apartamento
+EIA205,JUR,TOP1Q,"0,25","Av. Jornalista Maurício Sirotsky Sobrinho, 6101, apto 205 - Jurerê, Florianópolis - SC - CEP 88053-701",0,0,1,0,2,4,1,197,4,Não,08/02/2022,Ativo,Apartamento
+VLR605,CENTRO,TOP1Q,"0,2","Rua Felipe Schmidt, 554, apto 605 - Centro, Florianópolis - SC, CEP: 88010-001",0,0,1,0,0,,1,,4,Não,08/02/2022,Onboarding,Apartamento
+VLR606,CENTRO,TOP1Q,"0,2","Rua Felipe Schmidt, 554, apto 606 - Centro, Florianópolis - SC, CEP: 88010-001",0,0,1,0,0,,1,,4,Não,08/02/2022,Onboarding,Apartamento
+RDL2222,CAN,HOUMASTER1Q,"0,2","Rua do Lamin, 2222 - Canasvieiras, Florianópolis - SC - CEP 88.054-610",1,0,0,1,0,4,2,400,4,Não,08/02/2022,Ativo,Casa
+IMS1605,BCB,TOP3Q,"0,2","Avenida Atlântica, 3750, apto 1605 - Centro, Balneário Camboriú - SC, 88330-024",2,0,1,0,0,6,2,305,6,Não,09/02/2022,Inativo,Apartamento
+CSC013,ING,JR1Q,"0,25","Rua das Gaivotas, 1467, bloco D, apto 13 - Ingleses do Rio Vermelho - Florianópolis/SC",1,0,0,0,1,3,1,197,3,Não,11/02/2022,Ativo,Apartamento
+JBV373,JBV,JR,"0,1","Alameda César Nascimento, 646, apto 373 - Jurerê, Florianópolis - SC, 88053-500",0,0,1,0,1,3,1,0,3,Sim,11/02/2022,Ativo,Dentro do Hotel
+JBV375,JBV,JR,"0,1","Alameda César Nascimento, 646, apto 375 - Jurerê, Florianópolis - SC, 88053-500",0,0,1,0,1,3,1,0,3,Sim,11/02/2022,Ativo,Dentro do Hotel
+SED002,UFSC,JR1Q,"0,2","Servidão Dorval Manoel Bento, 175, apto 02 - Córrego Grande, Florianópolis - SC, 88037-410",1,0,0,0,0,4,1,197,4,Não,11/02/2022,Ativo,Apartamento
+JBV343,JBV,JR,"0,1","Alameda César Nascimento, 646, apto 343 - Jurerê, Florianópolis - SC, 88053-500",0,1,1,0,0,3,1,0,3,Sim,11/02/2022,Ativo,Dentro do Hotel
+RAE204,ING,TOP2Q,"0,25","Servidão Capivari, 277, bloco A, apto 204 - Ingleses do Rio Vermelho - Florianópolis/SC, CEP: 88058-420",2,0,0,0,0,4,2,236,4,Não,11/02/2022,Ativo,Apartamento
+ASR304,ING,MASTER3Q,"0,2","Estrada Vereador Onildo Lemos, 2345, vila 1, apto 304 - Santinho, Florianópolis - SC, 88058-700",0,0,3,0,2,8,4,304,8,Não,16/02/2022,Ativo,Apartamento
+RPP003,BOM,JR1Q,"0,2","Rua Pica-Pau, 165, apto 03 - Bombas, Bombinhas - SC, 88215-000.",1,0,0,0,2,4,1,197,4,Não,18/02/2022,Ativo,Apartamento
+ILC4202,ILC,TOP,"0,1","Av. dos Búzios, 1760, apto 4202 - Jurerê Internacional, Florianópolis - SC, 88053-301",0,0,1,0,0,4,1,0,4,Sim,17/02/2022,Ativo,Dentro do Hotel
+JBV344,JBV,JR,"0,1","Alameda César Nascimento, 646, apto 344 - Jurerê, Florianópolis - SC, 88053-500",0,0,1,0,1,3,1,0,3,Sim,22/02/2022,Ativo,Dentro do Hotel
+ILC3401,ILC,TOP,"0,13","Avenida dos Búzios, 1760, apto 3401 - Jurerê Internacional, Florianópolis - SC, 88053-301",0,0,1,0,0,4,1,0,4,Sim,24/02/2022,Ativo,Dentro do Hotel
+VLR702,CENTRO,TOP1Q,"0,2","Rua Felipe Schmidt, 554, apto 702 - Centro, Florianópolis - SC, 88010-001",0,0,1,0,0,,1,,4,Não,25/02/2022,Onboarding,Apartamento
+VLR401,CENTRO,TOP1Q,"0,2","Rua Felipe Schmidt, 554, apto 401 - Centro, Florianópolis - SC, 88010-001",0,0,1,0,0,,1,,4,Não,25/02/2022,Onboarding,Apartamento
+VLR703,CENTRO,TOP1Q,"0,2","Rua Felipe Schmidt, 554, apto 703 - Centro, Florianópolis - SC, 88010-001",0,0,1,0,0,,1,,4,Não,25/02/2022,Onboarding,Apartamento
+RJO303,CAN,SUP2Q,"0,21","Rua das Sereias, 58, apto 303 - Canasvieiras, Florianópolis - SC, 88054-360",,3,1,,,,2,,5,Não,25/02/2022,Onboarding,Apartamento
+BDR521,LAG,SUP1Q,"0,2","Servidão Bonifácio da Rosa, 52, apto 01 - Lagoa da Conceição, Florianópolis – SC, CEP 88062-445",Quantidade de Camas Casal,Quantidade de Camas Solteiro,Quantidade de Camas Queen,Quantidade de Camas King,Quantidade de Sofás Cama Solteiro,,Banheiros,,Capacidade,Não,03/03/2022,Onboarding,Apartamento
+BDR522,LAG,SUP1Q,"0,2","Servidão Bonifácio da Rosa, 52, apto 02 - Lagoa da Conceição, Florianópolis – SC, CEP 88062-445",Quantidade de Camas Casal,Quantidade de Camas Solteiro,Quantidade de Camas Queen,Quantidade de Camas King,Quantidade de Sofás Cama Solteiro,,Banheiros,,Capacidade,Não,03/03/2022,Onboarding,Apartamento
+BDR523,LAG,SUP1Q,"0,2","Servidão Bonifácio da Rosa, 52, apto 03 - Lagoa da Conceição, Florianópolis – SC, CEP 88062-445 ",1,4,,,,,1,,5,Não,03/03/2022,Onboarding,Apartamento
