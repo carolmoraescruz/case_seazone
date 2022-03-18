@@ -98,6 +98,8 @@ def clean_listings_dataset(df_listings):
 def clean_daily_revenue_dataset(df_daily_revenue):
     """ """
 
+    df_daily_revenue["date"] = pd.to_datetime(df_daily_revenue["date"])
+    
     df_daily_revenue["occupancy"] = df_daily_revenue["occupancy"].clip(0,1).astype("Int8")
 
     df_daily_revenue["blocked"] = df_daily_revenue["blocked"].clip(0,1).astype("Int8")
