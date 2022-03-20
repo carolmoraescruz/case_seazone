@@ -113,9 +113,9 @@ def clean_daily_revenue_dataset(df_daily_revenue):
         df_daily_revenue["creation_date"]
     )
 
-    df_daily_revenue.loc[
-        df_daily_revenue["creation_date"] > df_daily_revenue["date"], "creation_date"
-    ] = np.nan
+    # df_daily_revenue.loc[
+    #     df_daily_revenue["creation_date"] > df_daily_revenue["date"], "creation_date"
+    # ] = np.nan
 
     return df_daily_revenue
 
