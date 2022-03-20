@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 
+import pandas as pd
+import numpy as np
+
 
 def build_daily_features(df_daily_revenue):
     df_daily_revenue["reservation_advance_days"] = (
