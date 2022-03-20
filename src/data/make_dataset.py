@@ -3,8 +3,10 @@
 import pandas as pd
 import numpy as np
 
+
 def main():
     pass
+
 
 def clean_listings_dataset(df_listings):
     """ """
@@ -95,16 +97,28 @@ def clean_listings_dataset(df_listings):
 
     return df_listings
 
+
 def clean_daily_revenue_dataset(df_daily_revenue):
     """ """
 
     df_daily_revenue["date"] = pd.to_datetime(df_daily_revenue["date"])
-    
-    df_daily_revenue["occupancy"] = df_daily_revenue["occupancy"].clip(0,1).astype("Int8")
 
-    df_daily_revenue["blocked"] = df_daily_revenue["blocked"].clip(0,1).astype("Int8")
-    
+    df_daily_revenue["occupancy"] = (
+        df_daily_revenue["occupancy"].clip(0, 1).astype("Int8")
+    )
+
+    df_daily_revenue["blocked"] = df_daily_revenue["blocked"].clip(0, 1).astype("Int8")
+
+    df_daily_revenue["creation_date"] = pd.to_datetime(
+        df_daily_revenue["creation_date"]
+    )
+
+    df_daily_revenue.loc[
+        df_daily_revenue["creation_date"] > df_daily_revenue["date"], "creation_date"
+    ] = np.nan
+
     return df_daily_revenue
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
