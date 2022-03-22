@@ -2,6 +2,7 @@
 
 import pandas as pd
 import numpy as np
+from src.features.build_features import build_daily_features
 
 
 def main():
@@ -120,5 +121,15 @@ def clean_daily_revenue_dataset(df_daily_revenue):
     return df_daily_revenue
 
 
-if __name__ == "__main__":
-    main()
+def load_data():
+
+    # Importing Datasets
+    df_listings = pd.read_csv("data/raw/listings-challenge.csv")
+    df_daily_revenue = pd.read_csv("data/raw/daily_revenue.csv")
+
+    # Data Cleaning
+    df_listings = clean_listings_dataset(df_listings)
+    df_daily_revenue = clean_daily_revenue_dataset(df_daily_revenue)
+    df_daily_revenue = build_daily_features(df_daily_revenue)
+
+    return df_listings, df_daily_revenue
