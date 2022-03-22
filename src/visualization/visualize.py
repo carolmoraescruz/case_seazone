@@ -17,6 +17,7 @@ def plot_revenue_per_date(df_daily_revenue):
     plt.savefig(path)
     plt.close()
 
+    print("\n{}".format(89 * "*"))
     print("Exporting graph revenue_per_date to path: " + path)
 
 
@@ -28,4 +29,5 @@ def plot_hist_reservation_advance(df_daily_revenue):
     plt.savefig("reports/figures/histogram_reservation_advance.png")
     plt.close()
 
+    print("\n{}".format(89 * "*"))
     print("Exporting graph histogram_reservation_advance to path: " + path)
