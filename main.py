@@ -9,6 +9,7 @@ from src.visualization.visualize import (
     plot_hist_reservation_advance,
     plot_revenue_per_date,
 )
+from src.models.train_model import train_revenue_model
 
 
 def main():
@@ -18,6 +19,9 @@ def main():
 
     # Question 01
     answer_first_question(df_listings, df_daily_revenue)
+
+    # Question 02
+    train_revenue_model(df_listings, df_daily_revenue)
 
     # Complementary Data Analysis
     plot_revenue_per_date(df_daily_revenue)
