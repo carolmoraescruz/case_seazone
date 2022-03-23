@@ -3,7 +3,7 @@
 import pandas as pd
 import numpy as np
 from src.models.preprocessing import one_hot_encode_column
-from src.commons import is_holiday
+from src.commons import WEEK_DAY_ORDER, is_holiday
 
 
 def build_daily_features(df_daily_revenue):
@@ -39,17 +39,8 @@ def build_features_revenue_model(df_daily_revenue, df_listings):
     data_revenue["month"] = data_revenue["date"].dt.month
     data_revenue["day"] = data_revenue["date"].dt.day
 
-    week_day_order = {
-        0: "Mon",
-        1: "Tue",
-        2: "Wed",
-        3: "Thu",
-        4: "Fri",
-        5: "Sat",
-        6: "Sun",
-    }
     data_revenue["day_of_week"] = data_revenue["date"].dt.dayofweek.replace(
-        week_day_order
+        WEEK_DAY_ORDER
     )
 
     data_revenue["holiday"] = data_revenue["date"].apply(is_holiday)
