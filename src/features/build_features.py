@@ -18,7 +18,7 @@ def build_daily_features(df_daily_revenue):
     return df_daily_revenue
 
 
-def build_features_revenue_model(df_daily_revenue, df_listings):
+def build_features_revenue_model(df_listings, df_daily_revenue):
     data = pd.merge(
         df_daily_revenue,
         df_listings[["Código", "Comissão"]],

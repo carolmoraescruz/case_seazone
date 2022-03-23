@@ -11,9 +11,9 @@ from src.models.preprocessing import (
 from src.commons import dump_pickle
 
 
-def train_revenue_model(df_daily_revenue, df_listings):
+def train_revenue_model(df_listings, df_daily_revenue):
 
-    X, y = build_features_revenue_model(df_daily_revenue, df_listings)
+    X, y = build_features_revenue_model(df_listings, df_daily_revenue)
 
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.3, random_state=42
