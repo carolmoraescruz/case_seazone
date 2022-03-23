@@ -2,6 +2,9 @@
 
 import pandas as pd
 import numpy as np
+import holidays
+from src.models.preprocessing import one_hot_encode_column, preprocess_revenue_model
+from src.commons import WEEK_DAY_ORDER, load_pickle
 
 
 def print_reservation_advance_quantiles(df_daily_revenue):
@@ -97,3 +100,33 @@ def answer_first_question(df_listings, df_daily_revenue):
     )
     print("Expected price R$: {:.2f}".format(avg_last_offered_price_M2Q))
     print("Expected revenue R$: {:.2f}".format(avg_revenue_M2Q))
+
+
+def answer_second_question():
+    data_pred = pd.DataFrame()
+    data_pred["date"] = pd.date_range(
+        start=pd.to_datetime("2022-03-16"), end=pd.to_datetime("2022-12-31")
+    )
+
+    data_pred["year"] = data_pred["date"].dt.year
+    data_pred["month"] = data_pred["date"].dt.month
+    data_pred["day"] = data_pred["date"].dt.day
+
+    data_pred["day_of_week"] = data_pred["date"].dt.dayofweek.replace(WEEK_DAY_ORDER)
+
+    brazilian_holidays = holidays.Brazil()
+
+    def is_holiday(date):
+        return int(date in brazilian_holidays)
+
+    data_pred["holiday"] = data_pred["date"].apply(is_holiday)
+    data_pred = one_hot_encode_column(data_pred, "day_of_week")
+
+    data_pred = data_pred.drop(columns="date")
+
+    preprocessor = load_pickle("models/preprocessor_revenue_model.pickle")
+    model = load_pickle("models/regressor_revenue_model.pickle")
+
+    X_pred = preprocess_revenue_model(data_pred, preprocessor)
+
+    model.predict(X_pred).sum()
