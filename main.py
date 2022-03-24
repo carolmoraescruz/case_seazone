@@ -3,13 +3,20 @@
 from src.data.make_dataset import load_data
 from src.reports.reports import (
     answer_first_question,
+    answer_second_question,
+    header_q1,
+    header_q2,
     print_reservation_advance_quantiles,
 )
 from src.visualization.visualize import (
     plot_hist_reservation_advance,
     plot_revenue_per_date,
 )
-from src.models.train_model import train_revenue_model
+from src.models.train_model import (
+    train_price_model_q1,
+    train_revenue_model_q1,
+    train_revenue_model_q2,
+)
 
 
 def main():
@@ -18,10 +25,15 @@ def main():
     df_listings, df_daily_revenue = load_data()
 
     # Question 01
-    answer_first_question(df_listings, df_daily_revenue)
+    header_q1()
+    train_price_model_q1(df_listings, df_daily_revenue)
+    train_revenue_model_q1(df_listings, df_daily_revenue)
+    answer_first_question()
 
     # Question 02
-    train_revenue_model(df_listings, df_daily_revenue)
+    header_q2()
+    train_revenue_model_q2(df_listings, df_daily_revenue)
+    answer_second_question()
 
     # Complementary Data Analysis
     plot_revenue_per_date(df_daily_revenue)
