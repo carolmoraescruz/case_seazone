@@ -2,11 +2,27 @@
 
 import pandas as pd
 import numpy as np
-from src.features.build_features import build_daily_features
+from src import FEATURES_PRICE_MODEL_Q1, FEATURES_REVENUE_MODEL_Q1, REFERENCE_DATE
+from src.commons import WEEK_DAY_ORDER, is_holiday
+from src.features.build_features import build_daily_features, build_listings_features
+from src.models.preprocessing import one_hot_encode_column
 
 
-def main():
-    pass
+def load_data():
+
+    # Importing Datasets
+    df_listings = pd.read_csv("data/raw/listings-challenge.csv")
+    df_daily_revenue = pd.read_csv("data/raw/daily_revenue.csv")
+
+    # Data Cleaning
+    df_listings = clean_listings_dataset(df_listings)
+    df_daily_revenue = clean_daily_revenue_dataset(df_daily_revenue)
+
+    # Building Features
+    df_listings = build_listings_features(df_listings)
+    df_daily_revenue = build_daily_features(df_daily_revenue)
+
+    return df_listings, df_daily_revenue
 
 
 def clean_listings_dataset(df_listings):
@@ -115,21 +131,81 @@ def clean_daily_revenue_dataset(df_daily_revenue):
     )
 
     df_daily_revenue = df_daily_revenue.loc[
-        df_daily_revenue["date"] <= pd.to_datetime("2022-03-15")
+        df_daily_revenue["date"] <= pd.to_datetime(REFERENCE_DATE)
     ]
 
     return df_daily_revenue
 
 
-def load_data():
+def make_predict_dataset_price_q1():
 
-    # Importing Datasets
-    df_listings = pd.read_csv("data/raw/listings-challenge.csv")
-    df_daily_revenue = pd.read_csv("data/raw/daily_revenue.csv")
+    data_pred = pd.DataFrame({})
 
-    # Data Cleaning
-    df_listings = clean_listings_dataset(df_listings)
-    df_daily_revenue = clean_daily_revenue_dataset(df_daily_revenue)
-    df_daily_revenue = build_daily_features(df_daily_revenue)
+    # Selecionando os dias do mes de março nos tres anos
+    data_pred["date"] = pd.date_range(
+        start=pd.to_datetime("2022-03-01"), end=pd.to_datetime("2022-03-31")
+    ).to_list()
+    data_pred["Categoria"] = 5
 
-    return df_listings, df_daily_revenue
+    data_pred["Quartos"] = 2
+
+    data_pred["Localização_JUR"] = 1
+
+    data_pred["year"] = data_pred["date"].dt.year
+
+    data_pred["month"] = data_pred["date"].dt.month
+
+    data_pred["day"] = data_pred["date"].dt.day
+
+    data_pred["day_of_week"] = data_pred["date"].dt.dayofweek.replace(WEEK_DAY_ORDER)
+
+    data_pred["holiday"] = data_pred["date"].apply(is_holiday)
+
+    data_pred = one_hot_encode_column(data_pred, "day_of_week")
+
+    data_pred = data_pred.drop(columns="date")
+
+    for col in FEATURES_PRICE_MODEL_Q1:
+        if col not in data_pred.columns:
+            data_pred[col] = 0
+
+    data_pred = data_pred[FEATURES_PRICE_MODEL_Q1]
+
+    return data_pred
+
+
+def make_predict_dataset_revenue_q1():
+
+    data_pred = pd.DataFrame({})
+
+    data_pred["date"] = pd.date_range(
+        start=pd.to_datetime("2022-03-01"), end=pd.to_datetime("2022-03-31")
+    ).to_list()
+
+    data_pred["Categoria"] = 5
+
+    data_pred["Quartos"] = 2
+
+    data_pred["Localização_JUR"] = 1
+
+    data_pred["year"] = data_pred["date"].dt.year
+
+    data_pred["month"] = data_pred["date"].dt.month
+
+    data_pred["day"] = data_pred["date"].dt.day
+
+    data_pred["day_of_week"] = data_pred["date"].dt.dayofweek.replace(WEEK_DAY_ORDER)
+
+    data_pred["holiday"] = data_pred["date"].apply(is_holiday)
+
+    data_pred = one_hot_encode_column(data_pred, "day_of_week")
+
+    data_pred = data_pred.drop(columns="date")
+
+    for col in FEATURES_REVENUE_MODEL_Q1:
+        if col not in data_pred.columns:
+            data_pred[col] = 0
+
+    data_pred = data_pred[FEATURES_REVENUE_MODEL_Q1]
+
+    return data_pred
