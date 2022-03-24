@@ -8,6 +8,7 @@ from src.commons import transform_dataframe
 
 
 def one_hot_encode_column(dataframe, column_name):
+    """ """
     return pd.concat(
         [
             dataframe,
@@ -17,7 +18,16 @@ def one_hot_encode_column(dataframe, column_name):
     ).drop(columns=column_name)
 
 
-def fit_preprocess_revenue_model(X_train, y_train=None):
+def preprocess_transform(X, preprocess):
+    """ """
+
+    for p in preprocess:
+        X = transform_dataframe(p, X)
+
+    return X
+
+
+def fit_preprocess_revenue_model_q2(X_train, y_train=None):
     """ """
     imputer = SimpleImputer(strategy="mean")
     imputer.fit(X_train)
@@ -30,10 +40,14 @@ def fit_preprocess_revenue_model(X_train, y_train=None):
     return imputer, scaler
 
 
-def preprocess_revenue_model(X, preprocess):
+def fit_preprocess_price_model_q1(X_train, y_train=None):
     """ """
+    imputer = SimpleImputer(strategy="mean")
+    imputer.fit(X_train)
+    X_train = imputer.transform(X_train)
 
-    for p in preprocess:
-        X = transform_dataframe(p, X)
+    scaler = MinMaxScaler()
+    scaler.fit(X_train)
+    X_train = scaler.transform(X_train)
 
-    return X
+    return imputer, scaler
