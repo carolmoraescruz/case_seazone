@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+from importlib_metadata import entry_points
 import pandas as pd
 import numpy as np
 import holidays
@@ -8,8 +9,15 @@ from src.data.make_dataset import (
     make_predict_dataset_price_q1,
     make_predict_dataset_revenue_q1,
 )
+from src.features.build_features import return_date_of_quantile_sold_q4
 from src.models.preprocessing import one_hot_encode_column, preprocess_transform
-from src.commons import WEEK_DAY_ORDER, is_holiday, load_pickle, transform_dataframe
+from src.commons import (
+    WEEK_DAY_ORDER,
+    is_holiday,
+    load_pickle,
+    to_date,
+    transform_dataframe,
+)
 from src.models.train_model import train_revenue_model_q2, train_price_model_q1
 
 
@@ -52,19 +60,27 @@ def print_reservation_advance_quantiles(df_daily_revenue):
 
 def header_q1():
     print(
-        "\n{}\n1)What is the expected price and revenue for a listing tagged as JUR MASTER2Q in March?".format(
+        "\n{}\n1) What is the expected price and revenue for a listing tagged as JUR MASTER2Q in March?".format(
             89 * "*"
         )
     )
 
 
 def header_q2():
-    print("\n{}\n2)What is Seazone's expected revenue for 2022?".format(89 * "*"))
+    print("\n{}\n2) What is Seazone's expected revenue for 2022?".format(89 * "*"))
 
 
 def header_q3():
     print(
-        "\n{}\n2)How many reservations should we expect to sell per day?".format(
+        "\n{}\n3) How many reservations should we expect to sell per day?".format(
+            89 * "*"
+        )
+    )
+
+
+def header_q4():
+    print(
+        "\n{}\n4) At what time of the year should we expect to have sold 10 percent of our new year’s nights? And 50? And 80?".format(
             89 * "*"
         )
     )
@@ -159,3 +175,17 @@ def answer_third_question():
     print(
         "Expected reservations per day for 2022: {:d}".format(mean_reservations_per_day)
     )
+
+
+def answer_fourth_question(df_daily_revenue):
+
+    for percent in [0.1, 0.5, 0.8]:
+        date_of_new_year_reservations = return_date_of_quantile_sold_q4(
+            df_daily_revenue, percent
+        )
+        print(
+            "{:d} percent of new year's nights should be sold by: ".format(
+                int(np.round(percent * 100))
+            )
+            + to_date(date_of_new_year_reservations)
+        )
