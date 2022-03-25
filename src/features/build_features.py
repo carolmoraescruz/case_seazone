@@ -63,12 +63,10 @@ def build_features_price_model_q1(df_listings, df_daily_revenue):
         how="left",
     )
 
-    # data["company_revenue"] = data["Comissão"] * data["revenue"]
-
     data_revenue = data.drop(
         columns=[
             "listing",
-            "last_offered_price",
+            "revenue",
             "occupancy",
             "blocked",
             "creation_date",
@@ -92,11 +90,13 @@ def build_features_price_model_q1(df_listings, df_daily_revenue):
 
     data_revenue = data_revenue.drop(columns="date")
 
-    data_revenue = data_revenue.loc[data_revenue["revenue"] > 0]
+    data_revenue = data_revenue.loc[data_revenue["last_offered_price"] > 0]
 
-    X = data_revenue.drop(columns="revenue")[FEATURES_PRICE_MODEL_Q1].astype(float)
+    X = data_revenue.drop(columns="last_offered_price")[FEATURES_PRICE_MODEL_Q1].astype(
+        float
+    )
 
-    y = data_revenue["revenue"]
+    y = data_revenue["last_offered_price"]
 
     return X, y
 
