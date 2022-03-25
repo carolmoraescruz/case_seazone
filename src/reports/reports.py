@@ -62,6 +62,14 @@ def header_q2():
     print("\n{}\n2)What is Seazone's expected revenue for 2022?".format(89 * "*"))
 
 
+def header_q3():
+    print(
+        "\n{}\n2)How many reservations should we expect to sell per day?".format(
+            89 * "*"
+        )
+    )
+
+
 def answer_first_question():
     """ """
 
@@ -115,3 +123,39 @@ def answer_second_question():
     valor_2022 = model.predict(X_pred).sum()
 
     print("Expected revenue for 2022 R$: {:.2f}".format(valor_2022))
+
+
+def answer_third_question():
+
+    data_pred = pd.DataFrame()
+    dates_2022 = pd.date_range(
+        start=pd.to_datetime("2019-08-22"), end=pd.to_datetime("2022-12-31")
+    ).to_list()
+
+    data_pred["creation_date"] = dates_2022
+
+    data_pred["year"] = data_pred["creation_date"].dt.year
+    data_pred["month"] = data_pred["creation_date"].dt.month
+    data_pred["day"] = data_pred["creation_date"].dt.day
+
+    data_pred["day_of_week"] = data_pred["creation_date"].dt.dayofweek.replace(
+        WEEK_DAY_ORDER
+    )
+
+    data_pred["holiday"] = data_pred["creation_date"].apply(is_holiday)
+    data_pred = one_hot_encode_column(data_pred, "day_of_week")
+
+    data_pred = data_pred.drop(columns="creation_date")
+
+    preprocessor = load_pickle("models/preprocessor_reservations_model_q3.pickle")
+    model = load_pickle("models/regressor_reservations_model_q3.pickle")
+
+    X_pred = preprocess_transform(data_pred, preprocessor)
+
+    reservations = model.predict(X_pred)
+
+    mean_reservations_per_day = reservations.mean().round(0).astype(int)
+
+    print(
+        "Expected reservations per day for 2022: {:d}".format(mean_reservations_per_day)
+    )
