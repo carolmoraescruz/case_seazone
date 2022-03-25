@@ -4,8 +4,10 @@ from src.data.make_dataset import load_data
 from src.reports.reports import (
     answer_first_question,
     answer_second_question,
+    answer_third_question,
     header_q1,
     header_q2,
+    header_q3,
     print_reservation_advance_quantiles,
 )
 from src.visualization.visualize import (
@@ -14,6 +16,7 @@ from src.visualization.visualize import (
 )
 from src.models.train_model import (
     train_price_model_q1,
+    train_reservations_model_q3,
     train_revenue_model_q1,
     train_revenue_model_q2,
 )
@@ -34,6 +37,11 @@ def main():
     header_q2()
     train_revenue_model_q2(df_listings, df_daily_revenue)
     answer_second_question()
+
+    # Question 03
+    header_q3()
+    train_reservations_model_q3(df_daily_revenue)
+    answer_third_question()
 
     # Complementary Data Analysis
     plot_revenue_per_date(df_daily_revenue)
