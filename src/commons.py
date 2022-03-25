@@ -40,3 +40,7 @@ def load_pickle(path):
     with open(path, "rb") as f:
         variable = pickle.load(f)
     return variable
+
+
+def to_date(datetime):
+    return datetime.strftime("%Y-%m-%d")
