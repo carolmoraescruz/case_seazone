@@ -34,7 +34,7 @@ def train_price_model_q1(df_listings, df_daily_revenue):
 
     X_test = preprocess_transform(X_test, preprocessor)
 
-    model = model = XGBRegressor(max_depth=6, n_estimators=300).fit(X_train, y_train)
+    model = XGBRegressor(max_depth=6, n_estimators=300).fit(X_train, y_train)
 
     score = mae(y_test, model.predict(X_test))
 
@@ -61,7 +61,7 @@ def train_revenue_model_q1(df_listings, df_daily_revenue):
 
     X_test = preprocess_transform(X_test, preprocessor)
 
-    model = model = XGBRegressor(max_depth=6, n_estimators=300).fit(X_train, y_train)
+    model = XGBRegressor(max_depth=6, n_estimators=300).fit(X_train, y_train)
 
     score = mae(y_test, model.predict(X_test))
 
