@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+from datetime import timedelta
 import pandas as pd
 import numpy as np
 from src import FEATURES_PRICE_MODEL_Q1, FEATURES_REVENUE_MODEL_Q1, REFERENCE_DATE
@@ -239,3 +240,14 @@ def build_features_reservations_model_q3(df_daily_revenue):
     y = tsmodel.trend + tsmodel.seasonal
 
     return X, y
+
+
+def return_date_of_quantile_sold_q4(df_daily_revenue, percent):
+    df_q4 = df_daily_revenue[
+        (df_daily_revenue["date"].dt.month == 12)
+        & (df_daily_revenue["date"].dt.day == 31)
+        & (df_daily_revenue["occupancy"] == 1)
+        & (df_daily_revenue["blocked"] == 0)
+    ]
+    day = df_q4["reservation_advance_days"].quantile(1 - percent)
+    return pd.to_datetime("2022-12-31") - timedelta(day)
