@@ -51,3 +51,16 @@ def fit_preprocess_price_model_q1(X_train, y_train=None):
     X_train = scaler.transform(X_train)
 
     return imputer, scaler
+
+
+def fit_preprocess_reservations_model_q3(X_train, y_train=None):
+    """ """
+    imputer = SimpleImputer(strategy="mean")
+    imputer.fit(X_train)
+    X_train = imputer.transform(X_train)
+
+    scaler = MinMaxScaler()
+    scaler.fit(X_train)
+    X_train = scaler.transform(X_train)
+
+    return imputer, scaler
