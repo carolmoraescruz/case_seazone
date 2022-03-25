@@ -5,6 +5,7 @@ import numpy as np
 from src import FEATURES_PRICE_MODEL_Q1, FEATURES_REVENUE_MODEL_Q1, REFERENCE_DATE
 from src.models.preprocessing import one_hot_encode_column
 from src.commons import WEEK_DAY_ORDER, is_holiday
+from statsmodels.tsa.seasonal import seasonal_decompose
 
 
 def build_daily_features(df_daily_revenue):
@@ -199,5 +200,42 @@ def build_features_revenue_model_q2(df_listings, df_daily_revenue):
     X = data.drop(columns="company_revenue").astype(float)
 
     y = data["company_revenue"]
+
+    return X, y
+
+
+def build_features_reservations_model_q3(df_daily_revenue):
+
+    df_q3 = df_daily_revenue[
+        (df_daily_revenue["occupancy"] == 1) & (df_daily_revenue["blocked"] == 0)
+    ]
+
+    data_q3 = df_q3.groupby(["creation_date"]).count().iloc[:, 0:1].reset_index()
+    data_q3.columns = ["creation_date", "qt_reservations"]
+
+    data_q3["year"] = data_q3["creation_date"].dt.year
+    data_q3["month"] = data_q3["creation_date"].dt.month
+    data_q3["day"] = data_q3["creation_date"].dt.day
+
+    data_q3["day_of_week"] = data_q3["creation_date"].dt.dayofweek.replace(
+        WEEK_DAY_ORDER
+    )
+
+    data_q3["holiday"] = data_q3["creation_date"].apply(is_holiday)
+
+    data_q3 = one_hot_encode_column(data_q3, "day_of_week")
+
+    data_q3 = data_q3.drop(columns="creation_date")
+
+    tsmodel = seasonal_decompose(
+        data_q3["qt_reservations"],
+        model="additive",
+        extrapolate_trend="freq",
+        freq=365,
+    )
+
+    X = data_q3.drop(columns="qt_reservations").astype(float)
+
+    y = tsmodel.trend + tsmodel.seasonal
 
     return X, y
