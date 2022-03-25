@@ -3,11 +3,13 @@
 from src.data.make_dataset import load_data
 from src.reports.reports import (
     answer_first_question,
+    answer_fourth_question,
     answer_second_question,
     answer_third_question,
     header_q1,
     header_q2,
     header_q3,
+    header_q4,
     print_reservation_advance_quantiles,
 )
 from src.visualization.visualize import (
@@ -42,6 +44,10 @@ def main():
     header_q3()
     train_reservations_model_q3(df_daily_revenue)
     answer_third_question()
+
+    # Question 04
+    header_q4()
+    answer_fourth_question(df_daily_revenue)
 
     # Complementary Data Analysis
     plot_revenue_per_date(df_daily_revenue)
