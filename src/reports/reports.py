@@ -136,9 +136,9 @@ def answer_second_question():
 
     X_pred = preprocess_transform(data_pred, preprocessor)
 
-    valor_2022 = model.predict(X_pred).sum()
+    revenue_2022 = model.predict(X_pred).sum()
 
-    print("Expected revenue for 2022 R$: {:.2f}".format(valor_2022))
+    print("Expected revenue for 2022 R$: {:.2f}".format(revenue_2022))
 
 
 def answer_third_question():
