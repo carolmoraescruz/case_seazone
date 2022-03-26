@@ -6,6 +6,7 @@ website, to find guests interested in booking a short stay - usually lasting les
 per reservation. Each property is advertised as a “Listing”. For this analysis, I used two databases
 related to the listings and the booked rooms.
 
+The description of the project can be found in [references/seazone_challenge.pdf](https://github.com/carolmoraescruz/case_seazone/blob/3b29e43b79367196c2745b76e73c25d4c485761e/references/seazone_challenge.pdf). The final report is the file [references/final_report.pdf](https://github.com/carolmoraescruz/case_seazone/blob/3b29e43b79367196c2745b76e73c25d4c485761e/references/final_report.pdf)
 ## Installation
 
 The project requires Python 3.7.4 or greater. It can be installed directly from GitHub. 
