@@ -2,17 +2,29 @@
 
 import pandas as pd
 import numpy as np
-from src import FEATURES_PRICE_MODEL_Q1, FEATURES_REVENUE_MODEL_Q1, REFERENCE_DATE
+from src import (
+    FEATURES_PRICE_MODEL_Q1,
+    FEATURES_REVENUE_MODEL_Q1,
+    PATH_DAILY_REVENUE,
+    PATH_LISTINGS,
+    REFERENCE_DATE,
+)
 from src.commons import WEEK_DAY_ORDER, is_holiday
 from src.features.build_features import build_daily_features, build_listings_features
 from src.models.preprocessing import one_hot_encode_column
 
 
 def load_data():
+    """Load the datasets to be used on analysis.
 
+    Returns
+    -------
+    tuple
+        Returns respectivelly the listings and the daily revenue datasets.
+    """
     # Importing Datasets
-    df_listings = pd.read_csv("data/raw/listings-challenge.csv")
-    df_daily_revenue = pd.read_csv("data/raw/daily_revenue.csv")
+    df_listings = pd.read_csv(PATH_LISTINGS)
+    df_daily_revenue = pd.read_csv(PATH_DAILY_REVENUE)
 
     # Data Cleaning
     df_listings = clean_listings_dataset(df_listings)
@@ -25,8 +37,20 @@ def load_data():
     return df_listings, df_daily_revenue
 
 
-def clean_listings_dataset(df_listings):
-    """ """
+def clean_listings_dataset(df_listings: pd.DataFrame):
+    """Data cleaning and casting process for listings dataset.
+
+    Parameters
+    ----------
+    df_listings : pd.DataFrame
+        Pandas dataframe with informations about listings.
+
+    Returns
+    -------
+    pd.DataFrame
+        Return de listing dataframe with the casting and missing
+        treatment made.
+    """
 
     df_listings["Comissão"] = (
         df_listings["Comissão"].str.replace(",", ".").astype(float)
@@ -115,8 +139,20 @@ def clean_listings_dataset(df_listings):
     return df_listings
 
 
-def clean_daily_revenue_dataset(df_daily_revenue):
-    """ """
+def clean_daily_revenue_dataset(df_daily_revenue: pd.DataFrame):
+    """Data cleaning and casting process for daily revenue dataset.
+
+    Parameters
+    ----------
+    df_daily_revenue : pd.DataFrame
+        Pandas dataframe with information aboutt daily revenue.
+
+    Returns
+    -------
+    pd.DataFrame
+        Return de daily revenue dataframe with the casting and missing
+        treatment made.
+    """
 
     df_daily_revenue["date"] = pd.to_datetime(df_daily_revenue["date"])
 
@@ -138,6 +174,15 @@ def clean_daily_revenue_dataset(df_daily_revenue):
 
 
 def make_predict_dataset_price_q1():
+    """Create the dataset to apply the price model
+    to answer the question 1.
+
+    Returns
+    -------
+    pd.DataFrame
+        A pandas series with the dataframe read to be inputed
+        on the preprocessing pipeline and model predict method.
+    """
 
     data_pred = pd.DataFrame({})
 
@@ -175,6 +220,15 @@ def make_predict_dataset_price_q1():
 
 
 def make_predict_dataset_revenue_q1():
+    """Create the dataset to apply the revenue model
+    to answer the question 1.
+
+    Returns
+    -------
+    pd.DataFrame
+        A pandas series with the dataframe read to be inputed
+        on the preprocessing pipeline and model predict method.
+    """
 
     data_pred = pd.DataFrame({})
 
