@@ -19,7 +19,7 @@ WEEK_DAY_ORDER = {
 
 
 def is_holiday(date: datetime):
-    """Check if the impute is a brazilian holiday.
+    """Check if the input is a Brazilian holiday.
 
     Parameters
     ----------
@@ -43,7 +43,7 @@ def transform_dataframe(transformer: TransformerMixin, dataframe: pd.DataFrame):
     transformer : TransformerMixin
        A pandas-like transform.
     dataframe : pd.DataFrame
-        A dataframe to be transformer.
+        A dataframe to be transforme.
 
     Returns
     -------
@@ -59,7 +59,7 @@ def transform_dataframe(transformer: TransformerMixin, dataframe: pd.DataFrame):
 
 
 def dump_pickle(variable: Any, path: str):
-    """Write a pickled representation of obj to the open file object file.
+    """Writes a pickled representation of obj to the open file object file.
 
     Parameters
     ----------
@@ -107,7 +107,7 @@ def to_date(datetime: datetime):
 
 
 def decompose_date_ymd(dataframe: pd.DataFrame, date_column: str):
-    """Decompose date column into three columns of year, month and day.
+    """Decomposes date column into three columns of year, month and day.
 
     Parameters
     ----------
@@ -119,7 +119,7 @@ def decompose_date_ymd(dataframe: pd.DataFrame, date_column: str):
     Returns
     -------
     pd.DataFrame
-        Return the dataframe with date decomposed into three columns.
+        Returns the dataframe with date decomposed into three columns.
     """
 
     dataframe["year"] = dataframe[date_column].dt.year
@@ -143,7 +143,7 @@ def add_day_of_week(dataframe: pd.DataFrame, date_column: str):
     Returns
     -------
     pd.DataFrame
-        Return the dataframe containing a column indicating the day of week.
+        Returns the dataframe containing a column indicating the day of week.
     """
 
     dataframe["day_of_week"] = dataframe[date_column].dt.dayofweek.replace(

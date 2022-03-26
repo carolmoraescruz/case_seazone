@@ -11,19 +11,22 @@ from statsmodels.tsa.seasonal import seasonal_decompose
 
 
 def build_date_features(dataframe: pd.DataFrame, date_column: str):
-    """_summary_
+    """Decomposes date in year, month and day. Adds a one hot
+    encoding structure for 'day of week'. Adds a flag for holiday.
 
     Parameters
     ----------
     dataframe : pd.DataFrame
-        _description_
+        Pandas dataframe containing a date column.
     date_column : str
-        _description_
+        A column containing date in datetime format.
 
     Returns
     -------
-    _type_
-        _description_
+    pd.DataFrame
+        Returns the dataframe containing a column indicating whether a date
+        is a holiday, columns for decomposed date and one hot encoding
+        structure for 'day of week'.
     """
 
     dataframe = decompose_date_ymd(dataframe, date_column)
@@ -48,7 +51,7 @@ def build_daily_features(df_daily_revenue: pd.DataFrame):
     -------
     pd.DataFrame
         Returns the input dataframe with the columns
-        `reservation_advance_days` and `reservation_advance_days` added.
+        'reservation_advance_days' and 'reservation_advance_days' added.
     """
     df_daily_revenue["reservation_advance_days"] = (
         df_daily_revenue["date"] - df_daily_revenue["creation_date"]
@@ -67,13 +70,13 @@ def build_listings_features(df_listings: pd.DataFrame):
     Parameters
     ----------
     df_listings : pd.DataFrame
-        Pandas dataframe with informations about listings.
+        Pandas dataframe with information about listings.
 
     Returns
     -------
     pd.DataFrame
         Returns the input dataframe with the columns
-        `Quartos` added and the feature `Categoria`
+        'Quartos' added and the feature 'Categoria'
         numerically encoded.
     """
 
@@ -110,15 +113,15 @@ def build_listings_features(df_listings: pd.DataFrame):
 def build_features_price_model_q1(
     df_listings: pd.DataFrame, df_daily_revenue: pd.DataFrame
 ):
-    """Build the features to be used on the price modelling for
-    answer the question 1.
+    """Builds the features to be used on the price modelling for
+    answer question 1.
 
     Parameters
     ----------
     df_listings : pd.DataFrame
-        Pandas dataframe with informations about listings.
+        Pandas dataframe with information about listings.
     df_daily_revenue : pd.DataFrame
-        Pandas dataframe with information aboutt daily revenue.
+        Pandas dataframe with information about daily revenue.
 
     Returns
     -------
@@ -165,15 +168,15 @@ def build_features_price_model_q1(
 def build_features_revenue_model_q1(
     df_listings: pd.DataFrame, df_daily_revenue: pd.DataFrame
 ):
-    """Build the features to be used on the revenue modelling for
-    answer the question 1.
+    """Builds the features to be used on the revenue modelling for
+    answer question 1.
 
     Parameters
     ----------
     df_listings : pd.DataFrame
-        Pandas dataframe with informations about listings.
+        Pandas dataframe with information about listings.
     df_daily_revenue : pd.DataFrame
-        Pandas dataframe with information aboutt daily revenue.
+        Pandas dataframe with information about daily revenue.
 
     Returns
     -------
@@ -229,15 +232,15 @@ def build_features_revenue_model_q1(
 def build_features_revenue_model_q2(
     df_listings: pd.DataFrame, df_daily_revenue: pd.DataFrame
 ):
-    """Build the features to be used on the revenue modelling for
-    answer the question 2.
+    """Builds the features to be used on the revenue modelling for
+    answer question 2.
 
     Parameters
     ----------
     df_listings : pd.DataFrame
-        Pandas dataframe with informations about listings.
+        Pandas dataframe with information about listings.
     df_daily_revenue : pd.DataFrame
-        Pandas dataframe with information aboutt daily revenue.
+        Pandas dataframe with information about daily revenue.
 
     Returns
     -------
@@ -272,13 +275,13 @@ def build_features_revenue_model_q2(
 
 
 def build_features_reservations_model_q3(df_daily_revenue: pd.DataFrame):
-    """Build the features to be used on the reservations modelling for
-    answer the question 2.
+    """Builds the features to be used on the reservations modelling for
+    answer question 2.
 
     Parameters
     ----------
     df_daily_revenue : pd.DataFrame
-        Pandas dataframe with information aboutt daily revenue.
+        Pandas dataframe with information about daily revenue.
 
     Returns
     -------
@@ -310,13 +313,13 @@ def build_features_reservations_model_q3(df_daily_revenue: pd.DataFrame):
 
 
 def return_date_of_quantile_sold_q4(df_daily_revenue: pd.DataFrame, percent: float):
-    """Return the date in which a specified percent of the bookings
-    are made for all rent rooms.
+    """Returns the date in which a specified percent of the bookings
+    is made for all rent rooms.
 
     Parameters
     ----------
     df_daily_revenue : pd.DataFrame
-        Pandas dataframe with information aboutt daily revenue.
+        Pandas dataframe with information about daily revenue.
     percent : float
         A real value between 0 and 1 related to the percent of bookings
         to be analysed.

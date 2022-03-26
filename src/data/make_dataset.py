@@ -19,7 +19,7 @@ from src.models.preprocessing import one_hot_encode_column
 
 
 def load_data():
-    """Load the datasets to be used on analysis.
+    """Loads the datasets to be used on analysis.
 
     Returns
     -------
@@ -52,7 +52,7 @@ def clean_listings_dataset(df_listings: pd.DataFrame):
     Returns
     -------
     pd.DataFrame
-        Return the listing dataframe with the casting and missing
+        Returns the listing dataframe with the casting and missing
         treatment made.
     """
 
@@ -154,7 +154,7 @@ def clean_daily_revenue_dataset(df_daily_revenue: pd.DataFrame):
     Returns
     -------
     pd.DataFrame
-        Return the daily revenue dataframe with the casting and missing
+        Returns the daily revenue dataframe with the casting and missing
         treatment made.
     """
 
@@ -178,7 +178,7 @@ def clean_daily_revenue_dataset(df_daily_revenue: pd.DataFrame):
 
 
 def make_predict_dataset_price_q1():
-    """Create the dataset to apply the price model
+    """Creates the dataset to apply the price model
     to answer question 1.
 
     Returns
@@ -212,7 +212,7 @@ def make_predict_dataset_price_q1():
 
 
 def make_predict_dataset_revenue_q1():
-    """Create the dataset to apply the revenue model
+    """Creates the dataset to apply the revenue model
     to answer question 1.
 
     Returns

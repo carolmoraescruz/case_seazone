@@ -6,22 +6,21 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from statsmodels.tsa.seasonal import seasonal_decompose
-from src.commons import WEEK_DAY_ORDER, is_holiday, load_pickle
+from src.commons import WEEK_DAY_ORDER, load_pickle
 from src.features.build_features import (
     build_date_features,
-    build_features_reservations_model_q3,
     build_features_revenue_model_q2,
 )
-from src.models.preprocessing import one_hot_encode_column, preprocess_transform
+from src.models.preprocessing import preprocess_transform
 
 
 def plot_revenue_per_date(df_daily_revenue: pd.DataFrame):
-    """Plot a graph of revenue per date
+    """Plots a graph of revenue per date.
 
     Parameters
     ----------
     df_daily_revenue : pd.DataFrame
-        Pandas dataframe with information aboutt daily revenue.
+        Pandas dataframe with information about daily revenue.
     """
     path = "reports/figures/revenue_per_date.png"
     temp = df_daily_revenue.groupby("date")[["revenue"]].mean().reset_index()
@@ -40,12 +39,12 @@ def plot_revenue_per_date(df_daily_revenue: pd.DataFrame):
 
 
 def plot_hist_reservation_advance(df_daily_revenue: pd.DataFrame):
-    """Plot a histogram with the distribution of booking advance days.
+    """Plots a histogram with the distribution of booking advance days.
 
     Parameters
     ----------
     df_daily_revenue : pd.DataFrame
-        Pandas dataframe with information aboutt daily revenue.
+        Pandas dataframe with information about daily revenue.
     """
     path = "reports/figures/histogram_reservation_advance.png"
 
@@ -62,14 +61,14 @@ def plot_hist_reservation_advance(df_daily_revenue: pd.DataFrame):
 
 
 def plot_real_pred_data(df_listings: pd.DataFrame, df_daily_revenue: pd.DataFrame):
-    """Plot a graph comparing the real and the predicted revenue.
+    """Plots a graph comparing the real and the predicted revenue.
 
     Parameters
     ----------
     df_listings : pd.DataFrame
-        Pandas dataframe with informations about listings.
+        Pandas dataframe with information about listings.
     df_daily_revenue : pd.DataFrame
-        Pandas dataframe with information aboutt daily revenue.
+        Pandas dataframe with information about daily revenue.
     """
 
     X, y = build_features_revenue_model_q2(df_listings, df_daily_revenue)
@@ -113,14 +112,14 @@ def plot_real_pred_data(df_listings: pd.DataFrame, df_daily_revenue: pd.DataFram
 def plot_seasonal_decomposed_q2(
     df_listings: pd.DataFrame, df_daily_revenue: pd.DataFrame
 ):
-    """Plot the graphs of seasonal decomposition for the question 2
+    """Plots the graphs of seasonal decomposition for question 2.
 
     Parameters
     ----------
     df_listings : pd.DataFrame
-        Pandas dataframe with informations about listings.
+        Pandas dataframe with information about listings.
     df_daily_revenue : pd.DataFrame
-        Pandas dataframe with information aboutt daily revenue.
+        Pandas dataframe with information about daily revenue.
     """
 
     data = pd.merge(
@@ -165,7 +164,7 @@ def plot_seasonal_decomposed_q2(
 
 
 def plot_seasonal_decomposed_q3(df_daily_revenue: pd.DataFrame):
-    """Plot the graphs of seasonal decomposition for the question 3
+    """Plots the graphs of seasonal decomposition for question 3.
 
     Parameters
     ----------
