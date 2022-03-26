@@ -1,5 +1,10 @@
 __version__ = "0.0.0"
+
 __short_version__ = "0.0"
+
+PATH_LISTINGS = "data/raw/listings-challenge.csv"
+
+PATH_DAILY_REVENUE = "data/raw/daily_revenue.csv"
 
 REFERENCE_DATE = "2022-03-15"
 
