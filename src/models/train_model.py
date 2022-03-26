@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPRegressor
 from xgboost import XGBRegressor
@@ -18,7 +19,21 @@ from src.models.preprocessing import (
 from src.commons import dump_pickle
 
 
-def train_price_model_q1(df_listings, df_daily_revenue):
+def train_price_model_q1(df_listings: pd.DataFrame, df_daily_revenue: pd.DataFrame):
+    """Train the price estimator to be used on question 1.
+
+    Parameters
+    ----------
+    df_listings : pd.DataFrame
+        Pandas dataframe with informations about listings.
+    df_daily_revenue : pd.DataFrame
+        Pandas dataframe with information aboutt daily revenue.
+
+    Returns
+    -------
+    pd.DataFrame
+         Returns a sklearn-like regressor instance.
+    """
 
     print("Training price model - Q1")
 
@@ -45,7 +60,21 @@ def train_price_model_q1(df_listings, df_daily_revenue):
     print("MAE(teste) = {:.2f}".format(score))
 
 
-def train_revenue_model_q1(df_listings, df_daily_revenue):
+def train_revenue_model_q1(df_listings: pd.DataFrame, df_daily_revenue: pd.DataFrame):
+    """Train the revenue estimator to be used on question 1.
+
+    Parameters
+    ----------
+    df_listings : pd.DataFrame
+        Pandas dataframe with informations about listings.
+    df_daily_revenue : pd.DataFrame
+        Pandas dataframe with information aboutt daily revenue.
+
+    Returns
+    -------
+    pd.DataFrame
+         Returns a sklearn-like regressor instance.
+    """
 
     print("Training revenue model - Q1")
 
@@ -72,7 +101,21 @@ def train_revenue_model_q1(df_listings, df_daily_revenue):
     print("MAE(teste) = {:.2f}".format(score))
 
 
-def train_revenue_model_q2(df_listings, df_daily_revenue):
+def train_revenue_model_q2(df_listings: pd.DataFrame, df_daily_revenue: pd.DataFrame):
+    """Train the revenue estimator to be used on question 2.
+
+    Parameters
+    ----------
+    df_listings : pd.DataFrame
+        Pandas dataframe with informations about listings.
+    df_daily_revenue : pd.DataFrame
+        Pandas dataframe with information aboutt daily revenue.
+
+    Returns
+    -------
+    pd.DataFrame
+         Returns a sklearn-like regressor instance.
+    """
 
     print("Training revenue model - Q2")
 
@@ -106,7 +149,19 @@ def train_revenue_model_q2(df_listings, df_daily_revenue):
     print("MAE(teste) = {:.2f}".format(score))
 
 
-def train_reservations_model_q3(df_daily_revenue):
+def train_reservations_model_q3(df_daily_revenue: pd.DataFrame):
+    """Train the revenue estimator to be used on question 3.
+
+    Parameters
+    ----------
+    df_daily_revenue : pd.DataFrame
+        Pandas dataframe with information aboutt daily revenue.
+
+    Returns
+    -------
+    pd.DataFrame
+         Returns a sklearn-like regressor instance.
+    """
 
     print("Training reservations model - Q3")
 
