@@ -48,7 +48,7 @@ def build_listings_features(df_listings: pd.DataFrame):
     pd.DataFrame
         Returns the input dataframe with the columns
         `Quartos` added and the feature `Categoria`
-        numerixally encoded.
+        numerically encoded.
     """
 
     de_para_categoria = {
