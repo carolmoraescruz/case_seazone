@@ -14,6 +14,7 @@ from src.reports.reports import (
 )
 from src.visualization.visualize import (
     plot_hist_reservation_advance,
+    plot_real_pred_data,
     plot_revenue_per_date,
 )
 from src.models.train_model import (
@@ -39,6 +40,7 @@ def main():
     header_q2()
     train_revenue_model_q2(df_listings, df_daily_revenue)
     answer_second_question()
+    plot_real_pred_data(df_listings, df_daily_revenue)
 
     # Question 03
     header_q3()
