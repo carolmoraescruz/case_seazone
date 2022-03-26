@@ -21,7 +21,14 @@ from src.commons import (
 from src.models.train_model import train_revenue_model_q2, train_price_model_q1
 
 
-def print_reservation_advance_quantiles(df_daily_revenue):
+def print_reservation_advance_quantiles(df_daily_revenue: pd.DateOffset):
+    """Print distinct quantiles for the total booking advance dates distribution.
+
+    Parameters
+    ----------
+    df_daily_revenue : pd.DataFrame
+        Pandas dataframe with information aboutt daily revenue.
+    """
 
     print("\n{}".format(89 * "*"))
 
@@ -59,6 +66,7 @@ def print_reservation_advance_quantiles(df_daily_revenue):
 
 
 def header_q1():
+    """Print the header mesage for the question 1."""
     print(
         "\n{}\n1) What is the expected price and revenue for a listing tagged as JUR MASTER2Q in March?".format(
             89 * "*"
@@ -67,10 +75,12 @@ def header_q1():
 
 
 def header_q2():
+    """Print the header mesage for the question 2."""
     print("\n{}\n2) What is Seazone's expected revenue for 2022?".format(89 * "*"))
 
 
 def header_q3():
+    """Print the header mesage for the question 3."""
     print(
         "\n{}\n3) How many reservations should we expect to sell per day?".format(
             89 * "*"
@@ -79,6 +89,7 @@ def header_q3():
 
 
 def header_q4():
+    """Print the header mesage for the question 4."""
     print(
         "\n{}\n4) At what time of the year should we expect to have sold 10 percent of our new year’s nights? And 50? And 80?".format(
             89 * "*"
@@ -87,7 +98,7 @@ def header_q4():
 
 
 def answer_first_question():
-    """ """
+    """Script to obtain the answers to the question 1."""
 
     # Price
 
@@ -114,6 +125,7 @@ def answer_first_question():
 
 
 def answer_second_question():
+    """Script to obtain the answers to the question 2."""
 
     data_pred = pd.DataFrame()
     data_pred["date"] = pd.date_range(
@@ -142,6 +154,7 @@ def answer_second_question():
 
 
 def answer_third_question():
+    """Script to obtain the answers to the question 3."""
 
     data_pred = pd.DataFrame()
     dates_2022 = pd.date_range(
@@ -178,6 +191,7 @@ def answer_third_question():
 
 
 def answer_fourth_question(df_daily_revenue):
+    """Script to obtain the answers to the question 4."""
 
     for percent in [0.1, 0.5, 0.8]:
         date_of_new_year_reservations = return_date_of_quantile_sold_q4(
