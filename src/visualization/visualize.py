@@ -6,7 +6,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from statsmodels.tsa.seasonal import seasonal_decompose
-from src.commons import WEEK_DAY_ORDER, load_pickle
+from src.commons import load_pickle
 from src.features.build_features import (
     build_date_features,
     build_features_revenue_model_q2,
