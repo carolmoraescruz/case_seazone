@@ -17,6 +17,7 @@ from src.visualization.visualize import (
     plot_real_pred_data,
     plot_revenue_per_date,
     plot_seasonal_decomposed_q2,
+    plot_seasonal_decomposed_q3,
 )
 from src.models.train_model import (
     train_price_model_q1,
@@ -48,6 +49,7 @@ def main():
     header_q3()
     train_reservations_model_q3(df_daily_revenue)
     answer_third_question()
+    plot_seasonal_decomposed_q3(df_daily_revenue)
 
     # Question 04
     header_q4()

@@ -7,7 +7,10 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from statsmodels.tsa.seasonal import seasonal_decompose
 from src.commons import WEEK_DAY_ORDER, is_holiday, load_pickle
-from src.features.build_features import build_features_revenue_model_q2
+from src.features.build_features import (
+    build_features_reservations_model_q3,
+    build_features_revenue_model_q2,
+)
 from src.models.preprocessing import one_hot_encode_column, preprocess_transform
 
 
@@ -144,3 +147,47 @@ def plot_seasonal_decomposed_q2(df_listings, df_daily_revenue):
 
     print("\n{}".format(89 * "*"))
     print("Exporting graph seasonal_decompose_revenue to path: " + path)
+
+
+def plot_seasonal_decomposed_q3(df_daily_revenue):
+
+    df_q3 = df_daily_revenue[
+        (df_daily_revenue["occupancy"] == 1) & (df_daily_revenue["blocked"] == 0)
+    ]
+
+    data_q3 = df_q3.groupby(["creation_date"]).count().iloc[:, 0:1].reset_index()
+    data_q3.columns = ["creation_date", "qt_reservations"]
+
+    data_q3["year"] = data_q3["creation_date"].dt.year
+    data_q3["month"] = data_q3["creation_date"].dt.month
+    data_q3["day"] = data_q3["creation_date"].dt.day
+
+    data_q3["day_of_week"] = data_q3["creation_date"].dt.dayofweek.replace(
+        WEEK_DAY_ORDER
+    )
+
+    data_q3["holiday"] = data_q3["creation_date"].apply(is_holiday)
+
+    data_q3 = one_hot_encode_column(data_q3, "day_of_week")
+
+    data_q3 = data_q3.drop(columns="creation_date")
+
+    tsmodel = seasonal_decompose(
+        data_q3["qt_reservations"],
+        model="additive",
+        extrapolate_trend="freq",
+        freq=365,
+    )
+
+    path = "reports/figures/seasonal_decompose_reservations_q3.png"
+
+    plt.style.use("seaborn")
+    plt.rcParams.update({"figure.figsize": (10, 10)})
+    tsmodel.plot()
+    plt.xlabel("Days")
+    plt.tight_layout()
+    plt.savefig(path)
+    plt.close()
+
+    print("\n{}".format(89 * "*"))
+    print("Exporting graph seasonal_decompose_reservations to path: " + path)
