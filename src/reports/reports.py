@@ -9,7 +9,10 @@ from src.data.make_dataset import (
     make_predict_dataset_price_q1,
     make_predict_dataset_revenue_q1,
 )
-from src.features.build_features import return_date_of_quantile_sold_q4
+from src.features.build_features import (
+    build_date_features,
+    return_date_of_quantile_sold_q4,
+)
 from src.models.preprocessing import one_hot_encode_column, preprocess_transform
 from src.commons import (
     WEEK_DAY_ORDER,
@@ -132,16 +135,7 @@ def answer_second_question():
         start=pd.to_datetime("2022-01-01"), end=pd.to_datetime("2022-12-31")
     )
 
-    data_pred["year"] = data_pred["date"].dt.year
-    data_pred["month"] = data_pred["date"].dt.month
-    data_pred["day"] = data_pred["date"].dt.day
-
-    data_pred["day_of_week"] = data_pred["date"].dt.dayofweek.replace(WEEK_DAY_ORDER)
-
-    data_pred["holiday"] = data_pred["date"].apply(is_holiday)
-    data_pred = one_hot_encode_column(data_pred, "day_of_week")
-
-    data_pred = data_pred.drop(columns="date")
+    data_pred = build_date_features(data_pred, "date")
 
     preprocessor = load_pickle("models/preprocessor_revenue_model_q2.pickle")
     model = load_pickle("models/regressor_revenue_model_q2.pickle")
@@ -163,18 +157,7 @@ def answer_third_question():
 
     data_pred["creation_date"] = dates_2022
 
-    data_pred["year"] = data_pred["creation_date"].dt.year
-    data_pred["month"] = data_pred["creation_date"].dt.month
-    data_pred["day"] = data_pred["creation_date"].dt.day
-
-    data_pred["day_of_week"] = data_pred["creation_date"].dt.dayofweek.replace(
-        WEEK_DAY_ORDER
-    )
-
-    data_pred["holiday"] = data_pred["creation_date"].apply(is_holiday)
-    data_pred = one_hot_encode_column(data_pred, "day_of_week")
-
-    data_pred = data_pred.drop(columns="creation_date")
+    data_pred = build_date_features(data_pred, "creation_date")
 
     preprocessor = load_pickle("models/preprocessor_reservations_model_q3.pickle")
     model = load_pickle("models/regressor_reservations_model_q3.pickle")

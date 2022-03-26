@@ -104,3 +104,50 @@ def to_date(datetime: datetime):
         Formated date.
     """
     return datetime.strftime("%Y-%m-%d")
+
+
+def decompose_date_ymd(dataframe: pd.DataFrame, date_column: str):
+    """Decompose date column into three columns of year, month and day.
+
+    Parameters
+    ----------
+    dataframe : pd.DataFrame
+        Pandas dataframe containing a date column.
+    date_column : str
+        A column containing date in datetime format.
+
+    Returns
+    -------
+    pd.DataFrame
+        Return the dataframe with date decomposed into three columns.
+    """
+
+    dataframe["year"] = dataframe[date_column].dt.year
+    dataframe["month"] = dataframe[date_column].dt.month
+    dataframe["day"] = dataframe[date_column].dt.day
+
+    return dataframe
+
+
+def add_day_of_week(dataframe: pd.DataFrame, date_column: str):
+    """Adds a column to a dataframe containing the day of week
+    correspondent to the date.
+
+    Parameters
+    ----------
+    dataframe : pd.DataFrame
+        Pandas dataframe containing a date column.
+    date_column : str
+        A column containing date in datetime format.
+
+    Returns
+    -------
+    pd.DataFrame
+        Return the dataframe containing a column indicating the day of week.
+    """
+
+    dataframe["day_of_week"] = dataframe[date_column].dt.dayofweek.replace(
+        WEEK_DAY_ORDER
+    )
+
+    return dataframe

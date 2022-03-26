@@ -4,9 +4,35 @@ from datetime import timedelta
 import pandas as pd
 import numpy as np
 from src import FEATURES_PRICE_MODEL_Q1, FEATURES_REVENUE_MODEL_Q1, REFERENCE_DATE
+
 from src.models.preprocessing import one_hot_encode_column
-from src.commons import WEEK_DAY_ORDER, is_holiday
+from src.commons import WEEK_DAY_ORDER, add_day_of_week, decompose_date_ymd, is_holiday
 from statsmodels.tsa.seasonal import seasonal_decompose
+
+
+def build_date_features(dataframe: pd.DataFrame, date_column: str):
+    """_summary_
+
+    Parameters
+    ----------
+    dataframe : pd.DataFrame
+        _description_
+    date_column : str
+        _description_
+
+    Returns
+    -------
+    _type_
+        _description_
+    """
+
+    dataframe = decompose_date_ymd(dataframe, date_column)
+    dataframe = add_day_of_week(dataframe, date_column)
+    dataframe["holiday"] = dataframe[date_column].apply(is_holiday)
+    dataframe = one_hot_encode_column(dataframe, "day_of_week")
+    dataframe = dataframe.drop(columns=date_column)
+
+    return dataframe
 
 
 def build_daily_features(df_daily_revenue: pd.DataFrame):
@@ -121,19 +147,9 @@ def build_features_price_model_q1(
         ]
     )
 
-    data_revenue["year"] = data_revenue["date"].dt.year
-    data_revenue["month"] = data_revenue["date"].dt.month
-    data_revenue["day"] = data_revenue["date"].dt.day
+    data_revenue = build_date_features(data_revenue, "date")
 
-    data_revenue["day_of_week"] = data_revenue["date"].dt.dayofweek.replace(
-        WEEK_DAY_ORDER
-    )
-
-    data_revenue["holiday"] = data_revenue["date"].apply(is_holiday)
-    data_revenue = one_hot_encode_column(data_revenue, "day_of_week")
     data_revenue = one_hot_encode_column(data_revenue, "Localização")
-
-    data_revenue = data_revenue.drop(columns="date")
 
     data_revenue = data_revenue.loc[data_revenue["last_offered_price"] > 0]
 
@@ -197,23 +213,9 @@ def build_features_revenue_model_q1(
         .reset_index()
     )
 
-    data_revenue["year"] = data_revenue["date"].dt.year
-
-    data_revenue["month"] = data_revenue["date"].dt.month
-
-    data_revenue["day"] = data_revenue["date"].dt.day
-
-    data_revenue["day_of_week"] = data_revenue["date"].dt.dayofweek.replace(
-        WEEK_DAY_ORDER
-    )
-
-    data_revenue["holiday"] = data_revenue["date"].apply(is_holiday)
-
-    data_revenue = one_hot_encode_column(data_revenue, "day_of_week")
+    data_revenue = build_date_features(data_revenue, "date")
 
     data_revenue = one_hot_encode_column(data_revenue, "Localização")
-
-    data_revenue = data_revenue.drop(columns="date")
 
     X = data_revenue.drop(columns="company_revenue")[FEATURES_REVENUE_MODEL_Q1].astype(
         float
@@ -258,19 +260,7 @@ def build_features_revenue_model_q2(
         .reset_index()
     )
 
-    data_revenue["year"] = data_revenue["date"].dt.year
-    data_revenue["month"] = data_revenue["date"].dt.month
-    data_revenue["day"] = data_revenue["date"].dt.day
-
-    data_revenue["day_of_week"] = data_revenue["date"].dt.dayofweek.replace(
-        WEEK_DAY_ORDER
-    )
-
-    data_revenue["holiday"] = data_revenue["date"].apply(is_holiday)
-
-    data_revenue = one_hot_encode_column(data_revenue, "day_of_week")
-
-    data_revenue = data_revenue.drop(columns="date")
+    data_revenue = build_date_features(data_revenue, "date")
 
     data = data_revenue.loc[data_revenue["company_revenue"].notna()]
 
@@ -303,19 +293,7 @@ def build_features_reservations_model_q3(df_daily_revenue: pd.DataFrame):
     data_q3 = df_q3.groupby(["creation_date"]).count().iloc[:, 0:1].reset_index()
     data_q3.columns = ["creation_date", "qt_reservations"]
 
-    data_q3["year"] = data_q3["creation_date"].dt.year
-    data_q3["month"] = data_q3["creation_date"].dt.month
-    data_q3["day"] = data_q3["creation_date"].dt.day
-
-    data_q3["day_of_week"] = data_q3["creation_date"].dt.dayofweek.replace(
-        WEEK_DAY_ORDER
-    )
-
-    data_q3["holiday"] = data_q3["creation_date"].apply(is_holiday)
-
-    data_q3 = one_hot_encode_column(data_q3, "day_of_week")
-
-    data_q3 = data_q3.drop(columns="creation_date")
+    data_q3 = build_date_features(data_q3, "creation_date")
 
     tsmodel = seasonal_decompose(
         data_q3["qt_reservations"],

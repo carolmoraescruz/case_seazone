@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 from statsmodels.tsa.seasonal import seasonal_decompose
 from src.commons import WEEK_DAY_ORDER, is_holiday, load_pickle
 from src.features.build_features import (
+    build_date_features,
     build_features_reservations_model_q3,
     build_features_revenue_model_q2,
 )
@@ -83,16 +84,7 @@ def plot_real_pred_data(df_listings: pd.DataFrame, df_daily_revenue: pd.DataFram
     data_pred = pd.DataFrame()
     data_pred["date"] = pd.date_range(start=X["date"].min(), end=X["date"].max())
 
-    data_pred["year"] = data_pred["date"].dt.year
-    data_pred["month"] = data_pred["date"].dt.month
-    data_pred["day"] = data_pred["date"].dt.day
-
-    data_pred["day_of_week"] = data_pred["date"].dt.dayofweek.replace(WEEK_DAY_ORDER)
-
-    data_pred["holiday"] = data_pred["date"].apply(is_holiday)
-    data_pred = one_hot_encode_column(data_pred, "day_of_week")
-
-    data_pred = data_pred.drop(columns="date")
+    data_pred = build_date_features(data_pred, "date")
 
     preprocessor = load_pickle("models/preprocessor_revenue_model_q2.pickle")
     model = load_pickle("models/regressor_revenue_model_q2.pickle")
@@ -147,19 +139,7 @@ def plot_seasonal_decomposed_q2(
         .reset_index()
     )
 
-    data_revenue["year"] = data_revenue["date"].dt.year
-    data_revenue["month"] = data_revenue["date"].dt.month
-    data_revenue["day"] = data_revenue["date"].dt.day
-
-    data_revenue["day_of_week"] = data_revenue["date"].dt.dayofweek.replace(
-        WEEK_DAY_ORDER
-    )
-
-    data_revenue["holiday"] = data_revenue["date"].apply(is_holiday)
-
-    data_revenue = one_hot_encode_column(data_revenue, "day_of_week")
-
-    data_revenue = data_revenue.drop(columns="date")
+    data_revenue = build_date_features(data_revenue, "date")
 
     data = data_revenue.loc[data_revenue["company_revenue"].notna()]
 
@@ -200,19 +180,7 @@ def plot_seasonal_decomposed_q3(df_daily_revenue: pd.DataFrame):
     data_q3 = df_q3.groupby(["creation_date"]).count().iloc[:, 0:1].reset_index()
     data_q3.columns = ["creation_date", "qt_reservations"]
 
-    data_q3["year"] = data_q3["creation_date"].dt.year
-    data_q3["month"] = data_q3["creation_date"].dt.month
-    data_q3["day"] = data_q3["creation_date"].dt.day
-
-    data_q3["day_of_week"] = data_q3["creation_date"].dt.dayofweek.replace(
-        WEEK_DAY_ORDER
-    )
-
-    data_q3["holiday"] = data_q3["creation_date"].apply(is_holiday)
-
-    data_q3 = one_hot_encode_column(data_q3, "day_of_week")
-
-    data_q3 = data_q3.drop(columns="creation_date")
+    data_q3 = build_date_features(data_q3, "creation_date")
 
     tsmodel = seasonal_decompose(
         data_q3["qt_reservations"],

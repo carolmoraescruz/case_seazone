@@ -10,7 +10,11 @@ from src import (
     REFERENCE_DATE,
 )
 from src.commons import WEEK_DAY_ORDER, is_holiday
-from src.features.build_features import build_daily_features, build_listings_features
+from src.features.build_features import (
+    build_daily_features,
+    build_date_features,
+    build_listings_features,
+)
 from src.models.preprocessing import one_hot_encode_column
 
 
@@ -20,7 +24,7 @@ def load_data():
     Returns
     -------
     tuple
-        Returns respectivelly the listings and the daily revenue datasets.
+        Returns respectively the listings and the daily revenue datasets.
     """
     # Importing Datasets
     df_listings = pd.read_csv(PATH_LISTINGS)
@@ -43,12 +47,12 @@ def clean_listings_dataset(df_listings: pd.DataFrame):
     Parameters
     ----------
     df_listings : pd.DataFrame
-        Pandas dataframe with informations about listings.
+        Pandas dataframe with information about listings.
 
     Returns
     -------
     pd.DataFrame
-        Return de listing dataframe with the casting and missing
+        Return the listing dataframe with the casting and missing
         treatment made.
     """
 
@@ -145,12 +149,12 @@ def clean_daily_revenue_dataset(df_daily_revenue: pd.DataFrame):
     Parameters
     ----------
     df_daily_revenue : pd.DataFrame
-        Pandas dataframe with information aboutt daily revenue.
+        Pandas dataframe with information about daily revenue.
 
     Returns
     -------
     pd.DataFrame
-        Return de daily revenue dataframe with the casting and missing
+        Return the daily revenue dataframe with the casting and missing
         treatment made.
     """
 
@@ -175,12 +179,12 @@ def clean_daily_revenue_dataset(df_daily_revenue: pd.DataFrame):
 
 def make_predict_dataset_price_q1():
     """Create the dataset to apply the price model
-    to answer the question 1.
+    to answer question 1.
 
     Returns
     -------
     pd.DataFrame
-        A pandas series with the dataframe read to be inputed
+        A pandas series with the dataframe ready to be inputed
         on the preprocessing pipeline and model predict method.
     """
 
@@ -196,19 +200,7 @@ def make_predict_dataset_price_q1():
 
     data_pred["Localização_JUR"] = 1
 
-    data_pred["year"] = data_pred["date"].dt.year
-
-    data_pred["month"] = data_pred["date"].dt.month
-
-    data_pred["day"] = data_pred["date"].dt.day
-
-    data_pred["day_of_week"] = data_pred["date"].dt.dayofweek.replace(WEEK_DAY_ORDER)
-
-    data_pred["holiday"] = data_pred["date"].apply(is_holiday)
-
-    data_pred = one_hot_encode_column(data_pred, "day_of_week")
-
-    data_pred = data_pred.drop(columns="date")
+    data_pred = build_date_features(data_pred, "date")
 
     for col in FEATURES_PRICE_MODEL_Q1:
         if col not in data_pred.columns:
@@ -221,12 +213,12 @@ def make_predict_dataset_price_q1():
 
 def make_predict_dataset_revenue_q1():
     """Create the dataset to apply the revenue model
-    to answer the question 1.
+    to answer question 1.
 
     Returns
     -------
     pd.DataFrame
-        A pandas series with the dataframe read to be inputed
+        A pandas series with the dataframe ready to be inputed
         on the preprocessing pipeline and model predict method.
     """
 
@@ -242,19 +234,7 @@ def make_predict_dataset_revenue_q1():
 
     data_pred["Localização_JUR"] = 1
 
-    data_pred["year"] = data_pred["date"].dt.year
-
-    data_pred["month"] = data_pred["date"].dt.month
-
-    data_pred["day"] = data_pred["date"].dt.day
-
-    data_pred["day_of_week"] = data_pred["date"].dt.dayofweek.replace(WEEK_DAY_ORDER)
-
-    data_pred["holiday"] = data_pred["date"].apply(is_holiday)
-
-    data_pred = one_hot_encode_column(data_pred, "day_of_week")
-
-    data_pred = data_pred.drop(columns="date")
+    data_pred = build_date_features(data_pred, "date")
 
     for col in FEATURES_REVENUE_MODEL_Q1:
         if col not in data_pred.columns:
