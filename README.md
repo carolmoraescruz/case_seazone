@@ -1,6 +1,6 @@
 # Case Seazone Data Analyst
 
-This project encompasses a real data case for a junior data scientist job opportunity at Seazone. 
+This project encompasses a real data case for a junior data analyst job opportunity at Seazone. 
 Seazone uses OTAs (Online Travel Agencies) like Airbnb, Booking and Expedia, as well as its own
 website, to find guests interested in booking a short stay - usually lasting less than a month
 per reservation. Each property is advertised as a “Listing”. For this analysis, I used two databases
@@ -9,6 +9,17 @@ related to the listings and the booked rooms to answer a few business questions.
 
 The project requires Python 3.7.4 or greater. It can be installed directly from GitHub. 
 
+For Windows:
+```bash
+git clone https://github.com/carolmoraescruz/case_seazone.git
+cd case_seazone
+virtualenv venv --python=python3
+source venv/Scripts/activate
+pip install -r requirements.txt
+deactivate
+```
+
+For Linux:
 ```bash
 git clone https://github.com/carolmoraescruz/case_seazone.git
 cd case_seazone
@@ -18,7 +29,7 @@ pip install -r requirements.txt
 deactivate
 ```
 
-## Usage
+## Running Application
 
 ```bash
 source venv/bin/activate
