@@ -14,7 +14,14 @@ from src.features.build_features import (
 from src.models.preprocessing import one_hot_encode_column, preprocess_transform
 
 
-def plot_revenue_per_date(df_daily_revenue):
+def plot_revenue_per_date(df_daily_revenue: pd.DataFrame):
+    """Plot a graph of revenue per date
+
+    Parameters
+    ----------
+    df_daily_revenue : pd.DataFrame
+        Pandas dataframe with information aboutt daily revenue.
+    """
     path = "reports/figures/revenue_per_date.png"
     temp = df_daily_revenue.groupby("date")[["revenue"]].mean().reset_index()
 
@@ -31,7 +38,14 @@ def plot_revenue_per_date(df_daily_revenue):
     print("Exporting graph revenue_per_date to path: " + path)
 
 
-def plot_hist_reservation_advance(df_daily_revenue):
+def plot_hist_reservation_advance(df_daily_revenue: pd.DataFrame):
+    """Plot a histogram with the distribution of booking advance days.
+
+    Parameters
+    ----------
+    df_daily_revenue : pd.DataFrame
+        Pandas dataframe with information aboutt daily revenue.
+    """
     path = "reports/figures/histogram_reservation_advance.png"
 
     plt.style.use("seaborn")
@@ -46,7 +60,16 @@ def plot_hist_reservation_advance(df_daily_revenue):
     print("Exporting graph histogram_reservation_advance to path: " + path)
 
 
-def plot_real_pred_data(df_listings, df_daily_revenue):
+def plot_real_pred_data(df_listings: pd.DataFrame, df_daily_revenue: pd.DataFrame):
+    """Plot a graph comparing the real and the predicted revenue.
+
+    Parameters
+    ----------
+    df_listings : pd.DataFrame
+        Pandas dataframe with informations about listings.
+    df_daily_revenue : pd.DataFrame
+        Pandas dataframe with information aboutt daily revenue.
+    """
 
     X, y = build_features_revenue_model_q2(df_listings, df_daily_revenue)
 
@@ -95,7 +118,19 @@ def plot_real_pred_data(df_listings, df_daily_revenue):
     print("Exporting graph real_versus_predicted_revenue to path: " + path)
 
 
-def plot_seasonal_decomposed_q2(df_listings, df_daily_revenue):
+def plot_seasonal_decomposed_q2(
+    df_listings: pd.DataFrame, df_daily_revenue: pd.DataFrame
+):
+    """Plot the graphs of seasonal decomposition for the question 2
+
+    Parameters
+    ----------
+    df_listings : pd.DataFrame
+        Pandas dataframe with informations about listings.
+    df_daily_revenue : pd.DataFrame
+        Pandas dataframe with information aboutt daily revenue.
+    """
+
     data = pd.merge(
         df_daily_revenue,
         df_listings[["Código", "Comissão"]],
@@ -149,7 +184,14 @@ def plot_seasonal_decomposed_q2(df_listings, df_daily_revenue):
     print("Exporting graph seasonal_decompose_revenue to path: " + path)
 
 
-def plot_seasonal_decomposed_q3(df_daily_revenue):
+def plot_seasonal_decomposed_q3(df_daily_revenue: pd.DataFrame):
+    """Plot the graphs of seasonal decomposition for the question 3
+
+    Parameters
+    ----------
+    df_daily_revenue : pd.DataFrame
+        Pandas dataframe with information aboutt daily revenue.
+    """
 
     df_q3 = df_daily_revenue[
         (df_daily_revenue["occupancy"] == 1) & (df_daily_revenue["blocked"] == 0)
