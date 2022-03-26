@@ -5,8 +5,8 @@
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+from statsmodels.tsa.seasonal import seasonal_decompose
 from src.commons import WEEK_DAY_ORDER, is_holiday, load_pickle
-
 from src.features.build_features import build_features_revenue_model_q2
 from src.models.preprocessing import one_hot_encode_column, preprocess_transform
 
@@ -89,4 +89,58 @@ def plot_real_pred_data(df_listings, df_daily_revenue):
     plt.close()
 
     print("\n{}".format(89 * "*"))
-    print("Exporting graph histogram_reservation_advance to path: " + path)
+    print("Exporting graph real_versus_predicted_revenue to path: " + path)
+
+
+def plot_seasonal_decomposed_q2(df_listings, df_daily_revenue):
+    data = pd.merge(
+        df_daily_revenue,
+        df_listings[["Código", "Comissão"]],
+        left_on="listing",
+        right_on="Código",
+        how="left",
+    )
+
+    data["company_revenue"] = data["Comissão"] * data["revenue"]
+
+    data_revenue = (
+        data.groupby("date")
+        .agg(company_revenue=("company_revenue", "sum"))
+        .reset_index()
+    )
+
+    data_revenue["year"] = data_revenue["date"].dt.year
+    data_revenue["month"] = data_revenue["date"].dt.month
+    data_revenue["day"] = data_revenue["date"].dt.day
+
+    data_revenue["day_of_week"] = data_revenue["date"].dt.dayofweek.replace(
+        WEEK_DAY_ORDER
+    )
+
+    data_revenue["holiday"] = data_revenue["date"].apply(is_holiday)
+
+    data_revenue = one_hot_encode_column(data_revenue, "day_of_week")
+
+    data_revenue = data_revenue.drop(columns="date")
+
+    data = data_revenue.loc[data_revenue["company_revenue"].notna()]
+
+    tsmodel = seasonal_decompose(
+        data["company_revenue"],
+        model="additive",
+        extrapolate_trend="freq",
+        freq=365,
+    )
+
+    path = "reports/figures/seasonal_decompose_revenue_q2.png"
+
+    plt.style.use("seaborn")
+    plt.rcParams.update({"figure.figsize": (10, 10)})
+    tsmodel.plot()
+    plt.xlabel("Days")
+    plt.tight_layout()
+    plt.savefig(path)
+    plt.close()
+
+    print("\n{}".format(89 * "*"))
+    print("Exporting graph seasonal_decompose_revenue to path: " + path)
