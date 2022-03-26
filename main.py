@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
 
+import warnings
+
+warnings.filterwarnings("ignore")
+
 from src.data.make_dataset import load_data
 from src.reports.reports import (
     answer_first_question,
