@@ -11,8 +11,8 @@ The project requires Python 3.7.4 or greater. It can be installed directly from 
 
 ```bash
 git clone https://github.com/carolmoraescruz/case_seazone.git
-virtualenv case_seazone/venv --python=python3
 cd case_seazone
+virtualenv venv --python=python3
 source venv/bin/activate
 pip install -r requirements.txt
 deactivate
