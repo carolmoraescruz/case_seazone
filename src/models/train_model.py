@@ -6,6 +6,18 @@ from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPRegressor
 from xgboost import XGBRegressor
 from sklearn.metrics import mean_absolute_error as mae
+from src import (
+    PATH_PREPROCESSOR_COVID_IMPACT,
+    PATH_PREPROCESSOR_PRICE_MODEL_Q1,
+    PATH_PREPROCESSOR_RESERVATIONS_MODEL_Q3,
+    PATH_PREPROCESSOR_REVENUE_MODEL_Q1,
+    PATH_PREPROCESSOR_REVENUE_MODEL_Q2,
+    PATH_REGRESSOR_COVID_IMPACT,
+    PATH_REGRESSOR_PRICE_MODEL_Q1,
+    PATH_REGRESSOR_RESERVATIONS_MODEL_Q3,
+    PATH_REGRESSOR_REVENUE_MODEL_Q1,
+    PATH_REGRESSOR_REVENUE_MODEL_Q2,
+)
 from src.features.build_features import (
     build_features_covid_impact_model,
     build_features_reservations_model_q3,
@@ -56,9 +68,9 @@ def train_price_model_q1(df_listings: pd.DataFrame, df_daily_revenue: pd.DataFra
 
     score = mae(y_test, model.predict(X_test))
 
-    dump_pickle(preprocessor, "models/preprocessor_price_model_q1.pickle")
+    dump_pickle(preprocessor, PATH_PREPROCESSOR_PRICE_MODEL_Q1)
 
-    dump_pickle(model, "models/regressor_price_model_q1.pickle")
+    dump_pickle(model, PATH_REGRESSOR_PRICE_MODEL_Q1)
 
     print("MAE(teste) = {:.2f}".format(score))
 
@@ -97,9 +109,9 @@ def train_revenue_model_q1(df_listings: pd.DataFrame, df_daily_revenue: pd.DataF
 
     score = mae(y_test, model.predict(X_test))
 
-    dump_pickle(preprocessor, "models/preprocessor_revenue_model_q1.pickle")
+    dump_pickle(preprocessor, PATH_PREPROCESSOR_REVENUE_MODEL_Q1)
 
-    dump_pickle(model, "models/regressor_revenue_model_q1.pickle")
+    dump_pickle(model, PATH_REGRESSOR_REVENUE_MODEL_Q1)
 
     print("MAE(teste) = {:.2f}".format(score))
 
@@ -145,9 +157,9 @@ def train_revenue_model_q2(df_listings: pd.DataFrame, df_daily_revenue: pd.DataF
 
     score = mae(y_test, model.predict(X_test))
 
-    dump_pickle(preprocessor, "models/preprocessor_revenue_model_q2.pickle")
+    dump_pickle(preprocessor, PATH_PREPROCESSOR_REVENUE_MODEL_Q2)
 
-    dump_pickle(model, "models/regressor_revenue_model_q2.pickle")
+    dump_pickle(model, PATH_REGRESSOR_REVENUE_MODEL_Q2)
 
     print("MAE(teste) = {:.2f}".format(score))
 
@@ -186,9 +198,9 @@ def train_reservations_model_q3(df_daily_revenue: pd.DataFrame):
 
     score = mae(y_test, model.predict(X_test))
 
-    dump_pickle(preprocessor, "models/preprocessor_reservations_model_q3.pickle")
+    dump_pickle(preprocessor, PATH_PREPROCESSOR_RESERVATIONS_MODEL_Q3)
 
-    dump_pickle(model, "models/regressor_reservations_model_q3.pickle")
+    dump_pickle(model, PATH_REGRESSOR_RESERVATIONS_MODEL_Q3)
 
     print("MAE(teste) = {:.2f}".format(score))
 
@@ -229,8 +241,8 @@ def train_covid_impact_model(df_listings: pd.DataFrame, df_daily_revenue: pd.Dat
 
     score = mae(y_test, model.predict(X_test))
 
-    dump_pickle(preprocessor, "models/preprocessor_covid_impact_model.pickle")
+    dump_pickle(preprocessor, PATH_PREPROCESSOR_COVID_IMPACT)
 
-    dump_pickle(model, "models/regressor_covid_impact_model.pickle")
+    dump_pickle(model, PATH_REGRESSOR_COVID_IMPACT)
 
     print("MAE(teste) = {:.2f}".format(score))

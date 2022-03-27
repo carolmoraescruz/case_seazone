@@ -2,6 +2,18 @@
 
 import pandas as pd
 import numpy as np
+from src import (
+    PATH_PREPROCESSOR_COVID_IMPACT,
+    PATH_PREPROCESSOR_PRICE_MODEL_Q1,
+    PATH_PREPROCESSOR_RESERVATIONS_MODEL_Q3,
+    PATH_PREPROCESSOR_REVENUE_MODEL_Q1,
+    PATH_PREPROCESSOR_REVENUE_MODEL_Q2,
+    PATH_REGRESSOR_COVID_IMPACT,
+    PATH_REGRESSOR_PRICE_MODEL_Q1,
+    PATH_REGRESSOR_RESERVATIONS_MODEL_Q3,
+    PATH_REGRESSOR_REVENUE_MODEL_Q1,
+    PATH_REGRESSOR_REVENUE_MODEL_Q2,
+)
 from src.data.make_dataset import (
     make_predict_dataset_price_q1,
     make_predict_dataset_revenue_q1,
@@ -118,9 +130,9 @@ def answer_first_question():
     # Price
     data_pred_price = make_predict_dataset_price_q1()
 
-    price_preprocessor = load_pickle("models/preprocessor_price_model_q1.pickle")
+    price_preprocessor = load_pickle(PATH_PREPROCESSOR_PRICE_MODEL_Q1)
 
-    price_model = load_pickle("models/regressor_price_model_q1.pickle")
+    price_model = load_pickle(PATH_REGRESSOR_PRICE_MODEL_Q1)
 
     X_pred = preprocess_transform(data_pred_price, price_preprocessor)
 
@@ -129,9 +141,9 @@ def answer_first_question():
     # Revenue
     data_pred_revenue = make_predict_dataset_revenue_q1()
 
-    revenue_preprocessor = load_pickle("models/preprocessor_revenue_model_q1.pickle")
+    revenue_preprocessor = load_pickle(PATH_PREPROCESSOR_REVENUE_MODEL_Q1)
 
-    revenue_model = load_pickle("models/regressor_revenue_model_q1.pickle")
+    revenue_model = load_pickle(PATH_REGRESSOR_REVENUE_MODEL_Q1)
 
     X_pred = preprocess_transform(data_pred_revenue, revenue_preprocessor)
 
@@ -156,8 +168,8 @@ def answer_second_question(df_listings: pd.DataFrame, df_daily_revenue: pd.DataF
 
     data_pred = build_date_features(data_pred, "date")
 
-    preprocessor = load_pickle("models/preprocessor_revenue_model_q2.pickle")
-    model = load_pickle("models/regressor_revenue_model_q2.pickle")
+    preprocessor = load_pickle(PATH_PREPROCESSOR_REVENUE_MODEL_Q2)
+    model = load_pickle(PATH_REGRESSOR_REVENUE_MODEL_Q2)
 
     X_pred = preprocess_transform(data_pred, preprocessor)
 
@@ -187,8 +199,8 @@ def answer_third_question(df_daily_revenue: pd.DataFrame):
 
     data_pred = build_date_features(data_pred, "creation_date")
 
-    preprocessor = load_pickle("models/preprocessor_reservations_model_q3.pickle")
-    model = load_pickle("models/regressor_reservations_model_q3.pickle")
+    preprocessor = load_pickle(PATH_PREPROCESSOR_RESERVATIONS_MODEL_Q3)
+    model = load_pickle(PATH_REGRESSOR_RESERVATIONS_MODEL_Q3)
 
     X_pred = preprocess_transform(data_pred, preprocessor)
 
@@ -252,8 +264,8 @@ def answer_covid_impact_on_revenue(df_listings, df_daily_revenue):
 
     data_pred = build_date_features(data_pred, "date")
 
-    preprocessor = load_pickle("models/preprocessor_covid_impact_model.pickle")
-    model = load_pickle("models/regressor_covid_impact_model.pickle")
+    preprocessor = load_pickle(PATH_PREPROCESSOR_COVID_IMPACT)
+    model = load_pickle(PATH_REGRESSOR_COVID_IMPACT)
 
     X_pred = preprocess_transform(data_pred, preprocessor)
 

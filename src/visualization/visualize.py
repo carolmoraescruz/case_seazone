@@ -10,6 +10,10 @@ from src import (
     PATH_COVID_IMPACT_GRAPH,
     PATH_HISTOGRAM_BOOKINGS,
     PATH_PLOT_REVENUE_PER_DATE,
+    PATH_PREPROCESSOR_COVID_IMPACT,
+    PATH_PREPROCESSOR_REVENUE_MODEL_Q2,
+    PATH_REGRESSOR_COVID_IMPACT,
+    PATH_REGRESSOR_REVENUE_MODEL_Q2,
     PATH_REVENUE_COMPARISON,
     PATH_SEASONAL_DECOMPOSE_RESERVATIONS,
     PATH_SEASONAL_DECOMPOSE_REVENUE,
@@ -92,8 +96,8 @@ def plot_real_pred_data(df_listings: pd.DataFrame, df_daily_revenue: pd.DataFram
 
     data_pred = build_date_features(data_pred, "date")
 
-    preprocessor = load_pickle("models/preprocessor_revenue_model_q2.pickle")
-    model = load_pickle("models/regressor_revenue_model_q2.pickle")
+    preprocessor = load_pickle(PATH_PREPROCESSOR_REVENUE_MODEL_Q2)
+    model = load_pickle(PATH_REGRESSOR_REVENUE_MODEL_Q2)
 
     X_pred = preprocess_transform(data_pred, preprocessor)
 
@@ -246,8 +250,8 @@ def plot_revenue_loss_due_to_covid(
 
     data_pred = build_date_features(data_pred, "date")
 
-    preprocessor = load_pickle("models/preprocessor_covid_impact_model.pickle")
-    model = load_pickle("models/regressor_covid_impact_model.pickle")
+    preprocessor = load_pickle(PATH_PREPROCESSOR_COVID_IMPACT)
+    model = load_pickle(PATH_REGRESSOR_COVID_IMPACT)
 
     X_pred = preprocess_transform(data_pred, preprocessor)
 

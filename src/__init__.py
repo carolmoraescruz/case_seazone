@@ -20,6 +20,28 @@ PATH_SEASONAL_DECOMPOSE_RESERVATIONS = (
 
 PATH_COVID_IMPACT_GRAPH = "reports/figures/covid_impact_on_revenue.png"
 
+PATH_PREPROCESSOR_PRICE_MODEL_Q1 = "models/preprocessor_price_model_q1.pickle"
+
+PATH_REGRESSOR_PRICE_MODEL_Q1 = "models/regressor_price_model_q1.pickle"
+
+PATH_PREPROCESSOR_REVENUE_MODEL_Q1 = "models/preprocessor_revenue_model_q1.pickle"
+
+PATH_REGRESSOR_REVENUE_MODEL_Q1 = "models/regressor_revenue_model_q1.pickle"
+
+PATH_PREPROCESSOR_REVENUE_MODEL_Q2 = "models/preprocessor_revenue_model_q2.pickle"
+
+PATH_REGRESSOR_REVENUE_MODEL_Q2 = "models/regressor_revenue_model_q2.pickle"
+
+PATH_PREPROCESSOR_RESERVATIONS_MODEL_Q3 = (
+    "models/preprocessor_reservations_model_q3.pickle"
+)
+
+PATH_REGRESSOR_RESERVATIONS_MODEL_Q3 = "models/regressor_reservations_model_q3.pickle"
+
+PATH_PREPROCESSOR_COVID_IMPACT = "models/preprocessor_covid_impact_model.pickle"
+
+PATH_REGRESSOR_COVID_IMPACT = "models/regressor_covid_impact_model.pickle"
+
 REFERENCE_DATE = "2022-03-15"
 
 FEATURES_PRICE_MODEL_Q1 = [
