@@ -340,3 +340,56 @@ def return_date_of_quantile_sold_q4(df_daily_revenue: pd.DataFrame, percent: flo
     day = df_q4["reservation_advance_days"].quantile(1 - percent)
 
     return pd.to_datetime("2022-12-31") - timedelta(day)
+
+
+def build_features_covid_impact_model(
+    df_listings: pd.DataFrame, df_daily_revenue: pd.DataFrame
+):
+    """Builds the features to be used on the revenue modelling to
+    evaluate the impact of covid-19 on company revenue.
+
+    Parameters
+    ----------
+    df_listings : pd.DataFrame
+        Pandas dataframe with information about listings.
+    df_daily_revenue : pd.DataFrame
+        Pandas dataframe with information about daily revenue.
+
+    Returns
+    -------
+    pd.DataFrame
+         Returns the input pandas dataframe with the new features added.
+    """
+    data = pd.merge(
+        df_daily_revenue,
+        df_listings[["Código", "Comissão"]],
+        left_on="listing",
+        right_on="Código",
+        how="left",
+    )
+
+    data["company_revenue"] = data["Comissão"] * data["revenue"]
+
+    data = (
+        data.groupby("date")
+        .agg(company_revenue=("company_revenue", "sum"))
+        .reset_index()
+    )
+
+    df = data.copy()
+    df = df[
+        (df["date"] <= pd.to_datetime("2020-02-29"))
+        | (df["date"] > pd.to_datetime("2021-08-31"))
+    ]
+
+    df = build_date_features(df, "date")
+
+    df["company_revenue"] = df["company_revenue"].rolling(window=7, center=True).mean()
+
+    df = df[df["company_revenue"].notna()]
+
+    X = df.drop(columns="company_revenue").astype(float)
+
+    y = df["company_revenue"]
+
+    return X, y
