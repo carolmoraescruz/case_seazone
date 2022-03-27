@@ -36,6 +36,7 @@ def print_reservation_advance_quantiles(df_daily_revenue: pd.DataFrame):
     """
 
     print("\n{}".format(89 * "*"))
+    print("Complementary Data Analysis:")
 
     perc = 0.99917
     df_daily_revenue["reservation_advance_days"].quantile(perc)
@@ -105,7 +106,7 @@ def header_q4():
 def header_covid_impact_on_revenue():
     """Prints the header message for the answer about covid impact on revenue."""
     print(
-        "\n{}\nCan we estimate Seazone's revenue loss due to the pandemic? Has the industry recovered?".format(
+        "\n{}\nOptional: Can we estimate Seazone's revenue loss due to the pandemic? Has the industry recovered?".format(
             89 * "*"
         )
     )
@@ -281,6 +282,6 @@ def answer_complementary_data_analysis(df_daily_revenue):
          Pandas dataframe with information about daily revenue.
     """
 
+    print_reservation_advance_quantiles(df_daily_revenue)
     plot_revenue_per_date(df_daily_revenue)
     plot_hist_reservation_advance(df_daily_revenue)
-    print_reservation_advance_quantiles(df_daily_revenue)
