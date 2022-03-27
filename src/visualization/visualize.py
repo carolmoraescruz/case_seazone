@@ -153,12 +153,20 @@ def plot_seasonal_decomposed_q2(
 
     data = data_revenue.loc[data_revenue["company_revenue"].notna()]
 
-    tsmodel = seasonal_decompose(
-        data["company_revenue"],
-        model="additive",
-        extrapolate_trend="freq",
-        freq=365,
-    )
+    try:
+        tsmodel = seasonal_decompose(
+            data["company_revenue"],
+            model="additive",
+            extrapolate_trend="freq",
+            freq=365,
+        )
+    except Exception as err:
+        tsmodel = seasonal_decompose(
+            data["company_revenue"],
+            model="additive",
+            extrapolate_trend="freq",
+            period=365,
+        )
 
     plt.style.use("seaborn")
     plt.rcParams.update({"figure.figsize": (10, 10)})
@@ -192,12 +200,20 @@ def plot_seasonal_decomposed_q3(df_daily_revenue: pd.DataFrame):
 
     data_q3 = build_date_features(data_q3, "creation_date")
 
-    tsmodel = seasonal_decompose(
-        data_q3["qt_reservations"],
-        model="additive",
-        extrapolate_trend="freq",
-        freq=365,
-    )
+    try:
+        tsmodel = seasonal_decompose(
+            data_q3["qt_reservations"],
+            model="additive",
+            extrapolate_trend="freq",
+            freq=365,
+        )
+    except Exception as err:
+        tsmodel = seasonal_decompose(
+            data_q3["qt_reservations"],
+            model="additive",
+            extrapolate_trend="freq",
+            period=365,
+        )
 
     plt.style.use("seaborn")
     plt.rcParams.update({"figure.figsize": (10, 10)})

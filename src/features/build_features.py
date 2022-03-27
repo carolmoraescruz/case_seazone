@@ -298,12 +298,20 @@ def build_features_reservations_model_q3(df_daily_revenue: pd.DataFrame):
 
     data_q3 = build_date_features(data_q3, "creation_date")
 
-    tsmodel = seasonal_decompose(
-        data_q3["qt_reservations"],
-        model="additive",
-        extrapolate_trend="freq",
-        freq=365,
-    )
+    try:
+        tsmodel = seasonal_decompose(
+            data_q3["qt_reservations"],
+            model="additive",
+            extrapolate_trend="freq",
+            freq=365,
+        )
+    except Exception as err:
+        tsmodel = seasonal_decompose(
+            data_q3["qt_reservations"],
+            model="additive",
+            extrapolate_trend="freq",
+            period=365,
+        )
 
     X = data_q3.drop(columns="qt_reservations").astype(float)
 
