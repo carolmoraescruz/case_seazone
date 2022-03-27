@@ -21,7 +21,7 @@ def one_hot_encode_column(dataframe: pd.DataFrame, column_name: str):
     Returns
     -------
     pd.DataFrame
-        Return the input dataframe with the on-hot encoded columns added.
+        Returns the input dataframe with the one-hot encoded columns added.
     """
     return pd.concat(
         [
@@ -45,7 +45,7 @@ def preprocess_transform(X: pd.DataFrame, preprocess: list):
     Returns
     -------
     pd.DataFrame
-        Returns the transformed dataframe
+        Returns the transformed dataframe.
     """
 
     for p in preprocess:
@@ -55,7 +55,7 @@ def preprocess_transform(X: pd.DataFrame, preprocess: list):
 
 
 def fit_preprocess_price_model_q1(X_train: pd.DataFrame):
-    """Train the preprocess pipeline stages of the model for the question 1
+    """Trains the preprocess pipeline stages of the model for question 1
     with a given dataframe
 
     Parameters
@@ -80,8 +80,8 @@ def fit_preprocess_price_model_q1(X_train: pd.DataFrame):
 
 
 def fit_preprocess_revenue_model_q2(X_train: pd.DataFrame):
-    """Train the preprocess pipeline stages of the model for the question 2
-    with a given dataframe
+    """Trains the preprocess pipeline stages of the model for question 2
+    with a given dataframe.
 
     Parameters
     ----------
@@ -105,8 +105,33 @@ def fit_preprocess_revenue_model_q2(X_train: pd.DataFrame):
 
 
 def fit_preprocess_reservations_model_q3(X_train: pd.DataFrame):
-    """Train the preprocess pipeline stages of the model for the question 3
-    with a given dataframe
+    """Trains the preprocess pipeline stages of the model for question 3
+    with a given dataframe.
+
+    Parameters
+    ----------
+    X_train : pd.DataFrame
+        Dataframe to train the preprocess pipeline
+
+    Returns
+    -------
+    tuple
+        Returns a tuple with all stages of the pipeline trained.
+    """
+    imputer = SimpleImputer(strategy="mean")
+    imputer.fit(X_train)
+    X_train = imputer.transform(X_train)
+
+    scaler = MinMaxScaler()
+    scaler.fit(X_train)
+    X_train = scaler.transform(X_train)
+
+    return imputer, scaler
+
+
+def fit_preprocess_covid_impact_model(X_train: pd.DataFrame):
+    """Trains the preprocess pipeline stages of the model with a given
+    dataframe.
 
     Parameters
     ----------
