@@ -3,10 +3,10 @@
 from datetime import timedelta
 import pandas as pd
 import numpy as np
-from src import FEATURES_PRICE_MODEL_Q1, FEATURES_REVENUE_MODEL_Q1, REFERENCE_DATE
+from src import FEATURES_PRICE_MODEL_Q1, FEATURES_REVENUE_MODEL_Q1
 
 from src.models.preprocessing import one_hot_encode_column
-from src.commons import WEEK_DAY_ORDER, add_day_of_week, decompose_date_ymd, is_holiday
+from src.commons import add_day_of_week, decompose_date_ymd, is_holiday
 from statsmodels.tsa.seasonal import seasonal_decompose
 
 

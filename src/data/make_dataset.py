@@ -9,13 +9,11 @@ from src import (
     PATH_LISTINGS,
     REFERENCE_DATE,
 )
-from src.commons import WEEK_DAY_ORDER, is_holiday
 from src.features.build_features import (
     build_daily_features,
     build_date_features,
     build_listings_features,
 )
-from src.models.preprocessing import one_hot_encode_column
 
 
 def load_data():
