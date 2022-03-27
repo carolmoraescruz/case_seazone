@@ -188,10 +188,17 @@ def make_predict_dataset_price_q1():
 
     data_pred = pd.DataFrame({})
 
-    # Selecionando os dias do mes de março nos tres anos
-    data_pred["date"] = pd.date_range(
-        start=pd.to_datetime("2022-03-01"), end=pd.to_datetime("2022-03-31")
-    ).to_list()
+    data_pred["date"] = (
+        pd.date_range(
+            start=pd.to_datetime("2020-03-01"), end=pd.to_datetime("2020-03-31")
+        ).to_list()
+        + pd.date_range(
+            start=pd.to_datetime("2021-03-01"), end=pd.to_datetime("2021-03-31")
+        ).to_list()
+        + pd.date_range(
+            start=pd.to_datetime("2022-03-01"), end=pd.to_datetime("2022-03-31")
+        ).to_list()
+    )
     data_pred["Categoria"] = 5
 
     data_pred["Quartos"] = 2
@@ -222,9 +229,17 @@ def make_predict_dataset_revenue_q1():
 
     data_pred = pd.DataFrame({})
 
-    data_pred["date"] = pd.date_range(
-        start=pd.to_datetime("2022-03-01"), end=pd.to_datetime("2022-03-31")
-    ).to_list()
+    data_pred["date"] = (
+        pd.date_range(
+            start=pd.to_datetime("2020-03-01"), end=pd.to_datetime("2020-03-31")
+        ).to_list()
+        + pd.date_range(
+            start=pd.to_datetime("2021-03-01"), end=pd.to_datetime("2021-03-31")
+        ).to_list()
+        + pd.date_range(
+            start=pd.to_datetime("2022-03-01"), end=pd.to_datetime("2022-03-31")
+        ).to_list()
+    )
 
     data_pred["Categoria"] = 5
 
