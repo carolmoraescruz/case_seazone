@@ -16,7 +16,14 @@ from src.commons import (
     load_pickle,
     to_date,
 )
-from src.visualization.visualize import plot_real_pred_data, plot_seasonal_decomposed_q2
+from src.visualization.visualize import (
+    plot_hist_reservation_advance,
+    plot_real_pred_data,
+    plot_revenue_loss_due_to_covid,
+    plot_revenue_per_date,
+    plot_seasonal_decomposed_q2,
+    plot_seasonal_decomposed_q3,
+)
 
 
 def print_reservation_advance_quantiles(df_daily_revenue: pd.DataFrame):
@@ -131,7 +138,15 @@ def answer_first_question():
 
 
 def answer_second_question(df_listings: pd.DataFrame, df_daily_revenue: pd.DataFrame):
-    """Script to obtain the answers to question 2."""
+    """Script to obtain the answers to question 2.
+
+    Parameters
+    ----------
+    df_listings : pd.DataFrame
+        Pandas dataframe with information about listings.
+    df_daily_revenue : pd.DataFrame
+        Pandas dataframe with information about daily revenue.
+    """
 
     data_pred = pd.DataFrame()
     data_pred["date"] = pd.date_range(
@@ -149,9 +164,18 @@ def answer_second_question(df_listings: pd.DataFrame, df_daily_revenue: pd.DataF
 
     print("Expected revenue for 2022 R$: {:.2f}".format(revenue_2022))
 
+    plot_real_pred_data(df_listings, df_daily_revenue)
+    plot_seasonal_decomposed_q2(df_listings, df_daily_revenue)
 
-def answer_third_question():
-    """Script to obtain the answers to question 3."""
+
+def answer_third_question(df_daily_revenue: pd.DataFrame):
+    """Script to obtain the answers to question 3.
+
+    Parameters
+    ----------
+    df_daily_revenue : pd.DataFrame
+        Pandas dataframe with information about daily revenue.
+    """
 
     data_pred = pd.DataFrame()
     dates_2022 = pd.date_range(
@@ -175,6 +199,8 @@ def answer_third_question():
         "Expected reservations per day for 2022: {:d}".format(mean_reservations_per_day)
     )
 
+    plot_seasonal_decomposed_q3(df_daily_revenue)
+
 
 def answer_fourth_question(df_daily_revenue):
     """Script to obtain the answers to question 4."""
@@ -192,7 +218,15 @@ def answer_fourth_question(df_daily_revenue):
 
 
 def answer_covid_impact_on_revenue(df_listings, df_daily_revenue):
-    """Script to obtain the answers to covid impact on revenue."""
+    """Script to obtain the answers to covid impact on revenue.
+
+    Parameters
+    ----------
+    df_listings : pd.DataFrame
+        Pandas dataframe with information about listings.
+    df_daily_revenue : pd.DataFrame
+        Pandas dataframe with information about daily revenue.
+    """
 
     data = pd.merge(
         df_daily_revenue,
@@ -234,3 +268,19 @@ def answer_covid_impact_on_revenue(df_listings, df_daily_revenue):
             loss_due_to_pandemic
         )
     )
+
+    plot_revenue_loss_due_to_covid(df_listings, df_daily_revenue)
+
+
+def answer_complementary_data_analysis(df_daily_revenue):
+    """Complementary data analysis of the dataset provided.
+
+    Parameters
+     ----------
+     df_daily_revenue : pd.DataFrame
+         Pandas dataframe with information about daily revenue.
+    """
+
+    plot_revenue_per_date(df_daily_revenue)
+    plot_hist_reservation_advance(df_daily_revenue)
+    print_reservation_advance_quantiles(df_daily_revenue)
