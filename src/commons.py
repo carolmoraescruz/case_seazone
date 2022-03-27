@@ -151,3 +151,38 @@ def add_day_of_week(dataframe: pd.DataFrame, date_column: str):
     )
 
     return dataframe
+
+
+def get_date_from_ymd(
+    df: pd.DataFrame,
+    year_column: str = "year",
+    month_column: str = "month",
+    day_column: str = "day",
+):
+    """Composes a single date column from three columns of
+    year, month and day.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        A Pandas dataframe containing date decomposed in three columns,
+        containing separately 'year', 'month' and 'day'.
+    year_column : str, optional
+        Name of the column with the year, by default "year"
+    month_column : str, optional
+        Name of the column with the month, by default "month"
+    day_column : str, optional
+        Name of the column with the day, by default "day"
+
+    Returns
+    -------
+    pd.Series
+        Returns a Pandas Series with the date.
+    """
+    return pd.to_datetime(
+        df[year_column].astype("float").astype(int).astype("string")
+        + "-"
+        + df[month_column].astype("float").astype(int).astype("string")
+        + "-"
+        + df[day_column].astype("float").astype(int).astype("string")
+    )
