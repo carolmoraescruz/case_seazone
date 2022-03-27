@@ -34,7 +34,6 @@ def plot_revenue_per_date(df_daily_revenue: pd.DataFrame):
     plt.savefig(path)
     plt.close()
 
-    print("\n{}".format(89 * "*"))
     print("Exporting graph revenue_per_date to path: " + path)
 
 
@@ -56,7 +55,6 @@ def plot_hist_reservation_advance(df_daily_revenue: pd.DataFrame):
     plt.savefig(path)
     plt.close()
 
-    print("\n{}".format(89 * "*"))
     print("Exporting graph histogram_reservation_advance to path: " + path)
 
 
@@ -105,7 +103,6 @@ def plot_real_pred_data(df_listings: pd.DataFrame, df_daily_revenue: pd.DataFram
     plt.savefig(path)
     plt.close()
 
-    print("\n{}".format(89 * "*"))
     print("Exporting graph real_versus_predicted_revenue to path: " + path)
 
 
@@ -159,7 +156,6 @@ def plot_seasonal_decomposed_q2(
     plt.savefig(path)
     plt.close()
 
-    print("\n{}".format(89 * "*"))
     print("Exporting graph seasonal_decompose_revenue to path: " + path)
 
 
@@ -198,7 +194,6 @@ def plot_seasonal_decomposed_q3(df_daily_revenue: pd.DataFrame):
     plt.savefig(path)
     plt.close()
 
-    print("\n{}".format(89 * "*"))
     print("Exporting graph seasonal_decompose_reservations to path: " + path)
 
 
@@ -260,5 +255,4 @@ def plot_revenue_loss_due_to_covid(
     plt.savefig(path)
     plt.close()
 
-    print("\n{}".format(89 * "*"))
     print("Exporting graph covid_impact_on_revenue to path: " + path)
