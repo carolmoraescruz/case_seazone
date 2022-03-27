@@ -1,6 +1,6 @@
-__version__ = "0.0.0"
+__version__ = "1.0.0"
 
-__short_version__ = "0.0"
+__short_version__ = "1.0"
 
 PATH_LISTINGS = "data/raw/listings-challenge.csv"
 
