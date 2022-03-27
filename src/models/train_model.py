@@ -27,6 +27,7 @@ from src.features.build_features import (
 )
 from src.models.preprocessing import (
     fit_preprocess_covid_impact_model,
+    fit_preprocess_price_model_q1,
     fit_preprocess_reservations_model_q3,
     fit_preprocess_revenue_model_q2,
     preprocess_transform,
@@ -58,7 +59,7 @@ def train_price_model_q1(df_listings: pd.DataFrame, df_daily_revenue: pd.DataFra
         X, y, test_size=0.3, random_state=42
     )
 
-    preprocessor = fit_preprocess_revenue_model_q2(X_train)
+    preprocessor = fit_preprocess_price_model_q1(X_train)
 
     X_train = preprocess_transform(X_train, preprocessor)
 
