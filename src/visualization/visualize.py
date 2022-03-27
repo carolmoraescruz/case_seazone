@@ -40,7 +40,7 @@ def plot_revenue_per_date(df_daily_revenue: pd.DataFrame):
     sns.lineplot(data=temp, x="date", y="revenue")
     plt.xticks(rotation=45)
     plt.xlabel("Date")
-    plt.ylabel("Revenue (R$)")
+    plt.ylabel("Mean Daily Revenue (R$)")
     plt.tight_layout()
     plt.savefig(PATH_PLOT_REVENUE_PER_DATE)
     plt.close()
