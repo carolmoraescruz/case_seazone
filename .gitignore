@@ -87,3 +87,6 @@ notebooks/
 
 # Mypy cache
 .mypy_cache/
+
+# Virtual environment
+venv/
