@@ -6,6 +6,14 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from statsmodels.tsa.seasonal import seasonal_decompose
+from src import (
+    PATH_COVID_IMPACT_GRAPH,
+    PATH_HISTOGRAM_BOOKINGS,
+    PATH_PLOT_REVENUE_PER_DATE,
+    PATH_REVENUE_COMPARISON,
+    PATH_SEASONAL_DECOMPOSE_RESERVATIONS,
+    PATH_SEASONAL_DECOMPOSE_REVENUE,
+)
 from src.commons import get_date_from_ymd, load_pickle
 from src.features.build_features import (
     build_date_features,
@@ -22,7 +30,6 @@ def plot_revenue_per_date(df_daily_revenue: pd.DataFrame):
     df_daily_revenue : pd.DataFrame
         Pandas dataframe with information about daily revenue.
     """
-    path = "reports/figures/revenue_per_date.png"
     temp = df_daily_revenue.groupby("date")[["revenue"]].mean().reset_index()
 
     plt.style.use("seaborn")
@@ -31,10 +38,10 @@ def plot_revenue_per_date(df_daily_revenue: pd.DataFrame):
     plt.xlabel("Date")
     plt.ylabel("Revenue (R$)")
     plt.tight_layout()
-    plt.savefig(path)
+    plt.savefig(PATH_PLOT_REVENUE_PER_DATE)
     plt.close()
 
-    print("Exporting graph revenue_per_date to path: " + path)
+    print("Exporting graph revenue_per_date to path: " + PATH_PLOT_REVENUE_PER_DATE)
 
 
 def plot_hist_reservation_advance(df_daily_revenue: pd.DataFrame):
@@ -45,17 +52,19 @@ def plot_hist_reservation_advance(df_daily_revenue: pd.DataFrame):
     df_daily_revenue : pd.DataFrame
         Pandas dataframe with information about daily revenue.
     """
-    path = "reports/figures/histogram_reservation_advance.png"
 
     plt.style.use("seaborn")
     plt.hist(df_daily_revenue["reservation_advance_days"].dropna(), bins=100)
     plt.xlabel("Reservation advance (days)")
     plt.ylabel("Number of reservations")
     plt.tight_layout()
-    plt.savefig(path)
+    plt.savefig(PATH_HISTOGRAM_BOOKINGS)
     plt.close()
 
-    print("Exporting graph histogram_reservation_advance to path: " + path)
+    print(
+        "Exporting graph histogram_reservation_advance to path: "
+        + PATH_HISTOGRAM_BOOKINGS
+    )
 
 
 def plot_real_pred_data(df_listings: pd.DataFrame, df_daily_revenue: pd.DataFrame):
@@ -90,8 +99,6 @@ def plot_real_pred_data(df_listings: pd.DataFrame, df_daily_revenue: pd.DataFram
 
     y_pred = model.predict(X_pred)
 
-    path = "reports/figures/real_versus_predicted_revenue.png"
-
     plt.style.use("seaborn")
     plt.plot(X["date"], y, label="Real revenue", alpha=0.8)
     plt.plot(X["date"], y_pred, label="Predicted revenue", color="orange", alpha=0.8)
@@ -100,10 +107,13 @@ def plot_real_pred_data(df_listings: pd.DataFrame, df_daily_revenue: pd.DataFram
     plt.ylabel("Revenue (R$)")
     plt.legend()
     plt.tight_layout()
-    plt.savefig(path)
+    plt.savefig(PATH_REVENUE_COMPARISON)
     plt.close()
 
-    print("Exporting graph real_versus_predicted_revenue to path: " + path)
+    print(
+        "Exporting graph real_versus_predicted_revenue to path: "
+        + PATH_REVENUE_COMPARISON
+    )
 
 
 def plot_seasonal_decomposed_q2(
@@ -146,17 +156,18 @@ def plot_seasonal_decomposed_q2(
         freq=365,
     )
 
-    path = "reports/figures/seasonal_decompose_revenue_q2.png"
-
     plt.style.use("seaborn")
     plt.rcParams.update({"figure.figsize": (10, 10)})
     tsmodel.plot()
     plt.xlabel("Days")
     plt.tight_layout()
-    plt.savefig(path)
+    plt.savefig(PATH_SEASONAL_DECOMPOSE_REVENUE)
     plt.close()
 
-    print("Exporting graph seasonal_decompose_revenue to path: " + path)
+    print(
+        "Exporting graph seasonal_decompose_revenue to path: "
+        + PATH_SEASONAL_DECOMPOSE_REVENUE
+    )
 
 
 def plot_seasonal_decomposed_q3(df_daily_revenue: pd.DataFrame):
@@ -184,17 +195,18 @@ def plot_seasonal_decomposed_q3(df_daily_revenue: pd.DataFrame):
         freq=365,
     )
 
-    path = "reports/figures/seasonal_decompose_reservations_q3.png"
-
     plt.style.use("seaborn")
     plt.rcParams.update({"figure.figsize": (10, 10)})
     tsmodel.plot()
     plt.xlabel("Days")
     plt.tight_layout()
-    plt.savefig(path)
+    plt.savefig(PATH_SEASONAL_DECOMPOSE_RESERVATIONS)
     plt.close()
 
-    print("Exporting graph seasonal_decompose_reservations to path: " + path)
+    print(
+        "Exporting graph seasonal_decompose_reservations to path: "
+        + PATH_SEASONAL_DECOMPOSE_RESERVATIONS
+    )
 
 
 def plot_revenue_loss_due_to_covid(
@@ -242,8 +254,6 @@ def plot_revenue_loss_due_to_covid(
     data_pred["predicted_company_revenue"] = model.predict(X_pred)
     data_pred["date"] = get_date_from_ymd(data_pred)
 
-    path = "reports/figures/covid_impact_on_revenue.png"
-
     plt.style.use("seaborn")
     plt.rcParams.update({"figure.figsize": (10, 10)})
     plt.plot(
@@ -260,7 +270,7 @@ def plot_revenue_loss_due_to_covid(
     plt.ylabel("Company Revenue (R$)")
     plt.legend()
     plt.tight_layout()
-    plt.savefig(path)
+    plt.savefig(PATH_COVID_IMPACT_GRAPH)
     plt.close()
 
-    print("Exporting graph covid_impact_on_revenue to path: " + path)
+    print("Exporting graph covid_impact_on_revenue to path: " + PATH_COVID_IMPACT_GRAPH)

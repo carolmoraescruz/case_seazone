@@ -6,6 +6,20 @@ PATH_LISTINGS = "data/raw/listings-challenge.csv"
 
 PATH_DAILY_REVENUE = "data/raw/daily_revenue.csv"
 
+PATH_PLOT_REVENUE_PER_DATE = "reports/figures/revenue_per_date.png"
+
+PATH_HISTOGRAM_BOOKINGS = "reports/figures/histogram_reservation_advance.png"
+
+PATH_REVENUE_COMPARISON = "reports/figures/real_versus_predicted_revenue.png"
+
+PATH_SEASONAL_DECOMPOSE_REVENUE = "reports/figures/seasonal_decompose_revenue_q2.png"
+
+PATH_SEASONAL_DECOMPOSE_RESERVATIONS = (
+    "reports/figures/seasonal_decompose_reservations_q3.png"
+)
+
+PATH_COVID_IMPACT_GRAPH = "reports/figures/covid_impact_on_revenue.png"
+
 REFERENCE_DATE = "2022-03-15"
 
 FEATURES_PRICE_MODEL_Q1 = [
