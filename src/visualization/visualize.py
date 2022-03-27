@@ -246,8 +246,12 @@ def plot_revenue_loss_due_to_covid(
 
     plt.style.use("seaborn")
     plt.rcParams.update({"figure.figsize": (10, 10)})
-    plt.plot(data["date"], data["company_revenue"])
-    plt.plot(data_pred["date"], data_pred["predicted_company_revenue"])
+    plt.plot(data["date"], data["company_revenue"], label="Real Company Revenue")
+    plt.plot(
+        data_pred["date"],
+        data_pred["predicted_company_revenue"],
+        label="Predicted Company Revenue",
+    )
     plt.xlabel("Date")
     plt.ylabel("Company Revenue (R$)")
     plt.legend()
