@@ -12,9 +12,11 @@ from src.features.build_features import (
 )
 from src.models.preprocessing import preprocess_transform
 from src.commons import (
+    get_date_from_ymd,
     load_pickle,
     to_date,
 )
+from src.visualization.visualize import plot_real_pred_data, plot_seasonal_decomposed_q2
 
 
 def print_reservation_advance_quantiles(df_daily_revenue: pd.DataFrame):
@@ -93,6 +95,15 @@ def header_q4():
     )
 
 
+def header_covid_impact_on_revenue():
+    """Prints the header message for the answer about covid impact on revenue."""
+    print(
+        "\n{}\nCan we estimate Seazone's revenue loss due to the pandemic? Has the industry recovered?".format(
+            89 * "*"
+        )
+    )
+
+
 def answer_first_question():
     """Script to obtain the answers to question 1."""
 
@@ -119,7 +130,7 @@ def answer_first_question():
     print("Modeled revenue R$: {:.2f}".format(revenue_model.predict(X_pred).sum()))
 
 
-def answer_second_question():
+def answer_second_question(df_listings: pd.DataFrame, df_daily_revenue: pd.DataFrame):
     """Script to obtain the answers to question 2."""
 
     data_pred = pd.DataFrame()
@@ -178,3 +189,48 @@ def answer_fourth_question(df_daily_revenue):
             )
             + to_date(date_of_new_year_reservations)
         )
+
+
+def answer_covid_impact_on_revenue(df_listings, df_daily_revenue):
+    """Script to obtain the answers to covid impact on revenue."""
+
+    data = pd.merge(
+        df_daily_revenue,
+        df_listings[["Código", "Comissão"]],
+        left_on="listing",
+        right_on="Código",
+        how="left",
+    )
+
+    data["company_revenue"] = data["Comissão"] * data["revenue"]
+
+    data = (
+        data.groupby("date")
+        .agg(company_revenue=("company_revenue", "sum"))
+        .reset_index()
+    )
+
+    data_pred = pd.DataFrame()
+    data_pred["date"] = pd.date_range(
+        start=data["date"].min(), end=data["date"].max()
+    ).to_list()
+
+    data_pred = build_date_features(data_pred, "date")
+
+    preprocessor = load_pickle("models/preprocessor_covid_impact_model.pickle")
+    model = load_pickle("models/regressor_covid_impact_model.pickle")
+
+    X_pred = preprocess_transform(data_pred, preprocessor)
+
+    data_pred["predicted_company_revenue"] = model.predict(X_pred)
+    data_pred["date"] = get_date_from_ymd(data_pred)
+
+    loss_due_to_pandemic = np.sum(
+        data_pred["predicted_company_revenue"] - data["company_revenue"]
+    )
+
+    print(
+        "Estimated loss on revenue due to Covid-19 pandemic (R$): {:.2f}".format(
+            loss_due_to_pandemic
+        )
+    )
