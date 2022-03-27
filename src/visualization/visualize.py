@@ -6,7 +6,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from statsmodels.tsa.seasonal import seasonal_decompose
-from src.commons import load_pickle
+from src.commons import get_date_from_ymd, load_pickle
 from src.features.build_features import (
     build_date_features,
     build_features_revenue_model_q2,
@@ -200,3 +200,65 @@ def plot_seasonal_decomposed_q3(df_daily_revenue: pd.DataFrame):
 
     print("\n{}".format(89 * "*"))
     print("Exporting graph seasonal_decompose_reservations to path: " + path)
+
+
+def plot_revenue_loss_due_to_covid(
+    df_listings: pd.DataFrame, df_daily_revenue: pd.DataFrame
+):
+    """Plots the graph comparing the revenue expected in comparison to
+    real revenue in order to compare loss due to covid-19 pandemic.
+
+    Parameters
+    ----------
+    df_listings : pd.DataFrame
+        Pandas dataframe with information about listings.
+    df_daily_revenue : pd.DataFrame
+        Pandas dataframe with information about daily revenue.
+    """
+
+    data = pd.merge(
+        df_daily_revenue,
+        df_listings[["Código", "Comissão"]],
+        left_on="listing",
+        right_on="Código",
+        how="left",
+    )
+
+    data["company_revenue"] = data["Comissão"] * data["revenue"]
+
+    data = (
+        data.groupby("date")
+        .agg(company_revenue=("company_revenue", "sum"))
+        .reset_index()
+    )
+
+    data_pred = pd.DataFrame()
+    data_pred["date"] = pd.date_range(
+        start=data["date"].min(), end=data["date"].max()
+    ).to_list()
+
+    data_pred = build_date_features(data_pred, "date")
+
+    preprocessor = load_pickle("models/preprocessor_covid_impact_model.pickle")
+    model = load_pickle("models/regressor_covid_impact_model.pickle")
+
+    X_pred = preprocess_transform(data_pred, preprocessor)
+
+    data_pred["predicted_company_revenue"] = model.predict(X_pred)
+    data_pred["date"] = get_date_from_ymd(data_pred)
+
+    path = "reports/figures/covid_impact_on_revenue.png"
+
+    plt.style.use("seaborn")
+    plt.rcParams.update({"figure.figsize": (10, 10)})
+    plt.plot(data["date"], data["company_revenue"])
+    plt.plot(data_pred["date"], data_pred["predicted_company_revenue"])
+    plt.xlabel("Date")
+    plt.ylabel("Company Revenue (R$)")
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(path)
+    plt.close()
+
+    print("\n{}".format(89 * "*"))
+    print("Exporting graph covid_impact_on_revenue to path: " + path)
