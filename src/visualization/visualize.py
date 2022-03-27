@@ -93,8 +93,8 @@ def plot_real_pred_data(df_listings: pd.DataFrame, df_daily_revenue: pd.DataFram
     path = "reports/figures/real_versus_predicted_revenue.png"
 
     plt.style.use("seaborn")
-    plt.plot(X["date"], y, label="Real revenue")
-    plt.plot(X["date"], y_pred, label="Predicted revenue")
+    plt.plot(X["date"], y, label="Real revenue", alpha=0.8)
+    plt.plot(X["date"], y_pred, label="Predicted revenue", color="orange", alpha=0.8)
     plt.xticks(rotation=45)
     plt.xlabel("Date")
     plt.ylabel("Revenue (R$)")
@@ -246,11 +246,15 @@ def plot_revenue_loss_due_to_covid(
 
     plt.style.use("seaborn")
     plt.rcParams.update({"figure.figsize": (10, 10)})
-    plt.plot(data["date"], data["company_revenue"], label="Real Company Revenue")
+    plt.plot(
+        data["date"], data["company_revenue"], label="Real Company Revenue", alpha=0.8
+    )
     plt.plot(
         data_pred["date"],
         data_pred["predicted_company_revenue"],
         label="Predicted Company Revenue",
+        color="orange",
+        alpha=0.8,
     )
     plt.xlabel("Date")
     plt.ylabel("Company Revenue (R$)")
